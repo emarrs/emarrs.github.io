@@ -348,3 +348,17 @@ video{
     visibility: visible;
 }
 
+
+/*CRAIGSLIST PAGE*/
+.bundle{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bundle > div {
+  max-width: 400px;
+    max-height: 600px;
+    margin: auto;
+}
+
