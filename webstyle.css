@@ -13,7 +13,13 @@ html {
 
 @media screen and (max-width: 450px){
     .desktop{
-/*        display: none;*/
+        display: none;
+    }
+}
+
+@media screen and (min-width: 450px){
+    .mobile{
+        display: none;
     }
 }
     
