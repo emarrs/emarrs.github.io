@@ -11,14 +11,14 @@ html {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 650px){
     .desktop{
         display: none;
     }
 }
 
-@media screen and (min-width: 450px){
-    .desktop{
+@media screen and (min-width: 750px){
+    .mobile{
         display: none;
     }
 }
