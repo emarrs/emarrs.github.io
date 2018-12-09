@@ -11,11 +11,7 @@ html {
     box-sizing: border-box;
 }
 
-@media only screen and (max-device-width: 450px){
-    .desktop{
-        display: none;
-    }
-}
+
 
 @media only screen and (min-device-width: 450px){
     .mobile{
@@ -202,6 +198,58 @@ img{
     position: relative;
     top: 70px;
     left: 70px;
+}
+
+@media only screen and (max-device-width: 450px){
+    .desktop{
+/*        display: none;*/  
+    }
+    
+    #gdthumb{
+        left: 30%;
+        height: 500px;
+    }
+
+    #gdclick{
+        left: 30%;
+        height: 500px;
+    }
+
+    #libbythumb{
+        max-height: 400px;
+        max-width: 400px;
+        position: absolute;
+        bottom: 300px;
+        left: 900px;   
+    }
+
+    #libbyclick{
+        height: 290px;
+        width: 270px;
+        position: relative;
+        border-radius: 100%;
+        position: absolute;
+        bottom: 310px;
+        left: 960px;
+    }
+
+    #apparelthmb{
+        height: 90px;
+        width: 90px;
+        animation-duration: 4s;
+        -webkit-animation-duration: 4s;
+        position: absolute;
+        left: 98px;
+        top: 106px;
+    }
+
+    #apparelclick{
+        height: 90px;
+        width: 90px;
+        position: relative;
+        top: 70px;
+        left: 70px;
+    }
 }
 
 
