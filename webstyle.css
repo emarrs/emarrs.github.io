@@ -379,8 +379,21 @@ img{
   flex-wrap: wrap;
 }
 
-.flex-container > div {
+.flex-container a{
+    text-decoration: none;
+}
+
+.flex-container div {
   margin: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 0px;
+    margin-top: auto;
+    width: 200px;
+}
+
+.flex-container img{
+
 }
 
 .flex-container img {
@@ -401,19 +414,17 @@ img{
     text-shadow: 0 0 15px yellow;
 }
 
-.bad{
-   width: 150px;
-    height: 150px;
+.bad img{
+   max-height: 100px;
+    width: inherit;
 }
 
-.med{
+.med img{
     width: 200px;
-    height: 200px;
 }
 
-.best{
+.best img{
     width: 250px;
-    height: 250px;
 }
 
 @keyframes color {
