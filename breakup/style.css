@@ -71,10 +71,16 @@ input:focus {
 h1 {
   font-size: 75px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
   width: 800px;
   margin: 0 auto;
   color: #444;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 100;
+    color: darkslategray;
 }
 
 
@@ -85,8 +91,36 @@ h1 {
 
 
 
-/*
+
 .flex-container div{
-    width: 300px;
-    height: 300px;
-}*/
+    width: 25%;
+    cursor: pointer;
+}
+
+
+.marquee {
+  height: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 20s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}

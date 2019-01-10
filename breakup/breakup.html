@@ -13,12 +13,9 @@
 </head>
 
 <body>
-    
-    <a href="index.html"> This isn't me</a>
-    
   <h1></h1>
   <div id="main-form">
-    <form name="mainForm">
+    <form name="careerForm">
 
     <!-- SO's Name -->
       <div>
@@ -28,67 +25,119 @@
 
       <!-- Synonym -->
       <div>
-        <label>Synonym for talk</label>
+        <label>Time spent together</label>
         <input type="text" name="timeTogether">
       </div>
-
-      <!-- Number -->
+        
+        
+    <!-- SO Characteristic -->
       <div>
-        <label>Number</label>
-        <input type="text" name="number">
+        <label>A characteristic of sig. other</label>
+        <input type="text" name="soChar">
       </div>
+        
 
-      <!-- Time -->
-      <div>
-        <label style="padding-right: 150px;">Choose a unit of time</label><br />
-        <div class="radio"><input type="radio" name="timeUnit" value="minutes">Minutes</div>
-        <div class="radio"><input type="radio" name="timeUnit" value="hours">Hours</div>
-        <div class="radio"><input type="radio" name="timeUnit" value="days">Days</div>
-        <div class="radio"><input type="radio" name="timeUnit" value="months">Months</div>
+      <!-- Objects of infatuation -->
+      <div style="height: 100px; width: 500px; display: flex; flex-wrap: wrap;">
+        <label style="padding-right: 250px;">
+            Things you would rather be thinking about</label>
+        <br />
+        <div class="radio">
+            <input type="radio" name="objectsLike" value="podcasts">Podcasts
+        </div>
+        <div class="radio">
+            <input type="radio" name="objectsLike" 
+            value="my single-serve VitaMix">Single-Serve VitaMix
+        </div>
+        <div class="radio">
+            <input type="radio" name="objectsLike" 
+            value="Himalayan sea salt">Himalayan sea salt
+        </div>
+        <div class="radio">
+            <input type="radio" 
+            name="objectsLike" value="taking a juul break in bathroom to release my gas">Juuling
+        </div>
+        <div class="radio">
+            <input type="radio" name="objectsLike" 
+            value="the new iPhone">the new iPhone
+        </div>
       </div>
       <br /><br />
+        
+        
+    <!-- Hobbies of infatuation -->
+      <div style="height: 110px; display: flex; flex-wrap: wrap;">
+        <label style="padding-right: 450px;">Your preferred hobby:</label>
+          <br />
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" value="working out">Working Out
+        </div>
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" 
+            value="memorizing Beto O'Rourke quotes">Memorizing Beto O'Rourke Quotes
+        </div>
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" 
+            value="staring directly into the sun">Staring directly into the sun
+        </div>
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" value="reading autobiographies">Autobiographies
+        </div>
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" 
+            value="my intellectual superiority">Developing Intellectual Superiority
+        </div>
+      </div>
+      <br /><br />
+        
 
-      <!-- Activity -->
+      <!-- making out -->
       <div>
-        <label>Activity ending in -ing</label>
-        <input type="text" name="activity">
+        <label>Synonym for intimate contact:</label>
+        <input type="text" name="makingOut">
       </div>
 
-      <!-- Pet -->
+      <!-- sex -->
       <div>
-        <label>Your pet</label>
-        <input type="text" name="pet">
+        <label>Another synonym for intimate contact:</label>
+        <input type="text" name="sex">
       </div>
 
-      <!-- Clothing -->
+      <!-- number -->
       <div>
-        <label>Article of clothing</label>
-        <input type="text" name="clothing">
+        <label>A number:</label>
+        <input type="text" name="number">
+      </div>
+        
+    <!-- my dream -->
+      <div>
+        <label>Your dream job:</label>
+        <input type="text" name="myDream">
+      </div>
+        
+          <!-- Publish -->
+      <div style="height: 100px; width: 500px; display: flex; flex-wrap: wrap;">
+        <label style="padding-right: 250px;">
+            Favorite digital media output:</label>
+        <br />
+        <div class="radio">
+            <input type="radio" name="publish" value="a podcast">Podcasts
+        </div>
+        <div class="radio">
+            <input type="radio" name="publish" 
+            value="a successful blog">Blogs
+        </div>
+        <div class="radio">
+            <input type="radio" name="publish" 
+            value="a docudrama">Documentaries
+        </div>
       </div>
 
-      <!-- Food -->
+      <!-- my name -->
       <div>
-        <label>Food</label>
-        <input type="text" name="food">
-      </div>
-
-      <!-- Greeting -->
-      <div>
-        <label>A greeting</label>
-        <input type="text" name="greeting">
-      </div>
-
-      <!-- Posession -->
-      <div>
-        <label>Your favorite object</label>
-        <input type="text" name="posession">
-      </div>
-
-      <!-- SO's Hobby -->
-      <div>
-        <label>SO's Hobby</label>
-        <input type="text" name="soHobby">
-      </div>
+        <label>Your name:</label>
+        <input type="text" name="myName">
+      </div>    
 
       <!-- reset or submit form -->
       <div>
@@ -103,7 +152,12 @@
     <p id="message1"></p>
     <p id="message2"></p>
     <p id="message3"></p>
+    <p id="message4"></p>
+    <p id="message5"></p>
   </div>
+
+  
+</body>
 
   
 </body>

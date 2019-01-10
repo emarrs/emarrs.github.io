@@ -1,5 +1,5 @@
 <!doctype html>
-<html style="background-color: grey;">
+<html style="background-color: whitesmoke;">
 
 <head>
     <meta charset="UTF-8">
@@ -25,67 +25,112 @@
 
       <!-- Synonym -->
       <div>
-        <label>Synonym for talk</label>
+        <label>Time spent together</label>
         <input type="text" name="timeTogether">
       </div>
-
-      <!-- Number -->
+        
+    <!-- SO Characteristic -->
       <div>
-        <label>Number</label>
-        <input type="text" name="number">
+        <label>A characteristic of sig. other</label>
+        <input type="text" name="soChar">
       </div>
+        
 
-      <!-- Time -->
-      <div>
-        <label style="padding-right: 150px;">Choose a unit of time</label><br />
-        <div class="radio"><input type="radio" name="timeUnit" value="minutes">Minutes</div>
-        <div class="radio"><input type="radio" name="timeUnit" value="hours">Hours</div>
-        <div class="radio"><input type="radio" name="timeUnit" value="days">Days</div>
-        <div class="radio"><input type="radio" name="timeUnit" value="months">Months</div>
+      <!-- Objects of infatuation -->
+      <div style="height: 100px; width: 600px; display: flex; flex-wrap: wrap;">
+        <label style="padding-right: 250px;">
+            Objects you'd rather be thinking about</label>
+        <br />
+        <div class="radio">
+            <input type="radio" name="objectsLike" value="Demonia platforms">Demonia Platforms
+        </div>
+        <div class="radio">
+            <input type="radio" name="objectsLike" 
+            value="dry wheat flakes">Dry Wheat Flakes
+        </div>
+        <div class="radio">
+            <input type="radio" name="objectsLike" value="Deconstructivism">Deconstructivism
+        </div>
+        <div class="radio">
+            <input type="radio" 
+            name="objectsLike" value="polyester">Polyester
+        </div>
+        <div class="radio">
+            <input type="radio" name="objectsLike" 
+            value="my new grommet puncher from Amazon">Grommet Puncher from Amazon
+        </div>
       </div>
       <br /><br />
+        
+        
+    <!-- Hobbies of infatuation -->
+      <div style="height: 110px; display: flex; flex-wrap: wrap;">
+        <label style="padding-right: 450px;">Hobbies</label>
+          <br />
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" value="2000s anime">2000s-Era Anime
+        </div>
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" 
+            value="Depop">Depop
+        </div>
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" 
+            value="staring directly into the sun">Staring directly into the sun
+        </div>
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" value="growing outmy hair and nails">Growing my Hair + Nails
+        </div>
+        <div class="radio">
+            <input type="radio" name="hobbiesLike" 
+            value="playing Bauhaus backwards until i find hidden meaning">playing Bauhaus backwards until i find hidden meaning
+        </div>
+      </div>
+      <br /><br />
+        
 
-      <!-- Activity -->
-      <div>
-        <label>Activity ending in -ing</label>
-        <input type="text" name="activity">
+      <!-- song -->
+      <div style="height: 110px; display: flex; flex-wrap: wrap;">
+        <label style="padding-right: 450px;">favorite Joy Division song from 1979</label>
+          <br />
+        <div class="radio">
+            <input type="radio" name="emoSong" value="Interzone">Interzone
+        </div>
+        <div class="radio">
+            <input type="radio" name="emoSong" value="New Dawn Fades">New Dawn Fades
+        </div>
+        <div class="radio">
+            <input type="radio" name="emoSong" 
+            value="Novelty">Novelty
+        </div>
+        <div class="radio">
+            <input type="radio" name="emoSong" value="Shadowplay">Shadowplay
+        </div>
       </div>
 
-      <!-- Pet -->
+      <!-- grandma -->
       <div>
-        <label>Your pet</label>
-        <input type="text" name="pet">
+        <label>Name u call ur grandma</label>
+        <input type="text" name="gmaName">
       </div>
 
-      <!-- Clothing -->
+      <!-- street -->
       <div>
-        <label>Article of clothing</label>
-        <input type="text" name="clothing">
+        <label>Name of ur grandma's street</label>
+        <input type="text" name="street">
       </div>
 
-      <!-- Food -->
+      <!-- my sign -->
       <div>
-        <label>Food</label>
-        <input type="text" name="food">
+        <label>Synonym for "sweet"</label>
+        <input type="text" name="sweet">
       </div>
 
-      <!-- Greeting -->
+      <!-- my name -->
       <div>
-        <label>A greeting</label>
-        <input type="text" name="greeting">
-      </div>
-
-      <!-- Posession -->
-      <div>
-        <label>Your favorite object</label>
-        <input type="text" name="posession">
-      </div>
-
-      <!-- SO's Hobby -->
-      <div>
-        <label>SO's Hobby</label>
-        <input type="text" name="soHobby">
-      </div>
+        <label>Your name</label>
+        <input type="text" name="myName">
+      </div>    
 
       <!-- reset or submit form -->
       <div>
@@ -104,5 +149,6 @@
 
   
 </body>
-
+    
+    
 </html>
