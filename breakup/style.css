@@ -21,21 +21,34 @@
 #printout {
   float: right;
   width: 400px;
-  height: 600px;
-  padding: 15px;
-  margin-right: 200px;
-  margin-top: 50px;
-  background: pink;
-  border: 1px dotted #444;
+  height: 700px;
+  padding: 8% 4%;
+  margin-right: 50px;
+  margin-top: 0px;
+  background-image: url(1x/text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#sticker{
+    position: absolute;
+    height: 700px;
+    width: 400px;
+    right: 500px;
+}
+
+#sticker img{
+    max-width: 100%;
 }
 
 #printout p {
-  padding-bottom: 30px;
+    padding-top: 1%;
+    color: black;
 }
 
-h1,
-p {
-  font-family: 'VT323', monospace;
+p{
+  font-family: 'Arial';
+    font-size: 11pt;
 }
 
 form {
@@ -80,10 +93,20 @@ h1 {
 h2{
     font-size: 40px;
     font-weight: 100;
-    color: darkslategray;
+    color: #444;
 }
 
+h3{
+    font-weight: 100;
+    font-size: 12pt;
+    padding-top: 10px;
+}
 
+a{
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    color: #444;
+}
 
 .flex-container{
     display: flex;
@@ -124,3 +147,4 @@ h2{
   0% { left: 0; }
   100% { left: -100%; }
 }
+
