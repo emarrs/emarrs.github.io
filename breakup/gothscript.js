@@ -3,20 +3,20 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
-    document.mainForm.onsubmit = processForm;
+    document.gothForm.onsubmit = processForm;
 
     function processForm() {
-      const sigName = document.mainForm.sigName.value;
-      const timeTogether = document.mainForm.timeTogether.value;
-      const number = document.mainForm.number.value;
-      const time = document.mainForm.timeUnit.value;
-      const activity = document.mainForm.activity.value;
-      const pet = document.mainForm.pet.value;
-      const clothing = document.mainForm.clothing.value;
-      const food = document.mainForm.food.value;
-      const greeting = document.mainForm.greeting.value;
-      const posession = document.mainForm.posession.value;
-      const soHobby = document.mainForm.soHobby.value;
+      const sigName = document.gothForm.sigName.value;
+      const timeTogether = document.gothForm.timeTogether.value;
+      const number = document.gothForm.number.value;
+      const time = document.gothForm.timeUnit.value;
+      const activity = document.gothForm.activity.value;
+      const pet = document.gothForm.pet.value;
+      const clothing = document.gothForm.clothing.value;
+      const food = document.gothForm.food.value;
+      const greeting = document.gothForm.greeting.value;
+      const posession = document.gothForm.posession.value;
+      const soHobby = document.gothForm.soHobby.value;
 
       const soPhone = document.getElementById('soPhone');
       const message1 = document.getElementById('message1');

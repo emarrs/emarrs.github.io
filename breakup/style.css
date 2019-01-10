@@ -14,52 +14,23 @@
 /* Layout */
 #main-form {
   float: left;
-  width: 400px;
+  width: 600px;
   margin-left: 30px;
-  padding-top: 70px;
+  padding-top: 0px;
 }
 #printout {
   float: right;
   width: 400px;
-  height: 200px;
+  height: 600px;
   padding: 15px;
   margin-right: 200px;
-  margin-top: 150px;
+  margin-top: 50px;
   background: pink;
   border: 1px dotted #444;
 }
 
 #printout p {
   padding-bottom: 30px;
-}
-
-footer {
-  clear: left;
-  font-family: 'VT323', monospace;
-  width: 200px;
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-footer a:link {
-  text-decoration: none;
-  color: silver;
-}
-
-footer a:visited {
-  text-decoration: none;
-  color: silver;
-}
-
-footer a:hover {
-  text-decoration: none;
-  color: pink;
-}
-
-footer a:active {
-  text-decoration: none;
-  color: pink;
 }
 
 h1,
@@ -70,7 +41,7 @@ p {
 form {
   font-family: 'Montserrat', sans-serif;
   color: #444;
-  text-align: right;
+    font-size: .9em;
 }
 
 form div {
@@ -93,9 +64,8 @@ input:focus {
 }
 
 .radio {
-  float: right;
-  padding-right: 15px;
-  padding-bottom: 15px;
+    padding-left: 50px;
+    max-width: 300px;
 }
 
 h1 {
@@ -106,3 +76,17 @@ h1 {
   margin: 0 auto;
   color: #444;
 }
+
+
+
+.flex-container{
+    display: flex;
+}
+
+
+
+/*
+.flex-container div{
+    width: 300px;
+    height: 300px;
+}*/
