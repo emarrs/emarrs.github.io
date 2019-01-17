@@ -1,5 +1,5 @@
 html {
-  background: black;
+  background: #f7ab9b;
   -webkit-font-smoothing: antialiased;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -33,32 +33,21 @@ body {
 }
 
 a {
-    color: aqua;
 }
 
-p, h3, h4, h5, h6 {
-    color:black;
-    font-weight: 600;
-    text-align: center;
-    font-family: serif;
+img{
+    max-width: 95%;
 }
+
 
 h1{
     font-family: sans-serif;
-    text-shadow: 0px 0px 100px;
+    text-shadow: 0px 0px 80px;
     font-weight: 100;
 }
     
 h2 {
     font-family: 'Petit Formal Script', cursive;
-    color: mediumspringgreen;
-    text-shadow: 0px 0px 10px;
-    padding: none;
-    margin: auto;
-}
-
-img{
-    max-width: 95%;
 }
 
 .text{
@@ -99,8 +88,7 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    margin: auto;
-    height: 140%;
+    height: 100%;
 }
 
 
@@ -112,11 +100,8 @@ img{
     border: 0px;
     box-shadow: 35px 20px 40px black;
     border-radius: 100%;
-    position: absolute;
-    bottom: 100px;
-    left: 220px;
     padding-top: 6em;
-    margin-left: 3em;
+    margin: auto;
 }
 
 #gdthumb{
@@ -145,8 +130,8 @@ img{
     max-height: 400px;
     max-width: 400px;
     position: absolute;
-    bottom: 300px;
-    left: 900px;   
+    bottom: 17%;
+    right: 1%;   
 }
 
 #libbyclick{
@@ -265,23 +250,22 @@ img{
 
 #m4rrs{
     font-size: 6em;
-    color: red;
     margin-top: .4em;
     animation: blinkin 4s alternate;
 }
 
 @keyframes blinkin {
   0%{color: black}
-  30%{color: black}
-  45%{color: darkred}
-  60%{color: black;}
+  70%{color: black}
+  80%{color: #f7ab9b}
+  90%{color: black;}
 }
 
 @-webkit-keyframes blinkin {
   0%{color: black}
-  30%{color: black}
-  45%{color: darkred}
-  60%{color: black;}
+  70%{color: black}
+  80%{color: #f7ab9b}
+  90%{color: black;}
 }
 
 @-webkit-keyframes color {
@@ -357,13 +341,22 @@ img{
 
 /*///GRAPHIC DESIGN PAGE///*/
 
+#gdpg h1{
+    color: #da0505; 
+    font-size: 1em; 
+    text-align: center;
+    font-weight: bolder;
+    border: 1px dashed #da0505;
+    margin-bottom: 30px;
+}
+
 #gdmenu{
     position: static;
 }
 
 .flex-container {
   display: flex;
-    justify-content:space-around;
+   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -372,9 +365,8 @@ img{
 }
 
 .flex-container div {
-  margin: 10px;
-    justify-content: center;
-    align-content: center;
+  margin: 20px;
+
     margin-bottom: 0px;
     margin-top: auto;
     width: 200px;
