@@ -88,13 +88,14 @@ h2 {
 }
 
 .welcome{
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     text-align: center;
     border: 0px;
     box-shadow: 35px 20px 40px black;
     border-radius: 100%;
     padding-top: 6em;
+    margin: auto;
 }
 
 
@@ -180,13 +181,8 @@ h2 {
     .welcome{
         width: 800px;
         height: 800px;
-        text-align: center;
-        border: 0px;
-        box-shadow: 35px 20px 40px black;
-        border-radius: 100%;
-        top: 350px;
-        padding-top: 6em;
-        margin-left: 3em;
+        margin-left: 20%;
+        margin-top: 30%;
     }
     
     .welcome h1{
@@ -194,17 +190,19 @@ h2 {
     }
     
     #gdthumb{
-        left: 60%;
+        left: 25%;
         height: 500px;
-        margin-top: 100%;
+        margin-top: 80%;
+        width: 450px;
+        height: 450px;
     }
 
     #gdclick{
-        left: 60%;
-        width: 600px;
-        height: 500px;
+        left: 25%;
+        height: 450px;
+        margin-top: 80%;
+        width: 450px;
         font-size: 3em;
-        margin-top: 100%;
     }
 
     #libbythumb{
@@ -226,21 +224,21 @@ h2 {
     }
 
     #apparelthmb{
-        height: 90px;
-        width: 90px;
-        animation-duration: 4s;
-        -webkit-animation-duration: 4s;
+        height: 200px;
+        width: 200px;
+        animation-duration: 6s;
+        -webkit-animation-duration: 6s;
         position: absolute;
-        left: 98px;
-        top: 106px;
+        left: 11%;
+        top: 64%;
     }
 
     #apparelclick{
-        height: 90px;
-        width: 90px;
-        position: relative;
-        top: 70px;
-        left: 70px;
+        height: 200px;
+        width: 200px;
+        left: 40%;
+        bottom: 20%;
+        top: 0px;
     }
 }
 
@@ -305,34 +303,34 @@ h2 {
 }
 
 #spark1{
-    left: 70px;
-    bottom: 300px;
+    left: 3%;
+    bottom: 40%;
     height: 80px;
     width: 80px;
 }
 
 #spark2{
-    left: 870px;
-    bottom: 200px
+    right: 30%;
+    bottom: 10%;
 }
 
 #spark3{
-    left: 960px;
-    bottom: 200px;
+    right: 28%;
+    bottom: 20%;
     height: 40px;
     width: 40px;
 }
 
 #spark4{
-    top: 180px;
-    left: 240px;
+    top: 30%;
+    left: 15%;
     height: 50px;
     width: 50px;
 }
 
 #spark5{
-    top: 80px;
-    left: 850px;
+    top: 9%;
+   right: 17%;
     height: 40px;
     width: 40px;
 }
