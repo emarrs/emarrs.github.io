@@ -21,55 +21,42 @@
 
 <img src="decor3.png" style="width: 550px; position: absolute; left: 70px; top: 0;">
     
-<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
-<p><img id="output" width="200" /></p>
+<!--
+<input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+<img id="inputface" />
+-->
 
 
     <div class="flex-container">
         <div style="width: 400px; margin-top: 15%;">
             <img src="mirror2.png" style="position: absolute; width: 600px; top: 36%; left: 50px;">
-        <img id="inputface" src="#" />
+            <img id="inputface" />
         </div>
         <div style="margin-left: 70px;">
             <img src="framee.png" style="position: absolute; width: 600px; top: 0px; left: 46%;">
-        <img id="face" src="" style="width: 470px; height: 560px; margin-left: 120px; margin-top: 6%;">
+            <img id="face" src="" style="width: 470px; height: 560px; margin-left: 120px; margin-top: 6%;">
         </div>
     </div>
     
-    <input type='file' onchange="readURL(this);" />
-<img id="inputface" />
+<!--    <input type='file' onchange="readURL(this);" />-->
+<!--<img id="inputface" />-->
     
-<!--
-    <div class="flex-container" id="btns">
+ <div class="flex-container" id="btns">
         <p>Step 1: Upload a Selfie!</p>
-        <input type='file' onchange="readURL(this);" style="padding-right: 150px;" />
+        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
         <p>Step 2:</p>
         <button onClick="randomImg()">Find My Renaissance Face!</button>
 <a href="index.html"><button>Reset</button></a>
     </div>
--->
     
 <script>
 var loadFile = function(event) {
-	var image = document.getElementById('output');
+	var image = document.getElementById('inputface');
 	image.src = URL.createObjectURL(event.target.files[0]);
 };
 </script>    
     
 <script type="text/javascript">
-//         function readURL(input) {
-//            if (input.files && input.files[0]) {
-//                var reader = new FileReader();
-//
-//                reader.onload = function (e) {
-//                    $('#inputface')
-//                        .attr('src', e.target.result);
-//                };
-//
-//                reader.readAsDataURL(input.files[0]);
-//            }
-//        }
     
     
     function randomImg(){
@@ -77,21 +64,6 @@ var loadFile = function(event) {
         var imgName = "img_" + randomNumber;
     document.getElementById("face").src = "faces/" + imgName + ".jpg";
 }
-    
-//     function readURL(input) {
-//        if (input.files && input.files[0]) {
-//            var reader = new FileReader();
-//
-//            reader.onload = function (e) {
-//                $('#inputface')
-//                    .attr('src', e.target.result)
-////                    .max-width(500)
-////                    .max-height(700);
-//            };
-//
-//            reader.readAsDataURL(input.files[0]);
-//        }
-    }
 </script>
     
         
