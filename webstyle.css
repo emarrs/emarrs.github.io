@@ -132,11 +132,10 @@ h2 {
 #libbyclick{
     height: 290px;
     width: 270px;
-    position: relative;
-    border-radius: 100%;
     position: absolute;
-    bottom: 310px;
-    left: 960px;
+    border-radius: 100%;
+    bottom: 17%;
+    right: 6%;   
 }
 
 #apparelthmb{
@@ -158,9 +157,12 @@ h2 {
 #apparelclick{
     height: 90px;
     width: 90px;
-    position: relative;
-    top: 70px;
-    left: 70px;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 50%;
+    right: 60%; 
+    left: 50%;
+    top: 50%;
 }
 
 /*MOBILE HOMEPAGE*/
