@@ -44,9 +44,10 @@
  <div class="flex-container" id="btns">
         <p>Step 1: Upload a Selfie!</p>
         <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
-        <p>Step 2:</p>
+        <p style="margin-left: 13%;">Step 2:</p>
         <button onClick="randomImg()">Find My Renaissance Face!</button>
-<a href="index.html"><button>Reset</button></a>
+        <a href="index.html"><button>Reset</button>
+        </a>
     </div>
     
 <script>
@@ -57,8 +58,6 @@ var loadFile = function(event) {
 </script>    
     
 <script type="text/javascript">
-    
-    
     function randomImg(){
         var randomNumber = Math.floor(Math.random() * 61) + 1;
         var imgName = "img_" + randomNumber;
