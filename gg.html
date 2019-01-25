@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html id="ggpage"> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>about Libby Marrs</title>
+        <meta name="description" content="a girl graphix designer.">
+        <link rel="stylesheet" href="webstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+</head>  
+<body>
+    <div class="menu"> 
+            <a href="index.html"><p>home</p></a>
+            <h2 id="menu-cr"><em>Genuine<br>& Ginger</em></h2>
+        <a href="gdpage.html"><p>back</p></a>
+    </div>
+<div id="flex1">
+    <div class="flex-container">
+        <div><img src="gdpage/gg/gg_newsletter.png"></div> 
+        <div><img src="gdpage/gg/gg_upcomingevents.gif"></div>    <div><img src="gdpage/gg/gg_bingo.png"></div>
+        <div style="margin-top: 1%;"><p>Above: some designs for promotional graphics and email newsletters<br>
+            Right: examples of flatlay product photographs for the website and social media.<br>
+            Below: Poetic lookbook promoting new summer 2017 jewelry pieces.
+            </p></div>
+    </div>
+
+    <div id="flex2">
+        <div style="width: 100%;"><h1 style="text-shadow: 0px 0px 50px antiquewhite;">Genuine and Ginger<br> Design Internship</h1><p style="text-shadow: 0px 0px 80px antiquewhite;">
+            I spent the summer of 2017 as an intern at an Albuquerque jewelry startup, Genuine & Ginger (now named Tumble). I designed stickers, newsletters, promotional graphics & emails, organized events, and generated content for publication and social media (mainly photography). I also designed a 30-page poetic lookbook containing photographs of the jewelry paired with my own imagery.
+            </p></div>
+        <div style="width: 50%;"><img src="gdpage/gg/gg_product1.jpg"></div> 
+        <div style="width: 50%;"><img src="gdpage/gg/gg_product2.jpg"></div>    <div><img src="gdpage/gg/IMG_0803.PNG"></div>
+    </div>
+</div>
+
+    
+    
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg1.jpg" style="width:50%; margin-left: 45%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg2.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg3.jpg">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg4.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg5.jpg">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg6.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg7.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg8.jpg">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg9.jpg">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg10.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg11.jpg">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg12.jpg">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg13.jpg">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg14.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg15.jpg">
+</div>    
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg16.jpg">
+</div>    
+    
+<div class="mySlides fade">
+  <img src="gdpage/gg/gg17.jpg">
+</div>
+    
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+  <span class="dot" onclick="currentSlide(12)"></span> 
+  <span class="dot" onclick="currentSlide(13)"></span> 
+  <span class="dot" onclick="currentSlide(14)"></span> 
+  <span class="dot" onclick="currentSlide(15)"></span> 
+  <span class="dot" onclick="currentSlide(16)"></span> 
+  <span class="dot" onclick="currentSlide(17)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+
+        
+</body>
+</html>
