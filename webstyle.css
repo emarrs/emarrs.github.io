@@ -597,7 +597,11 @@ h3{
         width: 800px;
         margin-bottom: 10%;
     }
+    #stepatext{
+        width: 40%;
+    }
 }
+
 
 
 .bad img{
