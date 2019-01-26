@@ -431,6 +431,10 @@ h3{
     #ethpg .flex-container{
         margin-top: 20%;
     }
+    
+    #aboutblurb{
+        margin-top: 20%;
+    }
 }
 
 
@@ -465,8 +469,11 @@ h3{
         margin-bottom: 30%;
     }
     
+    #aboutblurb{
+    width: 30%;
+    }
+    
 }
-
 
 
 
@@ -495,6 +502,10 @@ h3{
 
 .flex-container a{
     text-decoration: none;
+}
+
+#gdpg .flex-container{
+    width: 80%;
 }
 
 #gdpg .flex-container div {
