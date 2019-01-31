@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 
 /* CSS Document */
@@ -11,35 +10,174 @@
     box-sizing: border-box;
 }
 
-/* Layout */
-#main-form {
-  float: left;
-  width: 600px;
-  margin-left: 30px;
-  padding-top: 0px;
-}
-#printout {
-  float: right;
-  width: 400px;
-  height: 700px;
-  padding: 8% 4%;
-  margin-right: 50px;
-  margin-top: 0px;
-  background-image: url(1x/text.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+
+html{
 }
 
-#sticker{
-    position: absolute;
-    height: 700px;
-    width: 400px;
-    right: 500px;
+/*DESKTOP*/
+@media only screen and (min-width: 450px){
+    
+    #main-form {
+      float: left;
+      width: 500px;
+      margin-left: 30px;
+      padding-top: 0px;
+    }
+    #printout {
+      float: right;
+      width: 400px;
+      height: 700px;
+      padding: 8% 4%;
+      margin-right: 50px;
+      margin-top: 0px;
+      background-image: url(1x/text.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #sticker{
+        position: absolute;
+        height: 700px;
+        width: 400px;
+        right: 500px;
+    }
+
+    #sticker img{
+        max-width: 100%;
+    }
+
+    
+/*aloof careerist desktop*/
+     #aloof1{
+        height: 100px;
+        width: 500px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #aloof1 label{
+        padding-right: 200px;
+    }   
+    #aloof2{
+        height: 110px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    
+    #aloof2 label{
+        padding-right: 450px;
+    }
+    
+    #aloof3{
+        height: 100px; 
+        width: 500px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    
+    #aloof3 label{
+         padding-right: 250px;
+    }
+    
+/*    goth desktop*/
+    #goth1{
+        height: 100px; 
+        width: 600px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    
+    #goth1 label{
+        padding-right: 250px;
+    }
+    #goth2{
+        height: 110px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #goth2 label{
+        padding-right: 450px;
+    }
+    #goth3{
+        height: 110px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #goth3 label{
+        padding-right: 450px
+    }
+    
+/*    hipster desktop*/
+    #hipster1{
+        height: 100px; 
+        width: 500px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #hipster1 label{
+        padding-right: 250px;
+    }
+    #hipster2{
+        height: 110px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #hipster2 label{
+        padding-right: 450px;
+    }
+    #teen1{
+        height: 100px; width: 500px; display: flex; flex-wrap: wrap;
+    }
+    #teen1 label{
+        padding-right: 250px;
+    }
+    #teen2{
+        height: 110px; display: flex; flex-wrap: wrap;
+    }
+    #teen2 label{
+        padding-right: 450px;
+    }
 }
 
-#sticker img{
-    max-width: 100%;
+/*MOBILE*/
+@media only screen and (max-width: 450px){
+    #main-form {
+      width: 100%;
+      padding-left: 13px;
+      padding-top: 0px;
+    }
+    /*aloof careerist MOBILE*/
+    #printout {
+      width: 100%;
+      height: 570px;
+      padding: 25% 10% 0%;
+      background-image: url(1x/text.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 10%
+    }
+    
+    #printout p {
+        padding-top: 1%;
+        color: black;
+        font-size: .8em;
+    }
+    
+    #aloof1, #aloof3{
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    
+    
+    #sticker{
+        width: 100%;
+    }
+    #sticker img{
+        max-width: 100%;
+    }
+    
+    
 }
+
 
 #printout p {
     padding-top: 1%;
@@ -65,7 +203,7 @@ input[type=text] {
   background-color: white;
   border: none;
   border-bottom: 2px solid pink;
-  width: 150px;
+  width: 50px;
   margin-left: 5px;
   transition: 1s border-bottom;
 }
@@ -77,9 +215,14 @@ input:focus {
 }
 
 .radio {
-    padding-left: 50px;
-    max-width: 300px;
+    padding-left: 10px;
+    max-width: 400px;
 }
+
+.radio input{
+    margin: 0px 10px;
+}
+
 
 h1 {
   font-size: 55px;

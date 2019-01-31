@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Its Not You Its Me, Im A Wandering Hipster</title>
     <link href="style.css" rel="stylesheet"/>
     <script src='hipsterscript.js' type="text/javascript"></script>
@@ -20,7 +21,11 @@
       <h3 style="padding-left: 30px;">I do not relate to this</h3>
     </a>
     </div>
-</div>    
+</div>  
+    
+    <div id="sticker">
+    <img src="notuhipster.png">
+    </div>
 
   <div id="main-form">
     <form name="hipsterForm">
@@ -45,8 +50,8 @@
         
 
       <!-- Objects of infatuation -->
-      <div style="height: 100px; width: 500px; display: flex; flex-wrap: wrap;">
-        <label style="padding-right: 250px;">
+      <div id="hipster1">
+        <label>
             Objects you'd rather be thinking about</label>
         <br />
         <div class="radio">
@@ -73,8 +78,8 @@
         
         
     <!-- Hobbies of infatuation -->
-      <div style="height: 110px; display: flex; flex-wrap: wrap;">
-        <label style="padding-right: 450px;">Hobbies</label>
+      <div id="hipster2">
+        <label>Hobbies</label>
           <br />
         <div class="radio">
             <input type="radio" name="hobbiesLike" value="astrology">Astrology
@@ -159,10 +164,6 @@
       </div>
     </form>
   </div>
-    
-<div id="sticker">
-    <img src="notuhipster.png">
-    </div>
 
   <div id="printout">
     <p id="soPhone"></p>
