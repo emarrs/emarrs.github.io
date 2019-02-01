@@ -1,15 +1,14 @@
 <!doctype html>
-<html style="background-color: burlywood;">
+<html id="skater" style="background-color: darkgrey;">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Its Not You Its Me (An App Developer)</title>
+    <title>Its Not You Its Me, Sk8R!</title>
     <link href="style.css" rel="stylesheet"/>
     <script src='skater.js' type="text/javascript"></script>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|UnifrakturMaguntia" rel="stylesheet">
 
 </head>
 
@@ -24,7 +23,7 @@
 </div>  
     
     <div id="sticker">
-    <img src="notuhipster.png">
+    <img src="skatenotu.png">
     </div>
 
   <div id="main-form">
@@ -43,7 +42,7 @@
       </div>
         
      <!-- videoPlatform -->
-      <div id="hipster1">
+      <div class="flex">
         <label>
             Video platform:</label>
         <br />
@@ -65,9 +64,9 @@
       </div>
         
              <!-- skateTrick -->
-      <div id="hipster1">
+      <div class="flex">
         <label>
-            Video platform:</label>
+            Skate trick:</label>
         <br />
         <div class="radio">
             <input type="radio" name="skateTrick" value="inward heelflip">Inward Heelflip
@@ -88,9 +87,9 @@
         
 
       <!-- Objects of infatuation -->
-      <div id="hipster1">
+      <div class="flex">
         <label>
-            Things you'd rather be doing</label>
+            Things you'd rather be thinking about</label>
         <br />
         <div class="radio">
             <input type="radio" name="objectsLike" value="single dangling earring">Single Dangly Earring
@@ -108,16 +107,15 @@
             name="objectsLike" value="urban cinematography">“Urban” Cinematography
         </div>
       </div>
-      <br /><br />
         
         
               <!-- hobbies of infatuation -->
-      <div id="hipster1">
+      <div class="flex">
         <label>
             Things you'd rather be doing</label>
         <br />
         <div class="radio">
-            <input type="radio" name="hobbiesLike" value="advertising that im in new york by posting “looking for a couch to sleep on tn in nyc” on my story">Letting everyone know when I'm in New York
+            <input type="radio" name="hobbiesLike" value="advertising that im in new york by posting “looking for a couch to sleep on tn in nyc” on my story">Letting everyone know I'm in New York
         </div>
         <div class="radio">
             <input type="radio" name="hobbiesLike" 
@@ -132,10 +130,9 @@
             name="hobbiesLike" value="trashing my dad’s hand-me-down prada sneakers">Trashing my Dad’s Hand-Me-Down Prada Sneakers
         </div>
       </div>
-      <br /><br />
         
     <!--transport -->
-      <div id="hipster1">
+      <div class="flex">
         <label>Mode of Transport</label>
         <br />
         <div class="radio">
@@ -157,7 +154,7 @@
         
         
             <!--activityName -->
-      <div id="hipster1">
+      <div class="flex">
         <label>Mode of Transport</label>
         <br />
         <div class="radio">
@@ -188,7 +185,9 @@
 
       <!-- reset or submit form -->
       <div>
-        <input type="reset" value="Reset" />
+<!--        <input type="reset" value="Reset" />-->
+          <button><a href="skater.html">Reset</a></button>
+          
         <input type="submit" value="Submit" />
       </div>
     </form>

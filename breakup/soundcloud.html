@@ -1,15 +1,13 @@
 <!doctype html>
-<html style="background-color: burlywood;">
+<html id="soundcloud">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Its Not You Its Me (An App Developer)</title>
+    <title>its not u, its me. soundcloud rapper.</title>
     <link href="style.css" rel="stylesheet"/>
     <script src='soundcloud.js' type="text/javascript"></script>
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Inconsolata|UnifrakturMaguntia" rel="stylesheet">
 
 </head>
 
@@ -18,13 +16,13 @@
 <div style="display: flex">
   <div style="display: inline-block">
     <a href="index.html">
-      <h3 style="padding-left: 30px;">I do not relate to this</h3>
+      <h3 style="padding-left: 30px; color: fuchsia;">I do not relate to this</h3>
     </a>
     </div>
 </div>  
     
     <div id="sticker">
-    <img src="notuhipster.png">
+    <img src="soundcloudnotu.png">
     </div>
 
   <div id="main-form">
@@ -32,21 +30,21 @@
 
     <!-- SO's Name -->
       <div>
-        <label>Significant other's name</label>
+        <label>SIGNIFICANT OTHER'S NAME:</label>
         <input type="text" name="sigName">
       </div>
 
       <!-- time together -->
       <div>
-        <label>Time spent together</label>
+        <label>TIME SPENT TOGETHER:</label>
         <input type="text" name="timeTogether">
       </div>
         
 
       <!-- Objects of infatuation -->
-      <div id="hipster1">
+      <div class="flex">
         <label>
-            Things you fuck with the most</label>
+            THINGS YOU FUCK WITH THE MOST:</label>
         <br />
         <div class="radio">
             <input type="radio" name="objectsLike" value="hentai">Hentai
@@ -64,12 +62,11 @@
             name="objectsLike" value="dope visuals">Dope Visuals
         </div>
       </div>
-      <br /><br />
 
         
     <!-- Hobbies of infatuation -->
-      <div id="hipster2">
-        <label>Shit that inspires u:</label>
+      <div class="flex">
+        <label>SHIT THAT INSPIRES U:</label>
           <br />
         <div class="radio">
             <input type="radio" name="hobbiesLike" value="bleaching my hair">Bleaching Your Hair
@@ -90,26 +87,25 @@
             value="...music obvii">Music
         </div>
       </div>
-      <br /><br />
         
     <!--follow count -->
       <div>
-        <label>Number between 1-10:</label>
+        <label>NUMBER BETWEEN 1-10:</label>
         <input type="text" name="followCount">
       </div>
         
         
     <!--drink name -->
       <div>
-        <label>Non-alcoholic beverage:</label>
+        <label>NON-ALCOHOLIC BEVERAGE:</label>
         <input type="text" name="drinkName">
       </div>
         
 
       <!-- ad lib -->
-      <div>
+      <div class="flex">
         <label>
-            Ad-lib:</label>
+            AD-LIB:</label>
         <br />
         <div class="radio">
             <input type="radio" name="sound" value="eyyyy">Eyyyy
@@ -135,16 +131,15 @@
         
      <!--letters -->
       <div>
-        <label>Drag your fingers across keyboard:</label>
+        <label>DRAG YOUR FINGERS ACROSS KEYBOARD:</label>
         <input type="text" name="letters">
       </div>
         
 
       <!-- gun noise -->
-      <div>
+      <div class="flex">
         <label>
-            Noise:</label>
-        <br />
+            NOISE:</label>
         <div class="radio">
             <input type="radio" name="gunNoise" value="bop! bopbopbopbop">Bop! BopBopBopBop
         </div>
@@ -159,10 +154,9 @@
       </div>
 
       <!-- Sound -->
-      <div>
+      <div class="flex">
         <label>
-            Sound:</label>
-        <br />
+            SOUND:</label>
         <div class="radio">
             <input type="radio" name="sound2" value="swooo...">Swoooo...
         </div>
@@ -178,47 +172,47 @@
 
       <!-- Heavy metal band -->
       <div>
-        <label>Heavy Metal Band:</label>
+        <label>HEAVY METAL BAND:</label>
         <input type="text" name="metalBand">
       </div>
 
       <!-- makeup -->
       <div>
-        <label>Your significant other's favorite cosmetic product:</label>
+        <label>SIGNIFICANT OTHER'S FAVORITE COSMETIC PRODUCT:</label>
         <input type="text" name="product">
       </div>
         
 
       <!-- sadSynonym -->
       <div>
-        <label>Synonym for 'sad':</label>
+        <label>SYNONYM FOR 'SAD':</label>
         <input type="text" name="sadSynonym">
       </div>
         
         
     <!-- objectName -->
       <div>
-        <label>Object you see right now:</label>
+        <label>OBJECT YOU SEE RIGHT NOW:</label>
         <input type="text" name="objectName">
       </div>
         
         
       <!-- adjective -->
       <div>
-        <label>Adjective:</label>
+        <label>ADJECTIVE:</label>
         <input type="text" name="adjective">
       </div>
         
         
     <!-- drugName -->
       <div>
-        <label>Name of a drug:</label>
+        <label>NAME OF A DRUG:</label>
         <input type="text" name="drugName">
       </div>
         
     <!-- noun -->
       <div>
-        <label>A noun:</label>
+        <label>A NOUN:</label>
         <input type="text" name="noun">
       </div>
         
@@ -226,7 +220,9 @@
 
       <!-- reset or submit form -->
       <div>
-        <input type="reset" value="Reset" />
+<!--        <input type="reset" value="Reset" />-->
+          <button><a href="soundcloud.html">Reset</a></button>
+          
         <input type="submit" value="Submit" />
       </div>
     </form>

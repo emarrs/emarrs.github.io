@@ -38,6 +38,12 @@
     #sticker img{
         max-width: 100%;
     }
+    
+    #american .marquee{
+        width: 400px;
+        position: absolute;
+        left: 35%;
+    }
 
     
 /*aloof careerist desktop*/
@@ -127,12 +133,25 @@
         height: 110px; display: flex; flex-wrap: wrap;
     }
     #teen2 label{
-        padding-right: 450px;
+        width: 100%
+    }
+    
+    #american1{
+        display: flex; 
+        flex-wrap: wrap;
+        width: 400px;
     }
 }
 
 
+.flex{
+    display: flex; 
+    flex-wrap: wrap;
+}
 
+label{
+    width: 100%;
+}
 
 /*iphone 5*/
 @media only screen and (max-width: 375px){
@@ -196,6 +215,7 @@
         max-width: 100%;
     }
     
+    
 }
 
 
@@ -221,11 +241,58 @@ form div {
   padding-top: 15px;
 }
 
+#american form {
+    color: #da0505;
+}
+
+#american .radio{
+    color: blue;
+}
+
+#techbro form{
+    font-family: 'Inconsolata', monospace;
+    font-size: .95em;
+    color: white;
+}
+
+#techbro .radio{
+    color: fuchsia;
+    font-weight: bold;
+}
+
+#techbro {
+    background-color: black;
+}
+
+#skater label{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 1.1em;
+}
+
+#soundcloud label{
+    font-family: 'Ceviche One', cursive;
+    font-size: 1.4em;
+}
+
+#soundcloud{
+    background-image: url(glitch.png)
+}
+
+#soundcloud form{
+    color: white;
+}
+
+#soundcloud .radio{
+    background-color: black;
+}
+
+
+
 input[type=text] {
   background-color: white;
   border: none;
   border-bottom: 2px solid pink;
-  width: 50px;
+  width: 75px;
   margin-left: 5px;
   transition: 1s border-bottom;
 }
@@ -234,6 +301,15 @@ input:focus {
   outline: none;
   border-bottom: 2px solid #444;
   text-decoration: none;
+}
+
+button{
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+button a{
+    text-decoration: none;
 }
 
 .radio {
@@ -285,11 +361,14 @@ a{
         cursor: pointer;
     }
 
+}
+
 
     .marquee {
       height: 25px;
       overflow: hidden;
       position: relative;
+        width: 100%;
     }
 
     .marquee div {
@@ -307,8 +386,13 @@ a{
       float: left;
       width: 50%;
     }
-}
 
+#american .marquee{
+    animation-duration: 5s;
+    color: red;
+    font-family: cursive;
+    font-weight: bold;
+}
 
 @keyframes marquee {
   0% { left: 0; }
