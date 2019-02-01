@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-/* CSS Document */
-
-/* start all css with a reset */
-
 * {
     margin: 0px;
     padding: 0px;
@@ -11,11 +7,8 @@
 }
 
 
-html{
-}
-
 /*DESKTOP*/
-@media only screen and (min-width: 450px){
+@media only screen and (min-width: 768px) and (max-width: 2000px){
     
     #main-form {
       float: left;
@@ -138,8 +131,35 @@ html{
     }
 }
 
+
+
+
+/*iphone 5*/
+@media only screen and (max-width: 375px){
+    #printout {
+      height: 565px;
+    }
+}
+
+/*iphone 6/7/8*/
+@media only screen and (min-width: 375px) and (max-width: 414px){
+    #printout {
+      height: 665px;
+    }
+}
+
+/*iphone 6/7/8PLUS*/
+@media only screen and (min-width: 414px) and (max-width: 768px){
+    #printout {
+      height: 730px;
+    }
+}
+
+
 /*MOBILE*/
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 768px){
+    
+    
     #main-form {
       width: 100%;
       padding-left: 13px;
@@ -148,12 +168,12 @@ html{
     /*aloof careerist MOBILE*/
     #printout {
       width: 100%;
-      height: 570px;
       padding: 25% 10% 0%;
       background-image: url(1x/text.png);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 10%
+        margin: auto;
+        margin-top: 10%;
     }
     
     #printout p {
@@ -169,14 +189,15 @@ html{
     
     
     #sticker{
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
     #sticker img{
         max-width: 100%;
     }
     
-    
 }
+
 
 
 #printout p {
@@ -193,6 +214,7 @@ form {
   font-family: 'Montserrat', sans-serif;
   color: #444;
     font-size: .9em;
+    max-width: 100%;
 }
 
 form div {
@@ -216,7 +238,7 @@ input:focus {
 
 .radio {
     padding-left: 10px;
-    max-width: 400px;
+    max-width: 100%;
 }
 
 .radio input{
@@ -251,40 +273,42 @@ a{
     color: #444;
 }
 
-.flex-container{
-    display: flex;
+
+/*HOME PAGE desktop*/
+@media only screen and (min-width: 768px) and (max-width: 2000px){
+    .flex-container{
+        display: flex;
+    }
+
+    .flex-container div{
+        width: 25%;
+        cursor: pointer;
+    }
+
+
+    .marquee {
+      height: 25px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee div {
+      display: block;
+      width: 200%;
+      height: 30px;
+
+      position: absolute;
+      overflow: hidden;
+
+      animation: marquee 20s linear infinite;
+    }
+
+    .marquee span {
+      float: left;
+      width: 50%;
+    }
 }
 
-
-
-
-.flex-container div{
-    width: 25%;
-    cursor: pointer;
-}
-
-
-.marquee {
-  height: 25px;
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee div {
-  display: block;
-  width: 200%;
-  height: 30px;
-
-  position: absolute;
-  overflow: hidden;
-
-  animation: marquee 20s linear infinite;
-}
-
-.marquee span {
-  float: left;
-  width: 50%;
-}
 
 @keyframes marquee {
   0% { left: 0; }
