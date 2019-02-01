@@ -39,10 +39,11 @@
         max-width: 100%;
     }
     
-    #american .marquee{
-        width: 400px;
+    
+    .pages .marquee{
+        width: 380px;
         position: absolute;
-        left: 35%;
+        left: 38%;
     }
 
     
@@ -393,6 +394,45 @@ a{
     font-family: cursive;
     font-weight: bold;
 }
+
+#techbro .marquee{
+    color: aqua;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#soundcloud .marquee{
+    color: aqua;
+    font-family: 'UnifrakturMaguntia', cursive;;
+    font-weight: bold;
+}
+
+#skater .marquee{
+    color: yellow;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-weight: bold;
+}
+
+#teen .marquee{
+    color: fuchsia;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#goth .marquee{
+    color: black;
+    font-family: 'Ceviche One', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#hipster .marquee{
+    color: green;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+
 
 @keyframes marquee {
   0% { left: 0; }
