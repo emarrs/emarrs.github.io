@@ -176,7 +176,7 @@ label{
 }  
 
 
-@media only screen and (max-device-width: 414px){
+@media only screen and (max-width: 414px){
     .flex-container{
         display: flex;
         flex-wrap: wrap;
@@ -186,6 +186,29 @@ label{
         width: 50%;
         cursor: pointer;
     }
+    
+    #home h1{
+        font-size: 2em;
+        padding-top: 0px;
+    }
+    
+    #home h2{
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+}
+
+#home img{
+    width: 95%;
+}
+
+#home{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#home p{
+    font-family: serif;
 }
 
 
@@ -229,6 +252,42 @@ label{
         max-width: 100%;
     }
     
+    #marqueecontainer {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #home .marquee {
+      height: 25px;
+      overflow: hidden;
+      position: relative;
+        width: 300%;
+    }
+    
+    #home .marquee p{
+        font-size: .8em;
+    }
+
+    #home .marquee div {
+      display: block;
+      width: 300%;
+      height: 15px;
+
+      position: absolute;
+      overflow: hidden;
+
+      animation: marquee 20s linear infinite;
+    }
+
+    #home .marquee span {
+      float: left;
+      width: 50%;
+    }
+    
+    @keyframes marquee {
+        0% { left: 0; }
+        100% { left: -600%; }
+    }
     
 }
 
@@ -340,7 +399,7 @@ h1 {
   font-size: 55px;
   text-align: center;
   padding-top: 20px;
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
   color: #444;
 }
@@ -404,6 +463,8 @@ HOME PAGE desktop
       float: left;
       width: 50%;
     }
+
+
 
 #american .marquee{
     animation-duration: 5s;
