@@ -492,8 +492,9 @@ h3{
         margin-top: 50%;
     }
     
-    #aboutblurb{
+    #about #aboutblurb{
         margin-top: 20%;
+        width: 100%;
     }
     
     #sunsetvid{
@@ -639,6 +640,11 @@ h3{
     bottom: 10%;
     right: 30%;
 }
+#aboutblurb{
+    width: 46%;
+    margin: 10%;
+}
+
 
 
 #webstuff .flex-container div{
