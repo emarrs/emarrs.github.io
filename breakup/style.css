@@ -173,6 +173,19 @@ label{
     #printout {
       height: 730px;
     }
+}  
+
+
+@media only screen and (max-device-width: 414px){
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #home .flex-container div{
+        width: 50%;
+        cursor: pointer;
+    }
 }
 
 
@@ -351,8 +364,12 @@ a{
 }
 
 
-/*HOME PAGE desktop*/
+/*
+HOME PAGE desktop
 @media only screen and (min-width: 768px) and (max-width: 2000px){
+*/
+
+
     .flex-container{
         display: flex;
     }
@@ -362,7 +379,7 @@ a{
         cursor: pointer;
     }
 
-}
+
 
 
     .marquee {
