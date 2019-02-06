@@ -544,6 +544,11 @@ h3{
         width: inherit;
         margin: auto;
     }
+    
+    .tall img{
+        max-height: 10%;
+        
+    }
 
     
     #yummypg .flex-container div{
@@ -604,6 +609,13 @@ h3{
     #cbcpg .slideshow-container{
         width: 95%;
     }
+    
+    #wtdri .flex-container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
 
     
 }
@@ -611,7 +623,7 @@ h3{
 @media only screen and (min-width: 1200px){
         #wtdri .flex-container div{
         width: 760px;
-        margin-right: 5%;
+        margin-right: 0%;
     }
     
     #wtdri .flex-container #riblurb{
@@ -620,7 +632,7 @@ h3{
     }
     
     #wtdri .flex-container{
-        margin-top: 5%;
+        margin-top: 10%;
     }
     
 }
@@ -630,6 +642,7 @@ h3{
         width: 70%;
     }
 }
+
 
 
 
