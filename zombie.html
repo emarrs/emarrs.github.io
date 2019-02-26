@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html id="zombiepg"> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Libby Marrs</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="webstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>  
+<body>
+    
+    <div class="menu"> 
+        <a href="index.html"><p>home</p></a>
+            <h2 class="menu-title" id="menu-cr"><em>Zombie Mods<br>vs. Pomo Vampires</em></h2>
+        <a href="gdpage.html"><p>back</p></a>
+    </div>
+    
+    
+    
+   
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="gdpage/zombie/1.png" style="width:50%; margin-left: 45%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/zombie/2.png">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/zombie/3.png">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/zombie/4.png">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/zombie/5.png">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/zombie/6.png">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/zombie/7.png">
+</div>
+
+<div class="mySlides fade">
+\  <img src="gdpage/zombie/8.png">
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="gdpage/zombie/9.png">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/zombie/10.png">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/zombie/11.png">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/zombie/12.png" style="width:50%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</body>
+</html>

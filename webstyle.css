@@ -610,12 +610,18 @@ h3{
         width: 95%;
     }
     
+    #zombiepg .slideshow-container{
+        width: 85%;
+    }
+    
     #wtdri .flex-container{
         width: 90%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10%;
     }
+    
+    
 
     
 }
@@ -850,6 +856,7 @@ h3{
         width: 75%;
         margin-right: 10%;
     }
+    
 
     .poster-container div{
         width: 40%;
@@ -1089,8 +1096,8 @@ h3{
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 5px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -1139,8 +1146,6 @@ h3{
 /*MODAL*/
  /* Style the Image Used to Trigger the Modal */
 .myImg {
-    border-radius: 5px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
