@@ -765,6 +765,27 @@ h3{
 }
 
 
+#metadescript{
+    justify-content: space-between;
+}
+
+#metadescript div{
+    width: 33%;
+}
+
+#metadescript h1, p{
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+@media only screen and (min-width:450px){ 
+    #niyapix{
+        width: 790px;
+        margin: auto;
+        }
+}
+
+
 @keyframes color {
   0%{color: black}
   50%{color: black}
