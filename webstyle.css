@@ -441,8 +441,9 @@ h3{
     color: #da0505; 
     font-size: 1em; 
     text-align: center;
-    font-weight: bolder;
+    font-weight: lighter;
     border: 1px dashed #da0505;
+    border-radius: 50%;
     margin-bottom: 30px;
 }
 
@@ -563,6 +564,10 @@ h3{
     }
     #yummypg .flex-container{
         margin-bottom: 20%;
+    }
+    
+    #yummy{
+        padding: 10%
     }
     
     
@@ -783,6 +788,12 @@ h3{
         width: 790px;
         margin: auto;
         }
+}
+
+#zombieback{
+    z-index: -1;
+    position: absolute;
+    justify-content: space-around;
 }
 
 
