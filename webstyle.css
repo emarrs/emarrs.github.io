@@ -600,19 +600,20 @@ h3{
     }
     
     #cbcpic{
-        width: 70%;
+        width: 45%;
         padding-top: 0%;
         margin-top: 0;
+        margin-right: 4%;
     }
     #cbccap{
-        width: 40%;
+        width: 27%;
         padding-top: 3%;
-        margin-left: 50%;
-        margin-bottom: 20%;
+        margin-top: 20%;
     }
     
     #cbcpg .slideshow-container{
         width: 95%;
+        margin-top: 10%
     }
     
     #zombiepg .slideshow-container{
@@ -778,10 +779,16 @@ h3{
     width: 33%; 
 }
 
-#metadescript h1, p{
+#metadescript h1{
     padding-left: 30px;
     padding-right: 15px;
 }
+
+#metadescript p{
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
 
 @media only screen and (min-width:450px){ 
     #niyapix{
@@ -1011,9 +1018,6 @@ h3{
     color: mediumblue;
 }
 
-.crpage > div {
-    color: white;
-}
 
 .center{
     margin-left: 550px;
@@ -1033,22 +1037,6 @@ h3{
     height: 100%;
 }
 
-.cr-forms-container > div {
-    opacity: 1;
-    margin: -30px;
-}
-
-.cr-forms-container > div:hover {
-    opacity: 1;
-}
-
-.container{
-    display: flex;
-    max-width: 50%;
-    top: 20px;
-    left: 550px;
-    position: relative;
-}
 
 .bundle{
     max-width: 100%;
