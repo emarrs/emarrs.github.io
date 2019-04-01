@@ -658,16 +658,28 @@ h3{
 
 
 
-#resume{
-    width: 100px;
-    background-color: #da0505;
-    position: absolute;
-    bottom: 10%;
-    right: 30%;
-}
 #aboutblurb{
     width: 46%;
     margin: 10%;
+    padding: 0% 3%; 
+    border: 2px solid #da0505;
+}
+
+#aboutblurb h1{
+    letter-spacing: 1pt;
+    color: #da0505; font-size: 2em; font-family:serif; line-height: 1.2;
+}
+
+#contact{
+    width: 250px;
+    font-size: 2em;
+    letter-spacing: 1pt;
+    margin-bottom: 5%;
+    padding-top: 32%;
+}
+
+#contact a{
+    text-decoration: underline;
 }
 
 
