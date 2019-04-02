@@ -136,6 +136,14 @@ h3{
     margin-left: -210px;
 }
 
+#about .tooltiptext{
+    top: 7%;
+    left: 108%;
+    width: 150px;
+    height: 300px;
+    text-shadow: 0 0 15px white;
+}
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
@@ -659,8 +667,8 @@ h3{
 
 
 #aboutblurb{
-    width: 46%;
-    margin: 10%;
+    width: 41%;
+    margin: 11% 10% 10% 15%;
     padding: 0% 3%; 
     border: 2px solid #da0505;
 }
@@ -675,12 +683,14 @@ h3{
     font-size: 2em;
     letter-spacing: 1pt;
     margin-bottom: 5%;
-    padding-top: 32%;
+    padding-top: 10%;
 }
 
 #contact a{
     text-decoration: underline;
 }
+
+
 
 
 
