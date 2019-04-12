@@ -93,7 +93,7 @@ h1{
     font-family: serif;
     font-weight: lighter;
     line-height: normal;
-    text-shadow: 0px 0px 70px red; text-decoration: underline solid #f7ab9b;
+    text-shadow: 0px 0px 70px red;
     margin-bottom: 15px;
 }
     
@@ -678,6 +678,42 @@ h3{
     color: #da0505; font-size: 2em; font-family:serif; line-height: 1.2;
 }
 
+.frymodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 10;
+    top: 10;
+    width: 20%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content (Image) */
+.fry-modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.fryclose {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fryclose:hover,
+.fryclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #contact{
     width: 250px;
     font-size: 2em;
@@ -1214,6 +1250,9 @@ h3{
     display: block;
     width: 80%;
 }
+
+
+
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {

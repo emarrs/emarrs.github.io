@@ -23,6 +23,19 @@
         <a href="apparelpg.html"><p>apparel</p></a>
             
     </div>
+    
+<button id="frybtn">logo on demand</button>
+
+<div id="frypopup" class="frymodal">
+
+  <!-- Modal content -->
+  <div class="fry-modal-content">
+    <span class="fryclose">&times;</span>
+    <img src="about/fryqueenkate.PNG">
+  </div>
+
+</div>
+    
 
 <div class="flex-container">
     <div id="aboutblurb">
@@ -42,6 +55,37 @@
     </div>
 
 </div>
+    
+    
+    
+    
+    <script>
+// Get the modal
+var frymodal = document.getElementById('frypopup');
+
+// Get the button that opens the modal
+var btn = document.getElementById("frybtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("fryclose")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  frymodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  frymodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == frymodal) {
+    frymodal.style.display = "none";
+  }
+}
+</script>
     
 
         
