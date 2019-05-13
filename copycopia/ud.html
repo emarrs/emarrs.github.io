@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Libby Marrs</title>
+        <meta name="description" content="a girl graphix designer.">
+        <link rel="stylesheet" href="ud.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:400,400i,900,900i" rel="stylesheet">
+    </head>  
+    
+<body>
+    
+    <div id="topnav">
+        <div style="display: flex;">
+            <img src="Asset%204.png" style="height: 70px; margin-left: 150px;">
+            <h4>browse</h4>
+        </div>
+        <div style="display: flex; flex-wrap: wrap;">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+            <div style="height: 40px; width: 40px; background-color: blue;"></div>
+        </div>
+    </div>
+    
+    <div id="banner">
+        
+    </div>
+
+<div class="grid-container">
+    <div>
+    <ul id="myUL">
+    <li>
+        <div class="header">
+            <h3 style="width: 40px;  margin-right: 70%">MAY 3</h3> 
+            <img src="https://img.icons8.com/metro/26/000000/twitter.png">
+            <img src="https://img.icons8.com/material/24/000000/facebook-f.png">
+            <img src="https://img.icons8.com/android/24/000000/share.png">
+        </div>
+        <a href="#"><h1>playgiarism</h1></a><p>The practice of <span class="tooltip">taking<span class="tooltiptext">TAKING</span></span> someone else's work or ideas and contributing to their authorship by researching, reworking, engaging, and playing with it, while taking measures to appropriately credit original work.</p>
+        <p><em>"Hey bro, I saw a publication exactly like that at Printed Matter in Brooklyn. Wanna explain why you thought you'd get away with stealing it?"<br><br>
+            "Glad to! Actually, what i'm doing is <span class="underline">playgiarizing</span>--I'm very inspired by this publication and feel that rather than trying to come up with my own publication with a forcibly different framework (even though it'd be the same conceptually) just so I could say the idea was my own, I figured I could work directly off of the existing publication, contributing my own ideas, and strengthening it as a whole through collaboration. When I'm done, I'm going to send it to the author of the original, and see if they like it and want to work together!" </em></p>
+        <div class="footer">
+            <p>Get a <span class="highlight">playgiarism</span> mug for your friend Beatrix.</p>
+        </div>
+</li>
+  <li>
+      <div class="header">
+            <h3 style="width: 40px;  margin-right: 70%">MAY 3</h3> 
+            <img src="https://img.icons8.com/metro/26/000000/twitter.png">
+            <img src="https://img.icons8.com/material/24/000000/facebook-f.png">
+            <img src="https://img.icons8.com/android/24/000000/share.png">
+        </div>
+      <a href="#"><h1>Anti-Vaccuumization</h1></a><p>The principle of creating under the awareness that designers do not design within a vacuum; a consideration for the sociopolitical contexts in which one designs</p>
+      <p>
+      <em>"Bro, you're anti-vacc? That's so fucked up, we're all gonna get sick and die because of you!"<br><br> "Yes I identify as an Anti-Vacc -- Anti-Vaccum, that is! I take the context of my work into careful consideration when creating, which actually plays a big role in my practice as an empathetic, informed creator."</em></p>
+      <div class="footer">
+            <p>Get a <span class="highlight">playgiarism</span> mug for your friend Beatrix.</p>
+        </div>
+</li>
+    
+    <li>
+        <div class="header">
+            <h3 style="width: 40px;  margin-right: 70%">MAY 3</h3> 
+            <img src="https://img.icons8.com/metro/26/000000/twitter.png">
+            <img src="https://img.icons8.com/material/24/000000/facebook-f.png">
+            <img src="https://img.icons8.com/android/24/000000/share.png">
+        </div>
+        <a href="#"><h1>bitchlegging</h1></a><p>1. The act of creating new work consisting of the elements you don’t like about existing work (things you <span class="tooltip">bitch<span class="tooltiptext">fucking complain all the time</span></span> about)<br><br>
+        2. The creative act of subverting the authority of bitches making you feel bad about yourself through bootlegging their swag</p>
+        <p><em>"Dude, why the hell are you making work about 2019 corporate identity / logos? I know you hate everything about it!"<br><br>
+            "You're right bro, I'm trying this thing called <span class="underline">bitchlegging</span>, where I confront my fears by stripping their visual signifiers of meaning and re-using them to generate content</em></p>
+        <div class="footer">
+            <p>Get a <span class="highlight">playgiarism</span> mug for your friend Beatrix.</p>
+        </div>
+</li>
+</ul>
+    </div>
+    
+    
+    <div>
+        <div class="intro">
+            
+        </div>
+        <div class="bitchlegging">
+            <img src="bitchleggingsad.png">
+        </div>
+        
+        <div class="bitchlegging">
+            <img src="bootloving.png">
+        </div>
+    </div>
+    
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>    
+</body>
+</html>
+
