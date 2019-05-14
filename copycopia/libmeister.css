@@ -1,0 +1,28 @@
+html{
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#footer{
+    
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+    z-index: -1
+}
+
+#video-container{
+    width: 100%;
+    height: 760px;
+    border: 30px solid black;
+}
