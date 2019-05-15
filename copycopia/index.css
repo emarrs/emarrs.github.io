@@ -73,3 +73,7 @@ li{
     border: 1px solid #6d6d6d;
     list-style-type: none;
 }
+
+li:hover{
+    border: 2px solid #6d6d6d;
+}
