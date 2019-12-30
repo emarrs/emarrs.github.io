@@ -10,14 +10,35 @@
         <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>  
+
+<style>
+    @media only screen and (max-width: 450px){
+        #apparelpage .flex-container div{
+            width: 100%;
+        }
+        #apparelpage .flex-container div{
+            margin-top: 10%;
+        }
+    }
+    #apparelpage .flex-container{
+        width: 100%;
+/*        justify-content: space-between;*/
+        border-bottom: 1px solid black;
+    }
+    #apparelpage .flex-container div{
+        width: 33.33%;
+        border-right: 1px solid black;
+    }
+</style>    
+    
 <body>
-        <div class="menu"> 
+        <div class="menu-bar"> 
             <a href="index.html"><p style="margin-bottom: 0; padding-bottom: 0;">home</p></a>
             <a href="gd.html"><p style="margin-bottom: 0; padding-bottom: 0;">GD</p></a>
-            <h2 id="menu-gd"><em>APPAREL</em></h2>
+            <h2 class="menu-reg"><em>APPAREL</em></h2>
     </div>
 
-<div class="flex-container" style="margin-top: 7%;">
+<div class="flex-container">
     <div>
         <a href="wtwta.html"><img src="apparel/raincoat.JPG"></a>
     </div>

@@ -10,28 +10,91 @@
         <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>  
+
+<style>
+    #ggpage .flex-container div{
+        width: 100%;
+    }
+    #ggpage .flex-container{
+        width: 30%;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        margin-left: 5%;
+    }
+    #flex1{
+        display: flex;
+        border-bottom: 1px solid black;
+    }
+    #flex2{
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+        border-right: 1px solid black;
+/*        background-color: white;*/
+    }
+    #flex2 p{
+        padding: 4%;
+    }
+    #flex3{
+        width: 20%;
+    }
+    
+    #ggpage .slideshow-container{
+        margin-top: 5%;
+    }
+    @media only screen and (max-width: 450px){
+        #flex2{
+            width: 100%;
+            padding: 0;
+        }
+        #flex2 p, #flex2 h1{
+            padding-left: 8px;
+        }
+        #ggpage .flex-container{
+        width: 90%;
+        margin: auto;
+        }
+        #ggpage .slideshow-container{
+            margin: auto;
+            padding: 0;
+            width: 90%;
+        }
+        #ggpage body{
+            padding: 0px;
+        }
+        #flex1{
+            flex-direction: column-reverse;
+            margin-top: 30%;
+        }
+    }
+</style>
+
 <body>
-    <div class="menu"> 
+    <div class="menu-bar"> 
             <a href="index.html"><p>home</p></a>
-            <h2 id="menu-cr"><em>Genuine<br>& Ginger</em></h2>
+            <h2 class="menu-serif"><em>Genuine<br>& Ginger</em></h2>
         <a href="gd.html"><p>back</p></a>
     </div>
 <div id="flex1">
     <div class="flex-container">
         <div><img src="gdpage/gg/gg_newsletter.png"></div> 
-        <div><img src="gdpage/gg/gg_upcomingevents.gif"></div>    <div><img src="gdpage/gg/gg_bingo.png"></div>
-        <div style="margin-top: 1%;"><p>Above: some designs for promotional graphics and email newsletters<br>
-            Right: examples of flatlay product photographs for the website and social media.<br>
-            Below: Poetic lookbook promoting new summer 2017 jewelry pieces.
-            </p></div>
+        <div style="padding: 5%; margin-bottom: 33%;"><img src="gdpage/gg/gg_upcomingevents.gif"></div>    
+        <div style="padding-top:0%;"><img src="gdpage/gg/gg_bingo.png"></div>
     </div>
 
     <div id="flex2">
-        <div><h1 style="text-shadow: 0px 0px 50px antiquewhite;">Genuine and Ginger<br> Design Internship</h1><p style="text-shadow: 0px 0px 80px antiquewhite; line-height: 1.3;">
+        <div style="border-bottom: 1px solid black; margin-bottom: 6%; padding-bottom: 5%; background-color:#f7ab9b;"><p> <span class="body-serif"><em>Genuine and Ginger Design Internship.</em></span>
             I spent the summer of 2017 as an intern at an Albuquerque jewelry startup, Genuine & Ginger (now named Tumble). I designed stickers, newsletters, promotional graphics & emails, organized events, and generated content for publication and social media (mainly photography). I also designed a 30-page poetic lookbook containing photographs of the jewelry paired with my own imagery.
             </p></div>
-        <div style="width: 50%;"><img src="gdpage/gg/gg_product1.jpg"></div> 
-        <div style="width: 50%;"><img src="gdpage/gg/gg_product2.jpg"></div>    <div><img src="gdpage/gg/IMG_0803.PNG"></div>
+        <div style="width: 50%; padding: 0 2.5% 0 5%;"><img src="gdpage/gg/gg_product1.jpg"></div> 
+        <div style="width: 50%; padding: 0 5% 0 2.5%;"><img src="gdpage/gg/gg_product2.jpg"></div>    
+        <div style="padding: 4% 5%;"><img src="gdpage/gg/IMG_0803.PNG"></div>
+    </div>
+    <div id="flex3">
+        <div style="padding: 350% 7% 5% 7%;"><p class="body-serif"><em>Left: some designs for promotional graphics and email newsletters<br><br>
+            Right: examples of flatlay product photographs for the website and social media.<br><br>
+            Below: Poetic lookbook promoting new summer 2017 jewelry pieces.</em>
+            </p></div>
     </div>
 </div>
 

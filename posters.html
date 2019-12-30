@@ -11,15 +11,70 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>  
+    
+<style>
+    #posterprev div{
+        width: 20%;
+        margin: auto; 
+        margin-top: 10%
+    }
+
+    @media only screen and (max-width: 450px){
+        #posterprev div{
+            width: 40%;
+        }
+
+        #posterprev{
+            margin-top: 30%;
+            margin-bottom: 50%;
+        }
+
+        .poster-container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30%;
+        }
+
+        .poster-container img{
+            width: 100%;
+        }
+
+        .poster-container div{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    @media only screen and (min-width: 450px){
+        .poster-container{
+            margin: 20% 5% 0 20%;
+            display: flex;
+        }
+
+        .poster-container img{
+            width: 75%;
+            margin-right: 10%;
+        }
+
+
+        .poster-container div{
+            width: 40%;
+        }
+
+        .poster-container div.thinner{
+            width: 30%;
+        }
+    }
+</style>
+    
 <body>
-    <div class="menu"> 
+    <div class="menu-bar"> 
         <a href="index.html"><p>home</p></a>
-            <h2 id="menu-cr"><em>Selected<br>Posters</em></h2>
+            <h2 class="menu-serif" id="menu-cr"><em>Selected<br>Posters</em></h2>
         <a href="gd.html"><p>back</p></a>
     </div>
     
 <div class="flex-container" id="posterprev">
-    <a href="#posterprev"><div class="navtest"><p>top</p></div></a>
     <div>
         <a href = "#wnnn"><img src="gdpage/posters/WNNNposterfinal.jpg"></a>
     </div>

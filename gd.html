@@ -11,6 +11,94 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>  
     
+    
+<style>
+    #menu-gd{
+        font-family: 'Petit Formal Script', serif;
+        font-weight: 100;
+        font-size: 3em;
+        color: black;
+        margin: 0;
+        animation: color 10s alternate;
+        -webkit-animation: color 10s alternate;
+        text-shadow: 0 0 15px red;
+        position: static;
+        line-height: normal;
+        margin: 10px 0px;
+    }
+    #gdpg h1{
+        color: #da0505; 
+/*        font-size: 1em; */
+        text-align: center;
+        font-weight: lighter;
+    }
+    @media only screen and (min-width: 450px){
+        #gdpg .flex-container div {
+            margin: 20px;
+            padding-bottom: 0px;
+/*            border-bottom: 1px dashed #da0505;*/
+/*            border-top: 1px dashed #da0505;*/
+            border-radius: 50%;
+            margin-bottom: 0px;
+            margin-top: auto;
+            width: 30%;
+        }
+
+        #gdpg .flex-container{
+            width: 80%;
+            padding: 2%;
+/*            border-bottom: 1px dashed #da0505;*/
+            }
+        
+        .top{
+            border-top: 1px dashed #da0505;
+        }
+        .bottom{
+            border-bottom: 1px dashed #da0505;
+        }
+        .left{
+            border-left: 1px dashed #da0505;
+        }
+        .right{
+            border-right: 1px dashed #da0505;
+        }
+
+
+        #gdpg .flex-container img {
+            max-height: 100%;
+            width: inherit;
+            margin: auto;
+        }
+
+        .tall img{
+            max-height: 10%;
+        }
+    }
+    @media only screen and (max-width: 450px){
+        #gdpg body{
+            padding: 0 3%;
+        }
+
+        #gdpg .flex-container{
+            width: 100%;
+            margin-top: 40%;
+        }
+
+        #gdpg h1{
+            font-size: .7em;
+        }
+
+        #gdpg .flex-container div{
+            width: 34%;
+            margin-top: auto;
+            margin-left: 20px;
+        }
+    }
+    
+</style>
+    
+    
+    
 <body>
     <div class="menu">   
         <a href="index.html"><p>home</p></a>
@@ -20,40 +108,46 @@
 <!--            <a href="other.html">other</a>-->
     </div>
     
+    
+    
+    
 <div class="flex-container">
-    <div>
-        <a href="posters.html"><img style="height: 240px; padding-left: 10%;" src="gdpage/posters/posters.gif"><h1>SELECTED<br />POSTERS</h1></a>
+    <div class="top left">
+        <a href="posters.html"><h1>SELECTED<br />POSTERS</h1></a>
+    </div>
+    <div class="top right">
+        <a href="yummypg.html"><h1>YUMMY:<br />A COOKBOOK</h1></a>
+    </div>
+    <div class="left">
+        <a href="craigslist.html"><h1>CRAIGSLIST<br />REFLECTIONS</h1></a>
+    </div>
+    <div class="right">
+        <a href="ethintro.html"><h1>PHOTOGRAPHIC<br />OTHER / AUTHOR </h1></a>
+    </div>
+    <div class="left">
+        <a href="cbcintro.html"><h1>NEOLIBERAL<br />OUTFITTERS</h1></a>
+    </div>
+    <div class="right">
+        <a href="meta.html"><h1>HIERARCHY <br />OF NEEDS</h1></a>
+    </div>
+    <div class="left">
+        <a href="gg.html"><h1>GENUINE<br />& GINGER</h1></a>
+    </div>
+    <div class="right">
+        <a href="zombie.html"><h1>ZOMBIE MODS vs.<br />POMO VAMPIRES</h1></a>
+    </div>
+    <div class="left">
+        <a href= "WTpg.html"><h1>WILD<br />TYPOGRAPHY</h1></a>
+    </div>
+    <div class="right">
+        <a href= "memes.html"><h1>FUN WEB<br />EXPERIMENTS</h1></a>
+    </div>
+<!--
     </div>
         <div>
-        <a href="yummypg.html"><img src="gdpage/yummy/yummythumbnail.png"><h1>YUMMY:<br />A COOKBOOK</h1></a>
+        <a href="https://marrsec4.wixsite.com/mysite" target="_blank"><h1>PROTEST SIGN<br />CAMPAIGN</h1></a>
     </div>
-    <div>
-        <a href="craigslist.html"><img style="height: 230px; padding: 0 0 0 10%;" src="gdpage/craigslist/handmirror.gif"><h1>CRAIGSLIST<br />REFLECTIONS</h1></a>
-    </div>
-    <div>
-        <a href="ethintro.html"><img src="ethpg/eththumb.png"><h1>PHOTOGRAPHIC<br />OTHER / AUTHOR </h1></a>
-    </div>
-    <div>
-        <a href="cbcintro.html"><img src="cbcpg/cbcthumb.png"><h1>NEOLIBERAL<br />OUTFITTERS</h1></a>
-    </div>
-    <div>
-        <a href="meta.html"><img src="META/metathumb.png"><h1>HIERARCHY OF NEEDS<br />VIDEO/APPAREL/PACKAGE</h1></a>
-    </div>
-        <div>
-        <a href="gg.html"><img style="height: 230px; padding: 0 0 0 10%" src="gdpage/gg/gg_thumb.png"><h1>GENUINE<br />& GINGER</h1></a>
-    </div>
-        <div>
-        <a href="zombie.html"><img src="gdpage/zombie/zstack.png" ><h1>ZOMBIE MODS vs.<br />POMO VAMPIRES</h1></a>
-    </div>
-            <div>
-        <a href= "WTpg.html"><img style="height: 250px; padding-left: 12%" src="gdpage/wildtype/wtthumb.png"><h1>WILD<br />TYPOGRAPHY</h1></a>
-    </div>
-    <div>
-        <a href= "memes.html"><img src="breakup/WEBEXPERIMENT.png" style="margin-bottom: 20px;"><h1>FUN WEB<br />EXPERIMENTS</h1></a>
-    </div>
-        <div id="protest">
-        <a href="https://marrsec4.wixsite.com/mysite" target="_blank"><img style="height: 250px; padding: 0 15%;" src="gdpage/smokingban/smokingbanthumb.png"><h1>PROTEST SIGN<br />CAMPAIGN</h1></a>
-    </div>
+-->
 <!--
             <div class="best">
         <a href="arthurpg.html"><img src="gdpage/arthur/arthur.gif" style="margin-bottom: 15%;"><h1>NIHILIST<br />ARTHUR</h1></a>
@@ -64,9 +158,11 @@
         <a href="risite.html"><img src="risitethumb.png" style="border: 4px dashed white; padding: 0;"><h1>WTD IN RI TODAY?<br />WEB DESIGN</h1></a>
     </div>
 -->
+<!--
         <div>
-        <a href="sunsetsun.html"><img src="gdpage/sunsetsun/sunsetsun.gif"><h1>TYPOGRAPHIC<br />MUSIC VIDEO</h1></a>
+        <a href="sunsetsun.html"><h1>TYPOGRAPHIC<br />MUSIC VIDEO</h1></a>
     </div>
+-->
 <!--
             <div>
         <a href="#"><img src="gdpage/smileu.png" style="padding: 15%;"><h1>COMING<br />SOON</h1></a>
@@ -75,6 +171,30 @@
         <a href="#"><img src="gdpage/smiley.png" style="padding: 15%;"><h1>COMING<br />SOON</h1></a>
     </div>
 -->
+        
+    <div class="left">
+        <a href="#"><h1>BROWN<br />POLITICAL REVIEW</h1></a>
+    </div>
+    <div class="right">
+        <a href="#"><h1>BOOTLEG<br />BOOK</h1></a>
+    </div>
+    <div class="left">
+        <a href="funeralmuseum.html"><h1>FUNERAL<br />MUSEUM</h1></a>
+    </div>
+    <div class="right">
+        <a href="contrefacon.html"><h1>CONTRE LA<br />CONTREFAÇON</h1></a>
+    </div>
+    <div class="bottom left">
+        <a href="#"><h1>NO POSTER<br />SHOW</h1></a>
+    </div>
+<!--
+    <div>
+        <a href="#"><h1>COPYCOPIA<br />DOT NET</h1></a>
+    </div>
+-->
+    <div class="bottom right">
+        <a href="#"><h1>POLITICS<br />REWIRED</h1></a>
+    </div>
     
 </div>
 

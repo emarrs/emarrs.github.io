@@ -10,10 +10,82 @@
         <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>  
+    
+<style>
+    @media only screen and (max-width: 450px){
+        #about #aboutblurb{
+            margin-top: 20%;
+            width: 100%;
+        }
+    }
+    
+    #aboutblurb{
+        width: 45%;
+        margin: 11% 10% 10% 15%;
+        padding: 0% 3%; 
+/*        border: 2px solid #da0505;*/
+    }
+
+    #aboutblurb h1{
+        letter-spacing: 0.5pt;
+        color: black; font-size: 2em; font-family:serif; line-height: 1.2;
+        text-shadow: 0px 0px 0px;
+    }
+
+    .frymodal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 10;
+        top: 10;
+        width: 20%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+    }
+
+    /* Modal Content (Image) */
+    .fry-modal-content {
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+
+    .fryclose {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        color: red;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .fryclose:hover,
+    .fryclose:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #contact{
+        width: 250px;
+        font-size: 2em;
+        letter-spacing: 1pt;
+        margin-bottom: 5%;
+        padding-top: 10%;
+    }
+
+    #contact a{
+        text-decoration: underline;
+    }
+
+</style>  
+    
 <body>
     <div class="menu"> 
         <p><a href="index.html">home</a></p>
-        <h2 id="menu-gd">LIBBY M
+        <h2 class="menu-reg">LIBBY M
             <div class="rootate" style="width: 7%; animation-duration: 5s; display: inline-block; position: relative; right: 10px;">
             <a style= "text-decoration: none; color: #da0505;" href="https://www.instagram.com/m4rrs/" target="_blank";>@
             </a>
@@ -40,8 +112,7 @@
 <div class="flex-container">
     <div id="aboutblurb">
         <h1>
-        Her passions include: <br />
-            Human-centered print and web design, fashion for the masses sans mass production, quality journalism, serving looks, serving espresso drinks,  and also loves early 20th century Soviet propaganda posters. She's also very proud that she coded this website all by herself.</h1>
+            Libby enjoys magazines, the internet, poetic programming, critical thinking, drawing & arranging letters, quality journalism, serving looks, and serving espresso drinks. We hear she comes from the desert of New Mexico. She's proud that she coded this website all by herself but is sorry that she made it before she started learning Javascript and now is left with this big hot mess of amateur CSS.</h1>
     </div>
     
     <div id="contact">

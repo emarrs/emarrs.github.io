@@ -3,13 +3,53 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Libby Marrs</title>
+        <title>Libby Marrs // Wild Type</title>
         <meta name="description" content="a girl graphix designer.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="webstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-</head>  
+</head> 
+    
+<style>
+    .clump{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;   
+        margin-top: 10%;
+    }
+
+    .clump div{
+        width: 30%;
+        padding: 0 0 5% 5%;
+    }
+
+    .clump img{
+        max-width: 100%;
+        height: inherit;
+    }
+
+    #wtpg{
+        width: 110%;
+        position: absolute; z-index: -1;
+    }
+/*    mobile*/
+    @media only screen and (max-width: 450px){
+        .clump{
+            margin-top: 60%;
+        }
+        .clump #wtcap{
+            width: 100%;
+        }
+        #wtpg{
+            left: 7px;
+            top: 27%;
+            width: 1000px;
+        }
+    }
+
+</style>    
+    
 <body>
     <div class="menu"> 
         <a href="index.html"><p>home</p></a>
