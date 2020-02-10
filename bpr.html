@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html id="bpr"> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Libby Marrs</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="webstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>  
+<style>
+    @media only screen and (min-width: 450px){
+
+        #bprpic{
+            width: 70%;
+            padding: 6% 10%;
+        }
+        #bprcap{
+            border-left: 1px solid black;
+            width: 30%;
+            padding: 3%;
+        }
+        #bpr .flex-container{
+            border-bottom: 1px solid black;
+        }
+        #bpr .slideshow-container{
+            padding-top: 10%;
+            width: 95%;
+        }
+    }
+/*    MOBILE*/
+    @media only screen and (max-width: 450px){
+        #bpr .slideshow-container{
+            padding: 3% 3% 3% 0%;
+            margin: 0 0 0 2%;
+            width: 98%;
+        }
+        #bpr .flex-container{
+/*            border-bottom: 1px solid black;*/
+        }
+        
+        #bprpic{
+            padding: 6%;
+        }
+    }
+</style>
+<body>
+    
+    <div class="menu-bar"> 
+        <a href="index.html"><p>home</p></a>
+            <h2 class="menu-serif"><em>Brown<br>Political Review</em></h2>
+        <a href="gd.html"><p>back</p></a>
+    </div>
+    
+<div class="flex-container">
+    <div id="bprpic">
+        <img src="gdpage/bpr/bpr1.png">
+    </div>
+    
+    <div id="bprcap">
+        <p><em><span class="body-serif">Brown Political Review.</span></em> In the spring of 2019, my classmate Jae Won Kim and I took over as design directors for Brown Political Review, a quarterly magazine consisting of articles written by students at Brown University and illustrated by RISD students. Over the last three issues, Jae Won and I have been working to reinvent the editorial design system.<br>Pictured are some selected spreads that I designed.<br>
+        <br><em><span class="body-serif">
+            Printed magazines.<br> 8.5"x11"<br>
+            2019.</span></em>
+        </p>
+    </div>
+</div>
+    
+    
+   
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="gdpage/bpr/bpr2.png" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/bpr/bpr3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/bpr/bpr4.png" style="width:100%">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/bpr/bpr5.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/bpr/bpr6.png" style="width:100%">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/bpr/bpr7.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/bpr/bpr8.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+\  <img src="gdpage/bpr/bpr9.png" style="width:100%">
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="gdpage/bpr/bpr10.png" style="width:100%">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/bpr/bpr11.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+</div>
+-->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</body>
+</html>
