@@ -25,24 +25,32 @@
         border-bottom-color: white;
     }
     @media only screen and (max-width: 450px){
+        #funeral .flex-container{
+            border-top: 1px solid white;
+            padding: 3%;
+        }
+        #funeral .next{
+            right: 0;
+        }
+        #funeral .prev{
+            left: 0;
+        }
     }
     
-    #funeral .flex-container div{
-    }
-
-    #funeral .flex-container{
-        border-top: 1px solid white;
-        padding: 3% 50% 5% 4%;
-    }
-    
-    #funeral .slideshow-container{
-        width: 97%;
-    }
-    #funeral .prev{
-        right: 99%;
-    }
-    #funeral .next{
-        right: 0;
+    @media only screen and (min-width: 450px){
+        #funeral .flex-container{
+            border-top: 1px solid white;
+            padding: 3% 50% 5% 4%;
+        }
+        #funeral .slideshow-container{
+            width: 97%;
+        }
+        #funeral .prev{
+            right: 99%;
+        }
+        #funeral .next{
+            right: 0;
+        }
     }
     
 </style>
@@ -86,11 +94,13 @@
 </div>
 <br>
 
+<!--
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+-->
     
 <div class="flex-container">
     <div>

@@ -12,17 +12,42 @@
 </head>  
 
 <style>
-    #zombieback{
-/*        z-index: -1;*/
-        position: absolute;
-        justify-content: space-around;
-        top: 50px;
-        width: 96%;
+    @media only screen and (min-width: 450px){
+        #zombieback{
+    /*        z-index: -1;*/
+            position: absolute;
+            justify-content: space-around;
+            top: 50px;
+            width: 96%;
 
+        }
+        #zombiepg .slideshow-container{
+            width: 85%;
+            margin-left: 10%;
+        }
+        #zombiepg .cap{
+            border-top: 1px solid black; 
+            padding: 3% 60% 2% 3%;
+        }
     }
-    #zombiepg .slideshow-container{
-        width: 85%;
-        margin-left: 10%;
+     @media only screen and (max-width: 450px){
+         #zombieback{
+    /*        z-index: -1;*/
+            position: absolute;
+            justify-content: space-around;
+            top: 170px;
+            width: 96%;
+
+        }
+        #zombiepg .slideshow-container{
+                padding: 10%;
+                margin: 0 0 0 2%;
+                width: 99%;
+        }
+        #zombiepg .cap{
+            border-top: 1px solid black; 
+            padding: 3% 3% 2% 3%;
+        }
     }
 </style>
     
@@ -120,6 +145,7 @@
 </div>
 <br>
 
+<!--
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
@@ -134,8 +160,9 @@
   <span class="dot" onclick="currentSlide(11)"></span>
     <span class="dot" onclick="currentSlide(12)"></span>
 </div>
+-->
     
-<div style="border-top: 1px solid black; padding: 3% 60% 2% 3%">
+<div class="cap">
             <p><span class="body-serif"><em>Zombie Mods vs. Pomo Vampires. </em></span>I typeset four essays written on the subject of Modernism
         vs. Postmodernism by notable designers with very different
         opinions. All of the essays flow simultaneously, creating

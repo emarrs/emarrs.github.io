@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Libby Marrs // Craigslist Reflections</title>
         <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="webstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -13,46 +14,67 @@
 </head>  
 
 <style>
-    #menu-cr{
-        font-family: serif;
-        font-weight: 100;
-        color: #da0505;
-        font-size: 3em;
-        line-height: .95;
-        margin: 15px 0px;
-    }
-    .crpage{
-        background: white;
-        color: mediumblue;
-    }
-    .center{
-        margin-left: 550px;
-        margin-top: 100px;
-    }
-    .cr-forms-container{
-        display: flex;
-        position: relative;
-        bottom: 300px;
-        left: 0px;
-        flex-wrap: wrap;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-    }
-    .bundle{
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .bundle > div {
-        width: 400px;
-        height: 500px;
-        margin: auto;
-    }
+        .crpage{
+            background: white;
+            color: mediumblue;
+        }
     @media only screen and (max-width: 450px){
+        .menu{
+            font-family: serif;
+            font-weight: 100;
+            color: #da0505;
+            font-size: 1em;
+            margin: 55px 0px;
+        }
+        .center{
+            display: none;
+        }
+        .crpage .slideshow-container{
+            padding: 10%;
+            margin: 0 0 0 5%;
+            width: 98%;
+        }
+    }
+    @media only screen and (min-width: 450px){
         #menu-cr{
-            margin: 0;
+            font-family: serif;
+            font-weight: 100;
+            color: #da0505;
+            font-size: 3em;
+            line-height: .95;
+            margin: 15px 0px;
+        }
+        
+        #cr-title{
+            position: relative; 
+            left: 550px; 
+            top: 100px;
+        }
+        
+        .center{
+            margin-left: 550px;
+            margin-top: 100px;
+        }
+        .cr-forms-container{
+            display: flex;
+            position: relative;
+            bottom: 300px;
+            left: 0px;
+            flex-wrap: wrap;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+        .bundle{
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .bundle > div {
+            width: 400px;
+            height: 500px;
+            margin: auto;
         }
     }
 </style>
@@ -63,7 +85,7 @@
             <a class="crpage" href="gd.html">back</a>
     </div>
 
-    <div style="position: relative; left: 550px; top: 100px;"><img src="gdpage/craigslist/cr-forms/Artwork%2031.png"></div>
+    <div id="cr-title"><img src="gdpage/craigslist/cr-forms/Artwork%2031.png"></div>
     
 <div class="center">
     <a class="crpage" href="#booklet">booklet</a><br>

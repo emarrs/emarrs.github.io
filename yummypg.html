@@ -13,31 +13,34 @@
     
 <style>
 /*    regular*/
-    #yummypg .flex-container div{
-        padding-top: 24%;
-/*        width: 40%;*/
-        border-left: 1px solid black;
-    }
+    
+    @media only screen and (min-width: 450px){
+        #yummypg .flex-container div{
+            padding-top: 24%;
+    /*        width: 40%;*/
+            border-left: 1px solid black;
+        }
 
-    #yummypg .flex-container #yummypic {
-        width: 70%;
-        padding: 0 12% 0 12%;
-        position: relative;
-        bottom: 150px;
-    }
-    
-    #yummypg .flex-container #yummycap {
-        width: 26%;
-        padding-left: 2%;
-    }
-    
-    #yummypg .flex-container{
-/*        margin-bottom: 20%;*/
-        border-bottom: 1px solid black;
-    }
-    
-    #yummy{
-        padding: 10%
+        #yummypg .flex-container #yummypic {
+            width: 70%;
+            padding: 0 12% 0 12%;
+            position: relative;
+            bottom: 150px;
+        }
+
+        #yummypg .flex-container #yummycap {
+            width: 26%;
+            padding-left: 2%;
+        }
+
+        #yummypg .flex-container{
+    /*        margin-bottom: 20%;*/
+            border-bottom: 1px solid black;
+        }
+
+        #yummy{
+            padding: 10%
+        }
     }
 
     
@@ -49,12 +52,15 @@
         }
         #yummypg .flex-container div{
             width: 100%;
-            margin-top: 50%;
+            margin-top: 0%;
         }
 
         #yummybackground{
             top: 27%;
             left: 0;
+        }
+        #yummypg .slideshow-container{
+            margin: 0 0 0 2%;
         }
     }
     
@@ -181,6 +187,7 @@
 </div>
 <br>
 
+<!--
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
@@ -202,6 +209,7 @@
     <span class="dot" onclick="currentSlide(18)"></span> 
     <span class="dot" onclick="currentSlide(19)"></span> 
 </div>
+-->
 
 <script>
 var slideIndex = 1;

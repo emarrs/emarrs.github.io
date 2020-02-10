@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="webstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
 </head>  
     
     
@@ -18,53 +18,41 @@
         font-weight: 100;
         font-size: 3em;
         color: black;
-        margin: 0;
         animation: color 10s alternate;
         -webkit-animation: color 10s alternate;
-        text-shadow: 0 0 15px red;
+/*        text-shadow: 0 0 15px red;*/
         position: static;
-        line-height: normal;
+        line-height: 1em;
         margin: 10px 0px;
     }
     #gdpg h1{
         color: #da0505; 
-/*        font-size: 1em; */
-        text-align: center;
-        font-weight: bold;
-        font-family: sans-serif;
-        font-size: 1.9em;
+        text-align: left;
+        font-weight: lighter;
+        font-size: 1.5em;
+        line-height: 1em;
+        margin: 0 0 0px 0;
+        text-shadow: none;
+    }
+    
+    #gdpg h1:hover{
+        text-shadow: 0 0 45px red;
+    }
+    
+    #gdpg .flex-container{
+        display: block;
     }
     @media only screen and (min-width: 450px){
         #gdpg .flex-container div {
-            margin: 5px;
-            padding-bottom: 0px;
-/*            border-bottom: 1px dashed #da0505;*/
-/*            border-top: 1px dashed #da0505;*/
             border-radius: 50%;
-            margin-bottom: 0px;
-            margin-top: auto;
-            width: 30%;
         }
 
         #gdpg .flex-container{
-            width: 30%;
             padding: 2%;
-/*            border-bottom: 1px dashed #da0505;*/
-            }
-        
-        .top{
-            border-top: 1px dashed #da0505;
+            position: absolute;
+            bottom: 5%;
+            left: 2%;
         }
-        .bottom{
-            border-bottom: 1px dashed #da0505;
-        }
-        .left{
-            border-left: 1px dashed #da0505;
-        }
-        .right{
-            border-right: 1px dashed #da0505;
-        }
-
 
         #gdpg .flex-container img {
             max-height: 100%;
@@ -78,20 +66,23 @@
     }
     @media only screen and (max-width: 450px){
         #gdpg body{
-            padding: 0 3%;
+        }
+        
+        #gdpg .menu{
+            margin: 3%;
         }
 
         #gdpg .flex-container{
+            position: absolute;
             width: 100%;
-            margin-top: 40%;
+            bottom: 5%;
         }
 
         #gdpg h1{
-            font-size: .7em;
+/*            font-size: 1em;*/
         }
 
         #gdpg .flex-container div{
-            width: 34%;
             margin-top: auto;
             margin-left: 20px;
         }
@@ -105,9 +96,8 @@
     <div class="menu">   
         <a href="index.html"><p>home</p></a>
         <a href="about.html"><p>about</p></a>
-            <h2 id="menu-gd">GR4PHIC<br> DESIGN</h2>
-        <a href="apparelpg.html"><p>apparel</p></a><br>
-<!--            <a href="other.html">other</a>-->
+        <a href="apparelpg.html"><p>apparel</p></a>
+        <h2 id="menu-gd">GR4PHIC<br> DESIGN</h2>
     </div>
     
     
@@ -115,34 +105,34 @@
     
 <div class="flex-container">
     <div class="top left">
-        <a href="posters.html"><h1>SELECTED<br />POSTERS</h1></a>
+        <a href="posters.html"><h1>Selected Posters</h1></a>
     </div>
     <div class="top right">
-        <a href="yummypg.html"><h1>YUMMY:<br />A COOKBOOK</h1></a>
+        <a href="yummypg.html"><h1>Yummy (A Cookbook)</h1></a>
     </div>
     <div class="left">
-        <a href="craigslist.html"><h1>CRAIGSLIST<br />REFLECTIONS</h1></a>
+        <a href="craigslist.html"><h1>Craigslist Reflections</h1></a>
     </div>
     <div class="right">
-        <a href="ethintro.html"><h1>PHOTOGRAPHIC<br />OTHER / AUTHOR </h1></a>
+        <a href="ethintro.html"><h1>Photographic Other / Author </h1></a>
     </div>
     <div class="left">
-        <a href="cbcintro.html"><h1>NEOLIBERAL<br />OUTFITTERS</h1></a>
+        <a href="cbcintro.html"><h1>Neoliberal Outfitters</h1></a>
     </div>
     <div class="right">
-        <a href="meta.html"><h1>HIERARCHY <br />OF NEEDS</h1></a>
+        <a href="meta.html"><h1>Hierarchy of Needs</h1></a>
     </div>
     <div class="left">
-        <a href="gg.html"><h1>GENUINE<br />& GINGER</h1></a>
+        <a href="gg.html"><h1>Genuine & Ginger</h1></a>
     </div>
     <div class="right">
-        <a href="zombie.html"><h1>ZOMBIE MODS vs.<br />POMO VAMPIRES</h1></a>
+        <a href="zombie.html"><h1>Zombie Mods vs. Pomo Vampires</h1></a>
     </div>
     <div class="left">
-        <a href= "WTpg.html"><h1>WILD<br />TYPOGRAPHY</h1></a>
+        <a href= "WTpg.html"><h1>Wild Typography</h1></a>
     </div>
     <div class="right">
-        <a href= "memes.html"><h1>FUN WEB<br />EXPERIMENTS</h1></a>
+        <a href= "memes.html"><h1>Fun Web Experiments</h1></a>
     </div>
 <!--
     </div>
@@ -175,16 +165,16 @@
 -->
         
     <div class="left">
-        <a href="#"><h1>BROWN<br />POLITICAL REVIEW</h1></a>
+        <a href="#"><h1>Brown Political Review</h1></a>
     </div>
     <div class="right">
-        <a href="#"><h1>BOOTLEG<br />BOOK</h1></a>
+        <a href="#"><h1>Bootleg Book</h1></a>
     </div>
     <div class="left">
-        <a href="funeralmuseum.html"><h1>FUNERAL<br />MUSEUM</h1></a>
+        <a href="funeralmuseum.html"><h1>Funeral Museum</h1></a>
     </div>
     <div class="right">
-        <a href="contrefacon.html"><h1>CONTRE LA<br />CONTREFAÇON</h1></a>
+        <a href="contrefacon.html"><h1>Contre la Contrefaçon</h1></a>
     </div>
 <!--
     <div class="bottom left">
