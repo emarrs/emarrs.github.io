@@ -13,82 +13,110 @@
     
 <style>
     @media only screen and (max-width: 450px){
-        #about #aboutblurb{
-            margin-top: 20%;
+        #about .menu{
+            padding: 3% 2%;
+        }
+        #aboutblurb{
+            margin: 5%;
+            padding: 0;
             width: 100%;
+        }
+        #about .flex-container{
+    /*        border-top: 1px solid black;*/
+            margin-top: 125px;
+            padding-top: 7%;
+        }
+        #photo{
+            margin-left: 20%;
+            width: 20%;
+            padding-top: 10%;
+        }
+        #contact{
+            width: 10%;
+            font-size: 1.2em;
+            letter-spacing: 1pt;
+            padding-top: 40%;
+        }
+
+        #contact a{
+            text-decoration: underline;
         }
     }
     
-    #about .flex-container{
-/*        border-top: 1px solid black;*/
-        margin-top: 125px;
-        padding-top: 7%;
+    @media only screen and (min-width: 450px){
+    
+        #about .flex-container{
+    /*        border-top: 1px solid black;*/
+            margin-top: 125px;
+            padding-top: 7%;
+        }
+
+        #aboutblurb{
+            width: 35%;
+            margin: 0% 5% 10% 15%;
+            padding: 0% 3%; 
+    /*        border: 2px solid #da0505;*/
+        }
+
+        #aboutblurb h1{
+            letter-spacing: 0.5pt;
+            color: black; font-size: 1.5em; font-family:serif; line-height: 1.2;
+            text-shadow: 0px 0px 0px;
+        }
+
+        #photo{
+            width: 15%;
+            margin-right: 5%;
+        }
+
+        #contact{
+            width: 10%;
+            font-size: 1.5em;
+            letter-spacing: 1pt;
+            padding-top: 0%;
+        }
+
+        #contact a{
+            text-decoration: underline;
+        }
     }
     
-    #aboutblurb{
-        width: 35%;
-        margin: 0% 5% 10% 15%;
-        padding: 0% 3%; 
-/*        border: 2px solid #da0505;*/
-    }
-
-    #aboutblurb h1{
-        letter-spacing: 0.5pt;
-        color: black; font-size: 1.5em; font-family:serif; line-height: 1.2;
-        text-shadow: 0px 0px 0px;
-    }
     
-    #photo{
-        width: 15%;
-        margin-right: 5%;
-    }
-    
-    #contact{
-        width: 10%;
-        font-size: 1.5em;
-        letter-spacing: 1pt;
-        padding-top: 0%;
-    }
+        .frymodal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 10;
+            top: 10;
+            width: 20%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+        }
 
-    #contact a{
-        text-decoration: underline;
-    }
+        /* Modal Content (Image) */
+        .fry-modal-content {
+            margin: auto;
+            display: block;
+            width: 100%;
+        }
 
-    .frymodal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 10;
-        top: 10;
-        width: 20%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-    }
+        .fryclose {
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            color: red;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    /* Modal Content (Image) */
-    .fry-modal-content {
-        margin: auto;
-        display: block;
-        width: 100%;
-    }
-
-    .fryclose {
-        position: absolute;
-        top: 50px;
-        right: 0px;
-        color: red;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    .fryclose:hover,
-    .fryclose:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
+        .fryclose:hover,
+        .fryclose:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
 </style>  
     
