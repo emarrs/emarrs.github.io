@@ -39,6 +39,7 @@ body {
 
 .menu-bar p:hover{
     text-shadow: 0 0 15px red;
+    color: #da0505;
 }
 
 .menu-reg{
@@ -69,6 +70,11 @@ body {
         margin: 5px 0px 10px 0px;
     }
 
+.menu-serif:hover{
+    color: #da0505;
+    text-shadow: 0 0 25px red;
+}
+
 .menu p{
     margin-top: 0%;
     font-size: 1em;
@@ -81,6 +87,7 @@ body {
 
 .menu p:hover{
    text-shadow: 0 0 15px red;
+    color: #da0505;
 }
 
 
