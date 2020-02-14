@@ -28,8 +28,10 @@ body {
         display: flex;
     }
     .backnext{
-        width: 10%;
+        width: 12%;
         text-align: left;
+        border-left: 1px solid black;
+        padding-left: 10px;
     }
     .backnext p{
         line-height: 1.3em;
