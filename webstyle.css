@@ -57,7 +57,7 @@ body {
         display: flex;
     }
     .backnext{
-        width: 12%;
+        width: 15%;
         text-align: left;
         position: relative;
         top: 18px;
@@ -66,11 +66,11 @@ body {
         line-height: 1.3em;
     }
     .backgd{
-        width: 30%;
+        width: 50%;
         text-align: right;
     }
     .empty{
-        width: 60%;
+        width: 20%;
     }
     .menu-bar .body-serif{
         display: none;
