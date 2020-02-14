@@ -33,6 +33,9 @@ body {
         border-left: 1px solid black;
         padding-left: 10px;
     }
+    .backnext:hover{
+        border-color: #da0505;
+    }
     .backnext p{
         line-height: 1.3em;
     }
