@@ -25,7 +25,7 @@
             width: 70%;
             padding: 0 12% 0 12%;
             position: relative;
-            bottom: 150px;
+/*            bottom: 10px;*/
         }
 
         #yummypg .flex-container #yummycap {
@@ -69,7 +69,7 @@
     
 <body>
     
-    <div id="yummybackground" style="position: absolute; width: 95%; height: 100%;">
+    <div id="yummybackground" style="position: absolute; top: 10%; width: 95%; height: 100%; pointer-events: none;">
 <!--        <img src="gdpage/yummy/foodpngs/granola.png" style="width: 60%; position: absolute; z-index: -2; bottom: 0px; right: 60%;">-->
         <img src="gdpage/yummy/foodpngs/avocado_slices.png" style="width: 10%; position: absolute; left: 6%; top: 5%;">
         <img src="gdpage/yummy/foodpngs/berries.png" style="position: absolute; left: 5%; top: 20%; width: 15%;">
@@ -80,13 +80,22 @@
     </div>
     
     <div class="menu-bar"> 
-        <a href="index.html"><p>home</p></a>
             <h2 class="menu-serif" id="menu-cr">Yummy,<br><em>a Cookbook</em></h2>
-        <a href="gd.html"><p>back</p></a>
+        <div class="nav-list">
+                <div class="backnext"><a href="WTpg.html"><p>prev<span class="body-serif">: Wild Typography</span></p></a></div>
+                <div class="backnext"><a href="craigslist.html"><p>next<span class="body-serif">: Craigslist Reflections</span></p></a></div>
+
+                <div class="empty"></div>
+
+                <div class="backgd">
+                    <div><a href="index.html"><p>home</p></a></div>
+                    <div><a href="gd.html"><p>back to projects</p></a></div>
+                </div>
+            </div>
     </div>
 <div class="flex-container">
-    <div id="yummypic">
-        <a href="#yummy"><img src="gdpage/yummy/yummy_jpegs/yummypic2.png"></a>
+    <div id="yummypic" style="pointer-events: none;">
+        <img src="gdpage/yummy/yummy_jpegs/yummypic2.png">
     </div>
     <div id="yummycap">
         <p><span class="body-serif"><em>Pretty Healthy, and Super Yummy!</em></span> I once saw a wonderful, flashy, fluorescent Starburst ad from the 90s and thought about using a similar visual language to represent fruits and vegetables instead of candy. So, I designed this cookbook containing 14 recipes reminiscent of classic American kids’ junk food, except containing healthy ingredients. Bright, candy colors and juicy graphic images are meant to entice young readers into making themselves nutritious, energy-packed meals.

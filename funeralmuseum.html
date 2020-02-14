@@ -26,14 +26,15 @@
     }
     @media only screen and (max-width: 450px){
         #funeral .flex-container{
-            border-top: 1px solid white;
-            padding: 3%;
-        }
+            border-top: 1px solid white;        }
         #funeral .next{
-            right: 0;
+            right: 7px;
         }
         #funeral .prev{
-            left: 0;
+            left: 5px;
+        }
+        #funeral .slideshow-container{
+            padding: 10% 0;
         }
     }
     
@@ -58,9 +59,18 @@
 <body>
     
     <div class="menu-bar"> 
-            <a href="index.html"><p>home</p></a>
             <h2 class="menu-serif"><em>Funeral Museum<br>Brand Identity</em></h2>
-            <a href="gd.html"><p>back</p></a>
+            <div class="nav-list">
+                <div class="backnext"><a href="posters.html"><p>prev<span class="body-serif">: Selected Posters</span></p></a></div>
+                <div class="backnext"><a href="contrefacon.html"><p>next<span class="body-serif">: Contre la Contrefaçon</span></p></a></div>
+
+                <div class="empty"></div>
+
+                <div class="backgd">
+                    <div><a href="index.html"><p>home</p></a></div>
+                    <div><a href="gd.html"><p>back to projects</p></a></div>
+                </div>
+            </div>
     </div>
     
 

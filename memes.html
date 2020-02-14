@@ -12,13 +12,13 @@
 </head> 
     
 <style>
-    #webstuff .cap{
-        padding: 2%;
-    }
     #webstuff{
         background-color: white;
     }
     @media only screen and (min-width: 450px){
+        #webstuff .cap{
+            padding: 2%;
+        }
         #webstuff .flex-container div{
             width: 50%;
             border-left: 1px solid black;
@@ -37,9 +37,18 @@
         
 <body>
     <div class="menu-bar"> 
-        <a href="index.html"><p>home</p></a>
-            <h2 class="menu-serif" id="menu-cr"><em>Fun Web<br>Experiments</em></h2>
-        <a href="gd.html"><p>back</p></a>
+        <h2 class="menu-serif" id="menu-cr"><em>Fun Web<br>Experiments</em></h2>
+            <div class="nav-list">
+                <div class="backnext"><a href="craigslist.html"><p>prev<span class="body-serif">: Craigslist Reflections</span></p></a></div>
+                <div class="backnext"><a href="posters.html"><p>next<span class="body-serif">: Selected Posters</span></p></a></div>
+
+                <div class="empty"></div>
+
+                <div class="backgd">
+                    <div><a href="index.html"><p>home</p></a></div>
+                    <div><a href="gd.html"><p>back to projects</p></a></div>
+                </div>
+            </div>
     </div>
     
     <div class="flex-container">

@@ -23,6 +23,61 @@ body {
 /*    padding: 2em 2em 4em;*/
 }
 
+@media only screen and (min-width: 450px){
+    .nav-list{
+        display: flex;
+    }
+    .backnext{
+        width: 10%;
+        text-align: left;
+    }
+    .backnext p{
+        line-height: 1.3em;
+    }
+    .backgd{
+        width: 10%;
+        text-align: right;
+    }
+    .empty{
+        width: 70%;
+    }
+
+    .navlonger{
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .nav-list{
+        display: flex;
+    }
+    .backnext{
+        width: 12%;
+        text-align: left;
+        position: relative;
+        top: 18px;
+    }
+    .backnext p{
+        line-height: 1.3em;
+    }
+    .backgd{
+        width: 30%;
+        text-align: right;
+    }
+    .empty{
+        width: 60%;
+    }
+    .menu-bar .body-serif{
+        display: none;
+    }
+
+/*
+    .navlonger{
+        width: 15%;
+    }
+*/
+}
+
 .menu{
 /*    float: right;*/
     text-align: right;
