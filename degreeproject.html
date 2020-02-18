@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html id="dp"> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Libby Marrs</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="webstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>  
+<style>
+    #dp .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 100%;
+      width: auto;
+      padding: 6px;
+      margin-top: -22px;
+      color: #da0505;
+      font-weight: lighter;
+      font-size: 70px;
+      transition: 0.6s ease;
+      border-radius: 0 0px 0px 0;
+      user-select: none;
+}
+    
+    @media only screen and (min-width: 450px){
+
+/*
+        #dppic{
+            width: 45%;
+        }
+*/
+        #dpcap{
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            padding-top: 0.8%;
+        }
+        #dp .flex-container{
+            border-top: 1px solid black;
+            padding-bottom: 2%;
+        }
+        #dp .slideshow-container{
+            padding-top: 0%;
+            width: 100%;
+        }
+        #dp .next {
+              right: 1%;;
+              border-radius: 3px 0 0 3px;
+        }
+
+        #dp .prev {
+                right: 93%;
+        }
+    }
+/*    MOBILE*/
+    @media only screen and (max-width: 450px){
+        #dp .next {
+              right: 1%;;
+              border-radius: 3px 0 0 3px;
+        }
+
+        #dp .prev {
+                right: 78%;
+        }
+        #dp .slideshow-container{
+        }
+        #dp .flex-container div{
+/*            width: 100%;*/
+        }
+         #dpcap{
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            padding-top: 0%;
+        }
+    }
+</style>
+<body>
+    
+    <div class="menu-bar"> 
+            <h1 class="menu-serif"><em>Degree<br>Project</em></h1>
+        <div class="nav-list">
+                <div class="backnext"><a href="memes.html"><p>prev<span class="body-serif">: Fun Web Experiments</span></p></a></div>
+                <div class="backnext"><a href="posters.html"><p>next<span class="body-serif">: Selected Posters</span></p></a></div>
+
+                <div class="empty"></div>
+
+                <div class="backgd">
+                    <div><a href="index.html"><p>home</p></a></div>
+                    <div><a href="gd.html"><p>back to projects</p></a></div>
+                </div>
+            </div>
+    </div>
+    
+
+    
+    
+   
+<div class="slideshow-container" id="dp">
+
+<div class="mySlides fade">
+  <img src="gdpage/DP/DPproposal.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/DP/DPproposal2.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+<a class="next" onclick="plusSlides(1)">&#8594;</a>
+
+</div>
+
+<div class="flex-container">
+    <div id="dpcap">
+        <p><em><span class="body-serif">Graphic Design Degree Project.</span></em> Over my very last semester at <br>RISD, I am working on my degree project. Above is my proposal, in the <br>form of a double-sided piece of tabloid paper. Stay tuned for <br>more as I embark upon this wonderful journey.......
+        <br><em><span class="body-serif"><br>
+            Work in progress.</span><br></em>
+            2020.
+        </p>
+    </div>
+</div>
+<!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+</div>
+-->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</body>
+</html>

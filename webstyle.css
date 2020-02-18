@@ -406,9 +406,11 @@ h3{
 }
 
 /* On hover, add a black background color with a little bit see-through */
+/*
 .prev:hover, .next:hover {
     border: 1px dashed #da0505;
 }
+*/
 
 
 /* Number text (1/3 etc) */
