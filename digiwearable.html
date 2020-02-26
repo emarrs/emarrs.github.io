@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html id="digiwear"> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Libby Marrs</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="webstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>  
+<style>
+    #digiwear .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 6px;
+      margin-top: -22px;
+      color: #da0505;
+      font-weight: lighter;
+      font-size: 70px;
+      transition: 0.6s ease;
+      border-radius: 0 0px 0px 0;
+      user-select: none;
+}
+    
+    @media only screen and (min-width: 450px){
+
+/*
+        #digiwearpic{
+            width: 45%;
+        }
+*/
+        #digiwearcap{
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            padding-top: 0.8%;
+        }
+        #digiwear .flex-container{
+            border-top: 1px solid black;
+            padding-bottom: 2%;
+        }
+        #digiwear .slideshow-container{
+            padding-top: 0%;
+            width: 100%;
+        }
+        #digiwear .next {
+              right: 1%;;
+              border-radius: 3px 0 0 3px;
+        }
+
+        #digiwear .prev {
+                right: 93%;
+        }
+    }
+/*    MOBILE*/
+    @media only screen and (max-width: 450px){
+        #digiwear .next {
+              right: 1%;;
+              border-radius: 3px 0 0 3px;
+        }
+
+        #digiwear .prev {
+                right: 78%;
+        }
+        #digiwear .slideshow-container{
+        }
+        #digiwear .flex-container div{
+/*            width: 100%;*/
+        }
+         #digiwearcap{
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            padding-top: 0%;
+        }
+    }
+</style>
+<body>
+    
+    <div class="menu-bar"> 
+            <h1 class="menu-serif"><em>Degree<br>Project</em></h1>
+        <div class="nav-list">
+                <div class="backnext"><a href="degreeproject.html"><p>prev<span class="body-serif">: Degree Project</span></p></a></div>
+                <div class="backnext"><a href="posters.html"><p>next<span class="body-serif">: Selected Posters</span></p></a></div>
+
+                <div class="empty"></div>
+
+                <div class="backgd">
+                    <div><a href="index.html"><p>home</p></a></div>
+                    <div><a href="gd.html"><p>back to projects</p></a></div>
+                </div>
+            </div>
+    </div>
+    
+
+    
+    
+   
+<div class="slideshow-container" id="digiwear">
+
+<div class="mySlides fade">
+  <img src="gdpage/shirts/bootlegshirt.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="gdpage/shirts/shirt1.png" style="width:100%">
+</div>
+    
+<div class="mySlides fade">
+  <img src="gdpage/shirts/shirt1back.png" style="width:100%">
+</div>
+    
+    <div class="mySlides fade">
+  <img src="gdpage/shirts/shirt2.png" style="width:100%">
+</div>
+    
+    <div class="mySlides fade">
+  <img src="gdpage/shirts/shirt2back.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+<a class="next" onclick="plusSlides(1)">&#8594;</a>
+
+</div>
+
+<div class="flex-container">
+    <div id="digiwearcap">
+        <p><em><span class="body-serif">Digitally Printed Wearables.</span></em> Recent experiements desiging into apparel patterns, then digitally printing them onto fabric and sewing tee-shirts. I'm interested in the intersection of language, graphic design, and apparel: how do we wear words? Thinking about novelty, virtue-signalling, and our cultural obsession with originality & specificity. Series to be continued.
+        <br>
+<!--            Tee-shirts as preferred modes of disseminating information, virtue signaling, claiming originality, and being in on the joke.-->
+            2020.
+        </p>
+    </div>
+</div>
+<!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+</div>
+-->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</body>
+</html>
