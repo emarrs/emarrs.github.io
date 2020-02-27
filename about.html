@@ -40,7 +40,7 @@
         #contact{
             width: 10%;
             font-size: 1.2em;
-            letter-spacing: 1pt;
+/*            letter-spacing: 0.5pt;*/
             padding-top: 40%;
         }
 
@@ -53,6 +53,13 @@
     }
     
     @media only screen and (min-width: 450px){
+        #about .center-photo{
+            position: absolute;
+            top: 10%;
+            left: 33%;
+            width: 35%;
+            z-index: -10;
+        }
     
         #about .flex-container{
     /*        border-top: 1px solid black;*/
@@ -61,15 +68,16 @@
         }
 
         #aboutblurb{
-            width: 35%;
-            margin: 10% 5% 10% 5%;
-            padding: 0% 3%; 
+            width: 33%;
+            margin: 12% 5% 10% 3%;
+            padding: 0%; 
     /*        border: 2px solid #da0505;*/
         }
 
         #aboutblurb h1{
-            letter-spacing: 0.5pt;
-            color: black; font-size: 1.5em; font-family:serif; line-height: 1.2;
+/*            letter-spacing: 0.5pt;*/
+            color: black; font-size: 1.5em; font-family:serif; 
+            line-height: 1.2;
             text-shadow: 0px 0px 0px;
         }
 
@@ -130,6 +138,10 @@
 </style>  
     
 <body>
+        <div class="center-photo">
+<!--        <img src="gdpage/trash.png">-->
+    </div>
+    
     <div class="menu"> 
         <a href="index.html"><p>home</p></a>
         <a href="gd.html"><p>GD</p></a>
@@ -151,7 +163,8 @@
             
     </div>
     
-<button id="frybtn">logo on demand</button>
+<button id="frybtn"></button>
+    
 
 <div id="frypopup" class="frymodal">
 
@@ -169,6 +182,8 @@
         <h1>
             A senior in Graphic Design at Rhode Island School of Design, Libby enjoys magazines, the internet, "poetic programming", "critical thinking", drawing & arranging letters, and making clothes. We hear she comes from the "desert" of New Mexico. She is proud that she coded this website all by herself but is sorry that it is kind of clunky...why not send her some mail?<br><br>emarrs@risd.edu</h1>
     </div>
+    
+    
     
 <!--
     <div id="photo">
