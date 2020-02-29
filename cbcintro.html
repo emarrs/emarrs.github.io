@@ -29,15 +29,23 @@
             padding-top: 10%;
             width: 95%;
         }
+        #cbc img{
+            width:50%; margin-left: 25%;
+        }
     }
 /*    MOBILE*/
     @media only screen and (max-width: 450px){
         #cbcpg .slideshow-container{
-            padding: 10%;
-            margin: 0 0 0 2%;
-            width: 99%;
         }
+/*
+        #cbc img{
+            width:50%; margin-left: 25%;
+        }
+*/
         #cbcpg .flex-container{
+        }
+        #cbcpg .prev{
+            left: 2%;
         }
     }
 </style>
@@ -84,69 +92,35 @@
 <div class="slideshow-container" id="cbc">
 
 <div class="mySlides fade">
-  <img src="cbcpg/cbc1.png" style="width:50%; margin-left: 45%;">
+  <img src="cbcpg/page.png">
 </div>
 
 <div class="mySlides fade">
-  <img src="cbcpg/cbc3.png" style="width:100%">
+  <img src="cbcpg/page2.png">
 </div>
 
 <div class="mySlides fade">
-  <img src="cbcpg/cbc4.png" style="width:100%">
+  <img src="cbcpg/page3.png">
 </div>
     
 <div class="mySlides fade">
-  <img src="cbcpg/cbc5.png" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="cbcpg/cbc6.png" style="width:100%">
+  <img src="cbcpg/page4.png">
 </div>
     
 <div class="mySlides fade">
-  <img src="cbcpg/cbc7.png" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="cbcpg/cbc8.png" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-\  <img src="cbcpg/cbc9.png" style="width:100%">
+  <img src="cbcpg/page5.png">
 </div>
     
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="cbcpg/CBC10.jpg" style="width:100%">
+  <img src="cbcpg/page6.png">
 </div>
     
-<div class="mySlides fade">
-  <img src="cbcpg/cbc11.png" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="cbcpg/cbc12.png" style="width:50%">
-</div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
 <br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
-  <span class="dot" onclick="currentSlide(7)"></span> 
-  <span class="dot" onclick="currentSlide(8)"></span> 
-  <span class="dot" onclick="currentSlide(9)"></span> 
-  <span class="dot" onclick="currentSlide(10)"></span> 
-  <span class="dot" onclick="currentSlide(11)"></span> 
-</div>
 
 <script>
 var slideIndex = 1;
