@@ -29,10 +29,13 @@
     }
     
     #sticker{
+        display: none;
+/*
         position: absolute;
         height: 700px;
         width: 400px;
-        right: 500px;
+        right: 600px;
+*/
     }
 
     #sticker img{
