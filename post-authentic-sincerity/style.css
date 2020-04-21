@@ -1,0 +1,66 @@
+html {
+/*  background: #f7ab9b;*/
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    line-height: 0.8;
+}
+
+h1, h3{
+    color: blue;
+}
+
+a:visited{
+    color: blue;
+}
+
+
+#article{
+    margin-top: 5%;
+}
+
+#outline{
+    width: 25%;
+    position: fixed;
+    margin-top: 1%;
+}
+
+.flexp{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexp p, h1, h2, h3{
+    padding: 0 5%;
+}
+
+.sides{
+    width: 25%;
+}
+
+.mid{
+    width: 50%;
+}
+
+.img-place{
+    border: 1px solid blue;
+/*    margin: auto;*/
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
