@@ -13,8 +13,26 @@ html {
     padding: 0px;
 }
 
-p{
+/*
+*:hover{
+    border: 1px solid blue;
+    background-color: white;
+}
+*/
+
+img{
+    display: block;
+}
+
+p, h1, h2, h3{
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    line-height: 1.2;
+    font-size: 1.2em;
 }
 
 h1{
@@ -22,23 +40,29 @@ h1{
     line-height: 0.8;
 }
 
-h1, h3{
-    color: blue;
-}
-
-a:visited{
+h1, h2, h3, a, a:visited{
     color: blue;
 }
 
 
-#article{
-    margin-top: 5%;
+#main-title{
+    margin-left: 22%;
+    margin-top: 2%;
+}
+#main-title h1{
+    font-family: cursive;
+    font-size: 3.5em;
 }
 
-#outline{
-    width: 25%;
-    position: fixed;
-    margin-top: 1%;
+#article-container{
+    margin-top: 9%;
+    margin-left: 22%;
+}
+
+div.part{
+    position: sticky;
+    top: 0;
+    width: 68%;
 }
 
 .flexp{
@@ -47,20 +71,160 @@ a:visited{
 }
 
 .flexp p, h1, h2, h3{
-    padding: 0 5%;
+    padding: 0 0 0 3%;
 }
 
-.sides{
-    width: 25%;
+.article{
+    width: 68%;
+    margin: 0.25% 0;
 }
 
-.mid{
-    width: 50%;
+
+/*outline*/
+#outline{
+    width: 22%;
+    padding: 0 1%;;
+    position: fixed;
+/*    margin:1%;*/
+    max-height: 93%;
+    overflow: scroll;
+    overflow-x: hidden
+}
+
+.content{
+    padding-left: 10%;
+    font-style: italic;
+    color: blue;
+    font-size: 1.3em;
+    line-height: 1em;
+}
+
+
+/*images and readings*/
+#right{
+    width: 10%;
+    position: fixed;
+    right: 0;
+    margin-right: 1.5%;
+    float: right;
+    overflow: visible;
+    cursor: crosshair;
+    border-left: 1px solid blue;
+    z-index: 2;
+}
+
+#right h3{
+    padding: 0;
+}
+
+#imgsbox{
+    overflow: scroll;
+    max-height: 200px;
+    flex-wrap: nowrap;
+}
+
+#imgsbox img{
+    max-height: 140px;
+    display: block;
+}
+
+#readingsbox{
+    max-height: 300px;
+    overflow: scroll;
+    border-bottom: 1px solid blue;
+    background-color: white;
+}
+
+/*article sidebar right*/
+.notes{
+    width: 30%;
+    padding-left: 5%;
+}
+
+.notes p{
+    padding: 0;
+    margin: 0;
 }
 
 .img-place{
     border: 1px solid blue;
-/*    margin: auto;*/
-    margin-left: 5%;
-    margin-bottom: 3%;
+    height: inherit;
+    width: 100%;
 }
+
+.img-place p{
+    font-family: sans-serif;
+/*    font-style: italic;*/
+    padding: 1% 3% 0 1%;
+    width: auto;
+    position: absolute;
+    z-index: -1;
+    color: blue;
+}
+
+.img-place img{
+    display: block;
+    max-width: 100%;
+    opacity: 0;
+}
+
+.img-place img:hover{
+    opacity: 100;
+    cursor:nesw-resize;
+}
+
+#intro{
+    max-height: 250px;
+    overflow: scroll;
+    cursor: all-scroll;
+    overflow-x: hidden;
+    font-size: 1.1em;
+}
+
+#intro p{
+        line-height: 1.1;
+}
+
+
+table {
+    margin: auto;
+    width: 100%;
+    font-family: sans-serif;
+    border-collapse: collapse;
+/*    width: 0%;*/
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    width: 50%;
+    padding: 8px;
+}
+tr{
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+div::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px blue; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white; 
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: blue; 
+}
+
