@@ -35,6 +35,11 @@ p{
     font-size: 1.2em;
 }
 
+.emph{
+    color: blue;
+    text-decoration: underline;
+}
+
 h1{
     font-size: 3em;
     line-height: 0.8;

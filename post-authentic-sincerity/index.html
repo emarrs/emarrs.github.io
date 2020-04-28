@@ -63,7 +63,7 @@
     </div>
     <h3 style="background-color: white"><em>Further reading</em></h3>
     <div id="readingsbox">
-        <a href="#">Firstname Lastname, Title</a><br>
+        <a href="#fisher">Mark Fisher, Capitalist Realism</a><br>
         <a href="#">Firstname Lastname, Title</a><br>
         <a href="#">Firstname Lastname, Title</a><br>
         <a href="#">Firstname Lastname, Title</a><br>
@@ -195,7 +195,7 @@ We can even make sense of the most mind-bogglingly astronomical disaster by brea
 The way we parse environmental depletion through authenticity-themed vocabulary is reminiscent of how we deal with other problems, especially ones of identity and subjectivity. It’s more difficult and painful to describe what our future environment will look like after it has been gutted and polluted into a toxic wasteland than to imagine it simply as populated with the “artificial” as it inevitably replaces the “natural”. It’s also easier to police each others’ “sincerity” and “legitimacy” in adherence to social hierarchies than to confront the structures automating those hierarchies themselves. They say that the Inuit have over 50 words for snow —well, the English language must have hundreds of words that tangentially or directly describe authenticity. Real, fake, natural, artificial, legitimate, sincere, counterfeit, synthetic… the list goes on and on. Authenticity doesn’t just dominate our world, it is the language we speak (“really? literally!”), it is the lens through which we see and judge people, places and things. 
 We rely on the real-fake binary as a crutch—without it, we risk disrupting the fragile equilibrium with which cultural binaries so lovingly construct our social infrastructure. It makes us feel better about the vague miasma of our contemporary condition, because as long as there remains an “other”, a “bad”, a “fake”, in contrast to our own “good”, “real” “selves”, there is still a palatable battle to be fought: keeping ourselves on the good side of the binary, and condemning others to the bad side. A cute scent of nostalgia perfumes the battlefield, as we fight to revive an imaginary past sense of wholeness and pureness in the wake of a fractured, chaotic, polluted present-future.<br>&emsp;&emsp;&emsp;&emsp;
 We permit a sense of unity to form between ourselves and those we identify with (those we deem appropriately adherent to our side of the binary), and out of the goodness of this unity grows a sense of innocence exempting us from the responsibility to confront the artificial future, because we are already good simply by believing in good. We are real as long as we have faith in the real, and as long as we cling on to that belief, we are able to comfortably maintain our ironic distance  from the fake, the bad, the other. As Slavoj Zizek puts it, “Cynical distance is just one way … to blind ourselves to the structural power of ideological fantasy: even if we do not take things seriously, even if we keep an ironical distance, we are still doing them.”  In other words, sheer belief without direct action (“ironical distance”) is enough to feel like we are “doing something,” thus allowing ourselves to continue on with our days once we’ve expressed our intent.<br>&emsp;&emsp;&emsp;&emsp;
-In Capitalist Realism, Mark Fisher, following along with Zizek, writes that “Capitalist ideology in general … consists precisely in the overvaluing of belief—in the sense of sheer subjective attitude—at the expense of the beliefs we exhibit and externalize in our behavior.”  Fisher emphasizes that capitalism relies on this “overvaluation of belief” in order to keep the masses complicit within its structure—it bets that even if we believe it is bad, we won’t take action to change it because belief itself goes far enough. Belief is a comfortable and safe way to make sense of things we don’t like; we address each of our grievances by interacting with them via the user interface of belief. This belief-user-interface simplifies our issues and provides easy actions that we can take to fix them – like pressing a button that’s built into a default interface rather than rewiring or hacking the code of the system. Belief is the magic evidence we need to prove to ourselves that something is in fact authentic, real, legitimate, even natural. Anything can be real if we believe in it—even reality itself.
+            In <span class="emph">Capitalist Realism,</span> Mark Fisher, following along with Zizek, writes that “Capitalist ideology in general … consists precisely in the overvaluing of belief—in the sense of sheer subjective attitude—at the expense of the beliefs we exhibit and externalize in our behavior.”  Fisher emphasizes that capitalism relies on this “overvaluation of belief” in order to keep the masses complicit within its structure—it bets that even if we believe it is bad, we won’t take action to change it because belief itself goes far enough. Belief is a comfortable and safe way to make sense of things we don’t like; we address each of our grievances by interacting with them via the user interface of belief. This belief-user-interface simplifies our issues and provides easy actions that we can take to fix them – like pressing a button that’s built into a default interface rather than rewiring or hacking the code of the system. Belief is the magic evidence we need to prove to ourselves that something is in fact authentic, real, legitimate, even natural. Anything can be real if we believe in it—even reality itself.
         </p>
     </div>
     <div class="notes">
@@ -279,10 +279,10 @@ In Capitalist Realism, Mark Fisher, following along with Zizek, writes that “C
             <p>Love Island Winter 2020</p>
             <img src="imgs/loveiisland.png">
         </div>
-        <div style="margin-top: 20%;">
+        <div id="fisher" style="position: relative; top: 20%;">
             <p>
-                <span style="text-decoration: underline">Capitalist Realism by Mark Fisher (2009)</span>&emsp;&emsp;&emsp;&emsp;
-                In Capitalist Realism, Mark Fisher describes how neoliberalism has grown so deeply ingrained in our belief systems that our entire perception of reality is now dictated by capital. Fisher delineates why, after Fukuyama’s “End of History” and the final erasure of “really-existing socialism”, it’s now almost impossible to operate outside of the market, or see any alternative to capitalism. So, what we perceive as “real” consists of the dynamic of competition and individualism, and in order to be “realistic” within this structure one must be flexible and adaptable--which relates perfectly to the development of “normcore” in attitude and brand strategy.
+                <span class="emph">Capitalist Realism by Mark Fisher (2009)</span>&emsp;&emsp;&emsp;&emsp;
+                In <em>Capitalist Realism,</em> Mark Fisher describes how neoliberalism has grown so deeply ingrained in our belief systems that our entire perception of reality is now dictated by capital. Fisher delineates why, after Fukuyama’s “End of History” and the final erasure of “really-existing socialism”, it’s now almost impossible to operate outside of capitalist exchange and ideology, or see any alternative to it. So, what we perceive as “real” is the dynamic of competition and individualism, and in order to be “realistic” within this structure one must be flexible and adaptable.
 
             </p>
         </div>
@@ -431,15 +431,15 @@ Contemporary narratives continue to promote the exceptionalism of nature and the
 $(document).ready(function(){
     $("a").on('click', function(event) {
     if (this.hash !== "") {
-    event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-    scrollTop: $(hash).offset().top
-    }, 800, function(){
-    // Add hash (#) to URL when done scrolling (default click behavior)
-    window.location.hash = hash;
-    });
-    } // End if
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        }
     });
 
     $( "#accordion" ).accordion({
