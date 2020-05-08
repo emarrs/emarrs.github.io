@@ -11,6 +11,11 @@ html {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    color: blue;
+}
+
+button{
+    z-index: 200;
 }
 
 /*
@@ -19,6 +24,14 @@ html {
     background-color: white;
 }
 */
+
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 100;
+}
 
 img{
     display: block;
@@ -53,10 +66,12 @@ h1, h2, h3, a, a:visited{
 #main-title{
     margin-left: 22%;
     margin-top: 2%;
+    padding-top: 2%;
 }
 #main-title h1{
     font-family: cursive;
-    font-size: 3.5em;
+    font-size: 6.5em;
+    font-weight: 100;
 }
 
 #article-container{
@@ -98,12 +113,18 @@ div.part{
 }
 
 .content{
-    padding-left: 10%;
+    padding-left: 4%;
     font-style: italic;
     color: blue;
     font-size: 1.3em;
     line-height: 1em;
 }
+
+#accordion-resizer {
+/*    padding: 10px;*/
+/*    width: 350px;*/
+/*    height: 220px;*/
+  }
 
 
 /*images and readings*/
