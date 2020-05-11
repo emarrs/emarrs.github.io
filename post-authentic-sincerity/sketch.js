@@ -1,15 +1,40 @@
 let userArray = [];
-let button;
+let button, randText, newCanvas;
+let x,y,w,h;
+let textArray = ["Of course it's real, as long as you believe in it.","You may never reach the origin,","Why torture yourself?"];
 function setup() {
-  createCanvas(windowWidth,windowHeight);
-  background(0,0,255);
-//    textAlign(CENTER);
+    noCursor();
+    createCanvas(windowWidth,windowHeight);
+    newCanvas = createGraphics(windowWidth,windowHeight);
+    newCanvas.clear(0);
+//    newCanvas.background(0);
+    newCanvas.noStroke();
+    background(0,0,255);
+    randText = Math.floor(random(textArray.length));
+    
+    textFont('Arial');
     textSize(14);
     fill(255);
-    textFont('Times');
-    text("<!DOCTYPE html> \n<html> \n<head> <meta charset= &#34; utf-8 &#34;> \n<meta http-equiv=X-UA-Compatible content=IE=edge> \n<title>Post-Authentic Sincerity</title> \n<meta name=description content= &#34; An essay about design, authenticity, and defaults &#34; > \n<meta name=viewport content=width=device-width, initial-scale=1.0> \n<link rel=stylesheet href=style.css>", 100, 100, windowWidth-100)
+    text("<!DOCTYPE html> \n<html> \n<head> <meta charset= &#34; utf-8 &#34;> \n<meta http-equiv=X-UA-Compatible content=IE=edge> \n<title>Post-Authentic Sincerity</title> \n<meta name=description content= &#34; An essay about design, authenticity, and defaults &#34; > \n<meta name=viewport content=width=device-width, initial-scale=1.0> \n<link rel=stylesheet href=style.css> \n<body> \n<h1>" + textArray[randText] + "</h1> \n</body> \n</html>", 50, 250, windowWidth/8)
+    
+    fill(0,0,255);
+    stroke(255);
+    strokeWeight(2);
+    x = windowWidth*.23; y = 25; w = windowWidth*.74; h = 610;
+    rect(x,y,w,h);
+    line(x,y,x+w,y+h);
+    line(x,y+h,w+x,y);
+    fill(255);
+    stroke(0,0,255);
+//    textFont('Helvetica');
+//    textStyle(ITALIC);
+    textAlign(CENTER);
+    textSize(30);
+//    textLeading(90);
+    text(textArray[randText],x+w / 2,windowHeight - 85)
+    
     button = createButton('straight to business');
-    button.position(100,windowHeight-100,'fixed');
+    button.position(50,windowHeight-90,'fixed');
     button.mousePressed(skipIntro);
 }
 
@@ -17,15 +42,31 @@ function skipIntro(){
     remove();
 }
 
+function aabb(){
+    if(mouseX >= x && mouseX <= x+w && mouseY <= y+h && mouseY > y){
+        cursor(HAND);
+    }else{
+        noCursor();
+    }
+}
+
 function draw() {
+    aabb();
+//    if (mouseIsPressed){
+//        newCanvas.rect()
+//    }
     for (let i = 0; i < userArray.length; i++) {
         if (mouseIsPressed){
 //            point(userArray[i].x, userArray[i].y);
-            rect(userArray[i].x, userArray[i].y, 6,6)
+            noStroke();
+            rect(userArray[i].x, userArray[i].y, 5,5)
             userArray[i].x += random(-10,10);
             userArray[i].y += random(-10,10);
+            newCanvas.clear();
+
         } else {
-//            frameRate(20);
+            newCanvas.rect(mouseX,mouseY,5,5);
+            
 //            stroke(0,0,255);
 //            strokeWeight(1);
 //            point(userArray[i].x, userArray[i].y);
@@ -33,6 +74,7 @@ function draw() {
 //            userArray[i].y += random(-10,10);
         }
     }
+    image(newCanvas,0,0);
 
 //    stroke(255);
 //    strokeWeight(10);
