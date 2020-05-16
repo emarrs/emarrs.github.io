@@ -49,9 +49,18 @@ p{
     font-size: 1.2em;
 }
 
+.footnote{
+    color: blue;
+    padding-top: 50px;
+    margin-top: -50px;
+    position: relative;
+    bottom: 4px;
+/*    font-size: 12pt;*/
+}
+
 .emph{
     color: blue;
-    text-decoration: underline;
+    font-style: italic;
 }
 
 h1{
@@ -71,7 +80,7 @@ h1, h2, h3, a, a:visited{
 #main-title{
     margin-left: 23.5%;
     margin-top: 2%;
-    padding-top: 2.5%;
+    padding-top: 2.2%;
 /*    border: 1px solid blue;*/
     height: 600px;
     width: 75%;
@@ -90,9 +99,10 @@ h1, h2, h3, a, a:visited{
 
 #main-title h1{
     font-family: cursive;
-    font-size: 7.5em;
+    font-size: 8.5em;
     font-weight: 100;
-    line-height: 0.75
+    line-height: 0.75;
+    text-shadow: 0 0 30px white;
 }
 
 #article-container{
@@ -138,20 +148,25 @@ div.part{
 
 /*outline*/
 #outline{
-    width: 22%;
-    padding: 0 1%;;
+    width: 21.5%;
+    margin-left: 1.1%;
     position: fixed;
+    z-index: 100;
     max-height: 93%;
     overflow: scroll;
     overflow-x: hidden;
+    padding-right: 0.7%;
+}
+#outline h2, #outline h3{
+    padding: 0;
 }
 
 .content{
-    padding-left: 4%;
     font-style: italic;
     color: blue;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1em;
+    padding-right: 1%;
 }
 
 #accordion-resizer {
@@ -205,6 +220,12 @@ div.part{
 /*    border-bottom: 1px solid blue;*/
     background-color: white;
 }
+#readingsbox a{
+    text-decoration: none;
+}
+#readingsbox a:hover{
+    text-shadow: 0 0 1px blue;
+}
 
 /*sidebar left*/
 .left{
@@ -230,9 +251,35 @@ div.part{
 }
 
 .num{
-    font-family: sans-serif;
+/*    font-family: sans-serif;*/
     font-style: normal;
+    border-radius: 50%;
+    padding: 0px 2.5%;
+    margin-right: 5px;
+/*    background-color: blue;*/
+    border: 1px solid blue;
+/*    color: white;*/
 }
+
+#readingsbox .num{
+    padding: 0 5px;
+}
+.num-big{
+    font-style: normal;
+    border-radius: 50%;
+    padding: 1px 2px;
+    margin-right: 5px;
+    border: 1px solid blue;
+    font-size: .9em;
+}
+
+/*
+.article .emph{
+    padding: 0 5px;
+    font-family: serif;
+    text-decoration: none;
+}
+*/
 
 
 /*article sidebar right*/
@@ -273,6 +320,14 @@ div.part{
     opacity: 100;
     cursor:nesw-resize;
 }
+
+/*
+.enlarged{
+    position: absolute;
+    transform: scale(1);
+    margin-left: -50%;
+}
+*/
 
 #intro{
     max-height: 250px;

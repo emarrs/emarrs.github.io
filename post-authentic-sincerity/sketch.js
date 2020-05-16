@@ -33,7 +33,7 @@ function setup() {
 //    textLeading(90);
     text(textArray[randText],x+w / 2,windowHeight - 85)
     
-    button = createButton('straight to business');
+    button = createButton('click for full interactivity!');
     button.position(50,windowHeight-90,'fixed');
     button.mousePressed(skipIntro);
 }
