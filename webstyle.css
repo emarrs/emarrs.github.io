@@ -13,6 +13,10 @@ html {
     padding: 0px;
 }
 
+img{
+    display: block;
+}
+
 body {
     color: black;
     font-size: 16px;
@@ -26,12 +30,16 @@ body {
 @media only screen and (min-width: 450px){
     .nav-list{
         display: flex;
+        padding: 0 1em;
     }
     .backnext{
-        width: 12%;
+        width: 12.5%;
         text-align: left;
         border-left: 1px solid black;
-        padding-left: 10px;
+        padding-left: 1em;
+        margin: 1em;
+        margin-right: 0;
+        margin-left: 0;
     }
     .backnext:hover{
         border-color: #da0505;
@@ -40,11 +48,17 @@ body {
         line-height: 1.3em;
     }
     .backgd{
-        width: 10%;
+        width: 25%;
         text-align: right;
+        margin: 1em 0 1em 2em;
     }
     .empty{
-        width: 70%;
+        width: 50%;
+/*
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+*/
+        padding: 1em;
     }
 
     .navlonger{
@@ -55,25 +69,42 @@ body {
 @media only screen and (max-width: 450px){
     .nav-list{
         display: flex;
+        flex-wrap: wrap-reverse;
     }
+
     .backnext{
-        width: 15%;
+        width: 50%;
         text-align: left;
+        border-left: 1px solid black;
+        padding: 0.5em;
+/*
         position: relative;
         top: 18px;
+*/
     }
     .backnext p{
         line-height: 1.3em;
     }
     .backgd{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .backgd div{
         width: 50%;
-        text-align: right;
+        padding: 1em;
+        border-left: 1px solid black;
+
     }
     .empty{
-        width: 20%;
+        width: 100%;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding: 1em;
     }
     .menu-bar .body-serif{
-        display: none;
+/*        display: none;*/
     }
 
 /*
@@ -92,10 +123,12 @@ body {
 }
 
 .menu-bar{
-    text-align: right;
+    text-align: center;
     border-bottom: 1px solid black;
-    padding: 1em;
+/*    padding: 1em;*/
+/*    position: fixed;*/
 }
+
 
 .menu-bar p:hover{
     text-shadow: 0 0 15px red;
@@ -121,13 +154,13 @@ body {
         font-weight: 100;
         font-size: 3em;
         color: black;
-        margin: 0;
+        margin: auto;
         animation: color 10s alternate;
         -webkit-animation: color 10s alternate;
 /*        text-shadow: 0 0 15px red;*/
-        position: static;
+/*        position: static;*/
         line-height: 0.9em;
-        margin: 5px 0px 10px 0px;
+/*        margin: 5px 0px 10px 0px;*/
     }
 
 .menu-serif:hover{

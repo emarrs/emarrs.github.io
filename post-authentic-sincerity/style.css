@@ -167,6 +167,7 @@ div.part{
     font-size: 1.2em;
     line-height: 1em;
     padding-right: 1%;
+    padding-top: 2%;
 }
 
 #accordion-resizer {
@@ -313,11 +314,11 @@ div.part{
 .img-place img{
     display: block;
     max-width: 100%;
-    opacity: 0;
+    opacity: 100;
 }
 
 .img-place img:hover{
-    opacity: 100;
+    opacity: 0;
     cursor:nesw-resize;
 }
 
