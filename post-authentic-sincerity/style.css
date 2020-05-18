@@ -343,6 +343,17 @@ div.part{
 }
 
 
+#next{
+    background-color: blue;
+    margin-left: 0.5%;
+    margin-top: 3%;
+}
+#next h1{
+    color: white;
+    padding-left: 1.2%;
+}
+
+
 table {
     margin: auto;
     width: 100%;

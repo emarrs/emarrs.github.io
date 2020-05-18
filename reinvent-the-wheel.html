@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Can You Reinvent The Wheel</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        <link rel="stylesheet" href="webstyle.css">-->
+</head>  
+    
+<style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    button{
+        position: absolute; z-index: 10;
+        padding: 20px;
+        bottom: 5%;
+    }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 120px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+/*
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+*/
+}
+#myBtn{
+    left: 53%;
+}
+    
+#flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+#flexbox p{
+    padding-right: 3%;
+    line-height: 1.4em;
+}
+#flexbox h3{
+    padding-right: 3%;
+    line-height: 1.3em;
+}   
+p, h1, h2, h3{
+    font-family: sans-serif;
+}
+
+.modal-content {
+  background-color: white;
+  border: 1px solid #888;
+  width: 80%;
+    margin: auto;
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+    
+<body>
+<button id="myBtn">?</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <div id="flexbox">
+          <div style="width: 100%">
+              <h1>About the game...</h1>
+          </div>
+          <div style="width: 65%">
+          <p>This game is inspired by the critique of Modernism as an inherently contradictory and flawed logic in Learning from Las Vegas by Robert Venturi. The problem with Modernist logic, according to Venturi, is that it tries to use physiognomy to denote, rather than connote, meaning. The perfect Modernism uses structural form that signifies specific inherent meaning — but this is a complete oxymoron, since structural form can’t possibly contain inherent meaning without symbolism, which is perfect Modernism’s worst enemy. So, there really is no perfect Modernism, only chaotic Modernism, which uses physiognomy to connote meaning — in other words, structural form that pretends to signify specific inherent meaning, but instead uses symbolism to signal general meaning. 
+          In this game, the player is the zombie Modernist trying to find their way to the perfect Modernism, by collecting inherently virtuous materials. But, these inherently virtuous materials (that give you points) are indistinguishable from “ugly and ordinary” Postmodernist obstacles, because in the end, all materials end up being “ugly and ordinary”. It’s an endless game for the Modernist striver — how far will YOU get before submitting to the Bricolage of Denotative Symbolism?</p>
+          </div>
+          <div style="width: 30%">
+              <h3>“Modern architects work through analogy, symbol, and image—although they have gone to lengths to disclaim almost all determinants of their forms except structural necessity and the program—and they derive insights, analogies, and stimulation from unexpected images.”</h3>
+              <p> - Robert Venturi, Learning from Las Vegas</p>
+          </div>
+      </div>
+  </div>
+</div>
+    
+    <button onClick="refreshPage()" id="submit" style="left: 45.5%;">RESTART</button>
+    <div style="height: 100%; background: white;">
+    <iframe src="https://editor.p5js.org/marrsec/embed/Ex3xT6_W"style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+    </div>
+    
+<script>
+    function refreshPage(){
+      window.location.reload();
+} 
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+    
+</html>
