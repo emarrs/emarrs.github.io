@@ -14,6 +14,11 @@ html {
 /*    color: blue;*/
 }
 
+html, body{
+    height: 100%;
+/*    background: white;*/
+}
+
 button{
     z-index: 200;
 }
@@ -30,7 +35,7 @@ canvas{
     top: 0;
     left: 0;
 /*    pointer-events: none;*/
-    z-index: 100;
+    z-index: 200;
 }
 
 img{
@@ -47,7 +52,33 @@ p, h1, h2, h3{
 p{
     line-height: 1.2;
     font-size: 1.2em;
+    hyphens: auto;
 }
+
+/*
+.highlight{
+    background: blue;
+}
+*/
+/*
+.pq p{
+    font-family: serif;
+    font-size: 1.3em;
+    line-height: 1.11;
+}
+*/
+.pq h2{
+    padding-left: 0;
+    text-decoration: underline;
+    hyphens: auto;
+    font-style: italic;
+}
+.pq{
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+    padding: 2em 0;
+}
+
 
 .footnote{
     color: blue;
@@ -105,9 +136,28 @@ h1, h2, h3, a, a:visited{
     text-shadow: 0 0 30px white;
 }
 
+.subtitle{
+    position: sticky;
+    z-index: 100;
+    width: 78%;
+    padding-right: 1%;
+    margin: 0 0 1% 0;
+}
+.subtitle h1{
+    font-family: serif;
+    color: blue; 
+    font-weight: 100;
+    font-size: 8em;
+    padding: 0 0 0 1.5%;
+}
+.title-num{
+    font-size: 1.3em;
+    position: relative;
+    top: 10px;
+}
+
 #article-container{
     margin-top: 3%;
-    margin-bottom: 5%;
 }
 
 div.part{
@@ -168,6 +218,7 @@ div.part{
     line-height: 1em;
     padding-right: 1%;
     padding-top: 2%;
+    hyphens: auto;
 }
 
 #accordion-resizer {
@@ -187,7 +238,7 @@ div.part{
 /*    overflow: visible;*/
     cursor: crosshair;
 /*    border: 1px solid blue;*/
-    z-index: 2;
+    z-index: 150;
 }
 
 .right-dropdown{
@@ -288,6 +339,7 @@ div.part{
     width: 22%;
 /*    border: 1px solid blue;*/
     padding-left: 2%;
+    margin-top: 25px;
 }
 
 .notes p{
@@ -295,6 +347,46 @@ div.part{
     margin: 0;
 }
 
+
+.image img{
+    max-width: 100%;
+        border: 1px solid blue;
+}
+.img-cap p{
+    font-family: serif;
+    font-size: 1.05em;
+    font-style: italic;
+    line-height: 1.1em;
+}
+.img-place, .img-place-long{
+    width: 100%;
+    display: flex;
+}
+/*short imgs*/
+.img-place div{
+    width: 50%;
+}
+.img-place .img-cap p{
+    padding-left: 0.75em; 
+}
+/*long imgs*/
+.img-place-long{
+    flex-wrap: wrap;
+}
+.img-place-long div{
+    padding-bottom: 0.5em;
+    width: 100%;
+}
+
+/*
+.img-cap p{
+    font-family: serif;
+    font-size: 1em;
+    padding-left: 1em;
+}
+*/
+
+/*
 .img-place{
     border: 1px solid blue;
     height: inherit;
@@ -303,7 +395,7 @@ div.part{
 
 .img-place p{
     font-family: sans-serif;
-/*    font-style: italic;*/
+    font-style: italic;
     padding: 1% 3% 0 1%;
     width: auto;
     position: absolute;
@@ -321,6 +413,7 @@ div.part{
     opacity: 0;
     cursor:nesw-resize;
 }
+*/
 
 /*
 .enlarged{
@@ -331,7 +424,8 @@ div.part{
 */
 
 #intro{
-    max-height: 250px;
+    max-height: 235px;
+    padding-top: 3px;
     overflow: scroll;
     cursor: all-scroll;
     overflow-x: hidden;
@@ -342,16 +436,60 @@ div.part{
         line-height: 1.1;
 }
 
+#nxt{
+    background: blue;
+    margin-left: .7em;
+}
+#nxt .left{
+    background: white;
+}
 
-#next{
-    background-color: blue;
-    margin-left: 0.5%;
-    margin-top: 3%;
-}
-#next h1{
+#nxt h1{
     color: white;
-    padding-left: 1.2%;
+    line-height: 1;
+    font-family: serif; font-size: 3.3em; font-weight: 100;
+/*    padding: 0;*/
 }
+#nxt .article{
+    padding: 2em;
+    width: 78%;
+}
+#nxt .notes{
+    width: 0%;
+}
+.alt{
+    font-style: italic;
+}
+h1.indent{
+    padding-left: 1.1em;
+}
+#nxt a{
+    color: white;
+}
+#final{
+    margin: 3em 4em;
+    background: white;
+    border-radius: 50px;
+    padding: 2em 2em 2em 0;
+}
+#end-intro{
+    display: flex;
+    margin-left: 22.5%; 
+    width: 77.5%
+}
+#end-intro div{
+    width: 50%;
+    background: blue; 
+    border-radius: 50px; 
+    padding: 2em; 
+}
+#end-intro h1{
+    font-size: 8em; color: white; font-weight: 100; font-family: serif;
+}
+#end-intro p{
+    color: white;
+}
+
 
 
 table {

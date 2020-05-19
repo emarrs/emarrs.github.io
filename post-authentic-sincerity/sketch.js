@@ -31,7 +31,8 @@ function setup() {
     textAlign(CENTER);
     textSize(30);
 //    textLeading(90);
-    text(textArray[randText],x+w / 2,windowHeight - 85)
+    text('Click around! Then click on the button to the left.',x+w / 2,windowHeight - 85)
+//    text(textArray[randText],x+w / 2,windowHeight - 85)
     
     button = createButton('click for full interactivity!');
     button.position(50,windowHeight-90,'fixed');
