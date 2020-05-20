@@ -10,7 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-        <script src="sketch.js"></script>
+<!--        <script src="sketch.js"></script>-->
 </head>  
     
 <style>
@@ -81,7 +81,7 @@
             &#10040; This requires seeing past institutional Graphic Design’s veneer of authenticity, and looking at design rather as a service, whose default functions are not inherently virtuous, innocent, or neutral, but derive from a history of bias and politics. 
             &#10040; Keeping in mind the politics of design and its defaults, we can strategically employ Premium Generic formulas to cope with our individual positions in service to a post-authentic commercial world, while working toward long-term pedagogical and ideological shifts for a graphic design in service to creative problem-solving rather than its own aura of authenticity.
         </div>
-        <h3><a href="#nxt">4.3 Onward!</a></h3>
+        <h3><a href="#end-intro">4.3 Onward!</a></h3>
             <div class="content" style="height: 220px; overflow-y: scroll;">Like it or not, we’re always participating in commercial design. When we’re designing for non-jobs or non-clients, we’re still doing marketing work: for ourselves, for the institutions where we learned our methods. We may be always advertising, but we’re also “always already programming,” in the words of Melanie Hoff. It’s hard to feel like we have agency, but I think that’s partly because it’s hard to see how much autonomy we do have, how we already automate our creative processes. It’s also hard to see how default presets automate our processes when we think we are being original. Either way, we’re already used to thinking like machines, shrinking and inflating to follow parameters and conditions like algorithms. Saying that we have no agency makes us out to be innocent bystanders, as if the Modernist formal sensibility and prestigious rhetorics we’ve internalized from design institutions aren’t powerful or dangerous like computational code.<br>
             I’ve assembled some actions we can practice to help us navigate the post-authentic world in an appropriately normcore fashion, by rethinking adaptability, automation, and autonomy.</div>
 </div>
@@ -141,7 +141,13 @@
 <div id="top-mods">
     <div><p>Making sense of authenticity, realness, nature, and graphic design.<br>by Libby Marrs <a href="https://libbymarrs.net/" target="_blank"; style="text-decoration: none;">&#9758; &#9786; &#9756;</a></p></div>
     <div><p>Written in the spring of 2020, and to be continued...!<br><br><span style="color: blue">.~*&#10040;.~*&#10052;.~*&#10047;.~*&#10018;</span></p></div>
-        <div style="width: 50%;"><p>But first, how fun is this: The five fonts built-in (so I suppose that makes them "default?") to the HTML programming language are: <input type="radio"> Sans-serif (recommended), <input type="radio"> Serif, <input type="radio"> Cursive, <input type="radio"> Monospace, and last but not least, <input type="radio"> Fantasy!</p></div>
+        <div style="width: 50%;"><p>Default settings can be fun: The five "default" fonts in the HTML programming language are: <br>
+            <input type="radio" name="foo"  id="radio-sans" checked onclick="toSans()"> Sans-serif (recommended), 
+            <input type="radio" name="foo" id="radio-serif" onclick="toSerif()"> Serif, 
+            <input type="radio" name="foo" id="radio-cursive" onclick="toCursive()"> Cursive, 
+            <input type="radio" name="foo" id="radio-cursive" onclick="toMono()"> Monospace, and last but not least, 
+            <input type="radio" name="foo" id="radio-fantasy" onclick="toFantasy()"> Fantasy!</p>
+        </div>
 </div>
 
     
@@ -155,7 +161,7 @@
     </div>
     <div class="notes" style="margin-top: 0;">
         <div id="intro">
-            <p style="font-family: serif; font-style: italic;">Designers should recognize their collective role as “the oil in the machine of capitalism,” and how this machine dictates our perception of reality, enveloping us in an oppressive belief system which amplifies and depends on oppositional constructs such as authenticity/artificiality, nature/culture, and original/copy. To better understand this role in the context of 2020, we need to look at what has been going on in the marketplace, as capital reveals itself more and more deeply, inextricably bound to graphic design practice. I find brand strategy to be a useful lens to see how the “authenticity” construct in particular shapes the role of the graphic designer.
+            <p>Designers should recognize their collective role as “the oil in the machine of capitalism,” and how this machine dictates our perception of reality, enveloping us in an oppressive belief system which amplifies and depends on oppositional constructs such as authenticity/artificiality, nature/culture, and original/copy. To better understand this role in the context of 2020, we need to look at what has been going on in the marketplace, as capital reveals itself more and more deeply, inextricably bound to graphic design practice. I find brand strategy to be a useful lens to see how the “authenticity” construct in particular shapes the role of the graphic designer.
 
 </p>
         </div>
@@ -165,7 +171,7 @@
 <!--PART 1 A BRIEF BREAKDOWN-->
 <div class="flexp">
 <div class="left"></div>
-<div id="part-1" class="subtitle"><h1><em><span style="letter-spacing: -0.13em">P</span>art</em> <span class="title-num">&#10122;</span> <br>A Brief Breakdown of Authenticity</h1></div>
+<div id="part-1" class="subtitle"><h1><em><span style="letter-spacing: -0.13em">P</span>art</em> <span class="title-num">&#10122;</span> <br>A Brief Breakdown <em><br>of</em> Authenticity</h1></div>
     <div class="left">
 <!--
         <div style="top: 87%;"><p>
@@ -279,10 +285,10 @@
             <div class="image"><img src="imgs/ecofash.tweet1_.png"></div>
             <div class="img-cap"><p>An insidious example of how the real-fake binary enables a dangerous oversimplification of a very complex issue</p></div>
         </div>
-        <div id="fisher" style="position: relative; top: 18.5%;">
+        <div id="fisher" style="position: relative; top: 19%;">
             <p>
-                <span class="emph">Capitalist Realism by Mark Fisher (2009)</span>&emsp;&emsp;&emsp;&emsp;
-                In <em>Capitalist Realism,</em> Mark Fisher describes how neoliberalism has grown so deeply ingrained in our belief systems that our entire perception of reality is now dictated by capital. Fisher delineates why, after Fukuyama’s “End of History” and the final erasure of “really-existing socialism”, it’s now almost impossible to operate outside of capitalist exchange and ideology, or see any alternative to it. So, what we perceive as “real” is the dynamic of competition and individualism, and in order to be “realistic” within this structure one must be flexible and adaptable.
+                Mark Fisher, <span class="emph">Capitalist Realism</span> (2009) 
+                Fisher describes how neoliberalism has grown so deeply ingrained in our belief systems that our entire perception of reality is now dictated by capital. Fisher delineates why, after Fukuyama’s “End of History” and the final erasure of “really-existing socialism”, it’s now almost impossible to operate outside of capitalist exchange and ideology, or see any alternative to it. So, what we perceive as “real” is the dynamic of competition and individualism, and in order to be “realistic” within this structure one must be flexible and adaptable.
 
             </p>
         </div>
@@ -311,7 +317,7 @@
             </p></div>
         </div>
         <div id="cronon" style="margin-top: 20%;">
-            <p>"For many Americans wilderness stands as the last remaining place where civilization, that all too human disease, has not fully infected the earth. It is an island in the polluted sea of urban-industrial modernity, the one place we can turn for escape from our own too-muchness. Seen in this way, wilderness presents itself as the best antidote to our human selves, a refuge we must somehow recover if we hope to save the planet." <br>William Cronon, the Trouble with Wilderness</p>
+            <p><span style="margin-left: -5px"></span>"For many Americans wilderness stands as the last remaining place where civilization, that all too human disease, has not fully infected the earth. It is an island in the polluted sea of urban-industrial modernity, the one place we can turn for escape from our own too-muchness. Seen in this way, wilderness presents itself as the best antidote to our human selves, a refuge we must somehow recover if we hope to save the planet." <br>William Cronon in <em>The Trouble with Wilderness</em> (1996)</p>
         </div>
         <div class="pq" style="margin-top: 8em;"><h2><span class="highlight">
             Within the capitalist-real, the “authentic” materializes as the formal anti-capitalist: the platonic image of raw nature, purity located in the wilderness of the past, uncontaminated by the human greed of industry.</span></h2>
@@ -324,8 +330,8 @@
 <div class="flexp">
 <div class="left"></div>
 <div id="part-2" class="subtitle">
-    <h1>Part <span class="title-num">&#10123;</span><br> 
-        The Death of Authenticity</h1></div>
+    <h1><em><span style="letter-spacing: -0.13em">P</span>art</em> <span class="title-num">&#10123;</span><br> 
+        The Death <em>of</em> Authenticity</h1></div>
     <div class="left"></div>
     <div class="article">
 <!--        <h1>PART II: THE DEATH OF AUTHENTICITY</h1>-->
@@ -348,7 +354,7 @@
 -->
         <div>
             <p>
-                <span class="emph">After Authenticity</span> by Toby Shorin makes sense of the fall of the Hipster as capital did what it does best, co-opting oppositional forces into itself, and “authenticity” became an aesthetic, a set of signifiers to be applied like a texture to any commodity. As these authenticity-signifiers entered public space as mainstream brand applications, the Hipster, deprived of its specificity, went extinct - along with the integrity of “authenticity” itself.
+                <span class="emph">After Authenticity</span> by Toby Shorin (2018) makes sense of the fall of the Hipster as capital did what it does best, co-opting oppositional forces into itself, and “authenticity” became an aesthetic, a set of signifiers to be applied like a texture to any commodity. As these authenticity-signifiers entered public space as mainstream brand applications, the Hipster, deprived of its specificity, went extinct - along with the integrity of “authenticity” itself.
             </p>
         </div>
         <div class="img-place" id="evolution-hipster" style="margin-top: 1em;">
@@ -424,7 +430,7 @@
         </div>
         <div class="img-cap" style="width: 100%; margin-top: .7em;"><p>Example of Premium Mediocre (a.k.a. Mass Indie, Fast Casual, Affordable Luxury) : McDonald's “Signature Crafted” menu + remodeled interiors</p></div>
         <div style="margin-top: 1em">
-            <p>“Premium mediocrity is a pattern of consumption that publicly signals upward mobile aspirations, with consciously insincere pretensions to refined taste, while navigating the realities of inexorable downward mobility with sincere anxiety. There are more important things to think about than actually learning to appreciate wine and cheese, such as making rent. But at least pretending to appreciate wine and cheese is necessary to not fall through the cracks in the API.” <br>- Venkatesh Rao</p>
+            <p><span style="margin-left: -5px"></span>“Premium mediocrity is a pattern of consumption that publicly signals upward mobile aspirations, with consciously insincere pretensions to refined taste, while navigating the realities of inexorable downward mobility with sincere anxiety. There are more important things to think about than actually learning to appreciate wine and cheese, such as making rent. But at least pretending to appreciate wine and cheese is necessary to not fall through the cracks in the API.” <br>- Venkatesh Rao</p>
         </div>
     </div>
 </div>
@@ -433,7 +439,7 @@
 <!--PART 3: THE NEW NATURAL-->
 <div class="flexp">
 <div class="left"></div>
-<div id="part-3" class="subtitle"><h1>Part <span class="title-num">&#10124;</span><em> The New Normcore Natural</em></h1></div>
+<div id="part-3" class="subtitle"><h1><em><span style="letter-spacing: -0.13em">P</span>art</em> <span class="title-num">&#10124;</span> The New Normcore Natural</h1></div>
     <div class="left"></div>
     <div class="article">
 <!--        <h1>THE NEW NORMCORE NATURAL</h1>-->
@@ -482,7 +488,7 @@
             Finally, the hipster has retreated into the shadows, Gen Z is here to party, and wants nothing to do with Mass Indie Millennial, can see right through it and its lame attempt at embodying authenticity through visual signals. We’re now in the world of post-authenticity. K-Hole introduces the word “normcore” in this 2013 trend report called Youth Mode. Normcore is the antithesis of the hipster; normcore is about adaptability, not exclusivity.</p>
         </div>
         <div style="margin-top: 1em;">
-            <p>“Once upon a time people were born into communities and had to find their individuality. Today people are born individuals and have to find their communities. Mass Indie responds to this situation by creating cliques of people in the know, while Normcore knows the real feat is harnessing the potential for connection to spring up. It’s about adaptability, not exclusivity.”<br>K-HOLE, Youth Mode</p>
+            <p><span style="margin-left: -5px"></span>“Once upon a time people were born into communities and had to find their individuality. Today people are born individuals and have to find their communities. Mass Indie responds to this situation by creating cliques of people in the know, while Normcore knows the real feat is harnessing the potential for connection to spring up. It’s about adaptability, not exclusivity.”<br>K-HOLE, Youth Mode</p>
         </div>
         <div class="pq" style="margin-top: 15%;"><h2>Each layer of design that aims to camouflage the commodity form adds a layer of opacity. Design itself, then, seems insincere. The apparent stripping-away of it enables the refreshing aura of transparency, the texture of post-authentic sincerity.</h2></div>
     </div>
@@ -546,7 +552,7 @@
 <div class="flexp">
 <div class="left"></div>
 <div id="part-4" class="subtitle">
-<h1>Part <span class="title-num">&#10125;</span><br> 
+<h1><em><span style="letter-spacing: -0.13em">P</span>art</em> <span class="title-num">&#10125;</span><br> 
         Post-Authentic Graphic Design</h1>    
 </div>
     <div class="left"></div>
@@ -624,7 +630,7 @@
         </div>
         <div style="margin-top: 48.5%;">
             <p>Jacob Lindgren, <span class="emph">Graphic Design's Factory Settings</span>, 2020 <br>Default Systems Design disgusts Rob Giampietro. And maybe we, graphic designers, could benefit from embracing design with an “automatic” approach when we’re designing for brands, to make our lives easier as we struggle to keep up with capital, as “clients ask for more, quicker, now.”<br><br>
-            “Self-organization education as one tool among many, which can be used to think through and act on these challenges. In order to do so we need to leave the factory, potentially by building our own school-as-exit. If we can’t leave, or decide to stay, we need to repurpose its machinery and organize ourselves appropriately.”
+            <span style="margin-left: -5px"></span>“Self-organization education as one tool among many, which can be used to think through and act on these challenges. In order to do so we need to leave the factory, potentially by building our own school-as-exit. If we can’t leave, or decide to stay, we need to repurpose its machinery and organize ourselves appropriately.”
             </p>
         </div>
         <div class="pq" style="margin-top: 40%;"><h2>Maybe we practice lazy-defaults-design for the clients who ask us for “more, quicker, now” and expect nothing more out of us than passive mockup-generation, so that we can reserve our energy to engage in projects that <em>need</em> a lot of creativity, projects whose purposes are to widen, instead of seal, the cracks in the capitalist real, so that we might again feel the breeze of the outside.</h2></div>
@@ -662,7 +668,7 @@
         </div>
     </div>
     
-    <h1 style="font-family: sans-serif; font-weight: 700;">BE THE PROGRAMMER THAT <a target="_blank" href="https://gist.github.com/melaniehoff/95ca90df7ca47761dc3d3d58fead22d4#-the-user-programs-and-the-programmer-uses-" style="text-decoration: underline; color: white;">YOU ALREADY ARE!</a></h1>
+    <h1 style="font-family: sans-serif; font-weight: 700;">BE THE PROGRAMMER THAT <a target="_blank" href="https://gist.github.com/melaniehoff/95ca90df7ca47761dc3d3d58fead22d4" style="text-decoration: underline; color: white;">YOU ALREADY ARE!</a></h1>
     <h1 class="alt">Automate your own processes...</h1>
     <div style="display: flex;">
         <div style="width: 100px; padding-left: 1em"><h1>&#10022;</h1></div>
@@ -715,7 +721,45 @@
 </div> 
 
 </div>
-    
+   
+    <script>
+        let articleFont = document.querySelector("body")
+        let toSans = function(){
+            articleFont.style.fontFamily = "sans-serif";
+            articleFont.style.fontSize = "1em";
+        }
+        let toSerif = function(){
+            articleFont.style.fontFamily = "serif";
+            articleFont.style.fontSize = "1.0725em";
+        }
+        let toCursive = function(){
+            articleFont.style.fontFamily = "cursive";
+            articleFont.style.fontSize = "1.1em";
+        }
+        let toMono = function(){
+            articleFont.style.fontFamily = "monospace";
+            articleFont.style.fontSize = "1.1em";
+        }
+        let toFantasy = function(){
+            articleFont.style.fontFamily = "fantasy";
+            articleFont.style.fontSize = "1.1em";
+        }
+        
+        if (document.getElementById("radio-sans").checked){
+            toSans();
+        } else if (document.getElementById("radio-serif").checked){
+            toSerif();
+        } else if (document.getElementById("radio-cursive").checked){
+            toCursive();
+        } else if (document.getElementById("radio-mono").checked){
+            toMono();
+        } else if(document.getElementById("radio-fantasy").checked){
+            toFantasy();   
+        }else{
+            articleFont.style.fontFamily = "sans-serif";
+            articleFont.style.fontSize = "1em";
+        }
+    </script>    
 <script>
 $(document).ready(function(){
     $("a").on('click', function(event) {
@@ -730,6 +774,11 @@ $(document).ready(function(){
         });
         }
     });
+    
+//    $("radio-serif").click(function(){
+////                console.log("hi")
+//                $(this).css({"color": "red", "font-size": "6em"})
+//            })
 
     $( "#accordion" ).accordion({
         event: "mouseover",

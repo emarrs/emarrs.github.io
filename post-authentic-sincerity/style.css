@@ -15,8 +15,10 @@ html {
 }
 
 html, body{
-    height: 100%;
+/*    height: 100%;*/
 /*    background: white;*/
+    width: 100%;
+    overflow-x: hidden;
 }
 
 button{
@@ -43,30 +45,19 @@ img{
 }
 
 
-p, h1, h2, h3{
+h1, h2, h3{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
 p{
+/*    font-family: sans-serif;*/
     line-height: 1.2;
     font-size: 1.2em;
     hyphens: auto;
 }
 
-/*
-.highlight{
-    background: blue;
-}
-*/
-/*
-.pq p{
-    font-family: serif;
-    font-size: 1.3em;
-    line-height: 1.11;
-}
-*/
 .pq h2{
     padding-left: 0;
     text-decoration: underline;
@@ -110,8 +101,8 @@ h1, h2, h3, a, a:visited{
 
 #main-title{
     margin-left: 23.5%;
-    margin-top: 2%;
-    padding-top: 2.2%;
+    margin-top: 1em;
+    padding-top: 2%;
 /*    border: 1px solid blue;*/
 /*    height: 600px;*/
     height: 41.5vw;
@@ -121,6 +112,8 @@ h1, h2, h3, a, a:visited{
 #main-title-img{
 /*    border: 1px solid blue;*/
     position: absolute;
+    top: 1em;
+    left: auto;
     margin-left: 23.5%;
     height: 41.75vw;
     width: 75%;
@@ -154,7 +147,7 @@ h1, h2, h3, a, a:visited{
     font-family: serif;
     color: blue; 
     font-weight: 100;
-     font-size: 9vw;
+     font-size: 10vw;
     padding: 0 0 0 1.5%;
     letter-spacing: -0.04em;
 }
@@ -165,7 +158,7 @@ h1, h2, h3, a, a:visited{
 }
 
 #article-container{
-    margin-top: 3%;
+    background: white;
 }
 
 div.part{
@@ -191,11 +184,11 @@ div.part{
 
 /*mods*/
 #top-mods{
+    background: white;
     margin-left: 23.5%;
-    margin-top: 1.5%;
-    margin-bottom: 3%;
 /*    border: 1px solid blue;*/
     display: flex;
+    padding: 1.5em 0 3em 0;
 }
 #top-mods div{
     width: 25%;
@@ -206,11 +199,12 @@ div.part{
 
 /*outline*/
 #outline{
+    margin-top: 1em;
     width: 21.5%;
     margin-left: 1.1%;
     position: fixed;
     z-index: 100;
-    max-height: 93%;
+    max-height: 96%;
     overflow: scroll;
     overflow-x: hidden;
     padding-right: 0.7%;
@@ -238,9 +232,10 @@ div.part{
 
 /*images and readings*/
 #right{
-    width: 11.3%;
+    width: 11.5%;
     position: fixed;
-    right: 0;
+    right: 0em;
+    margin-top: 1em;
     padding-right: 1.5%;
     float: right;
 /*    overflow: visible;*/
@@ -446,7 +441,7 @@ div.part{
 
 #nxt{
     background: blue;
-    margin-left: .7em;
+    margin-left: 0.95%;
 }
 #nxt .left{
     background: white;
@@ -460,7 +455,7 @@ div.part{
 }
 #nxt .article{
     padding: 2em;
-    width: 78%;
+    width: 77.25%;
 }
 #nxt .notes{
     width: 0%;
@@ -482,8 +477,8 @@ h1.indent{
 }
 #end-intro{
     display: flex;
-    margin-left: 22.5%; 
-    width: 77.5%
+    margin-left: 22.75%; 
+    width: 77.25%
 }
 #end-intro div{
     width: 50%;
@@ -492,7 +487,7 @@ h1.indent{
     padding: 2em; 
 }
 #end-intro h1{
-    font-size: 8em; color: white; font-weight: 100; font-family: serif;
+    font-size: 10vw; color: white; font-weight: 100; font-family: serif; padding: 0; margin-left: -0.7vw;
 }
 #end-intro p{
     color: white;
