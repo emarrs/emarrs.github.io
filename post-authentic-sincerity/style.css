@@ -113,24 +113,31 @@ h1, h2, h3, a, a:visited{
     margin-top: 2%;
     padding-top: 2.2%;
 /*    border: 1px solid blue;*/
-    height: 600px;
+/*    height: 600px;*/
+    height: 41.5vw;
     width: 75%;
 /*    background-image: url(imgs/veggiegrill.jpg);*/
 }
 #main-title-img{
+/*    border: 1px solid blue;*/
     position: absolute;
     margin-left: 23.5%;
-    height: 600px;
+    height: 41.75vw;
     width: 75%;
     background-image: url(imgs/banner-img-blue.png);
     background-size: contain;
+    background-repeat: no-repeat;
     opacity: 0;
     z-index: -1;
 }
 
 #main-title h1{
-    font-family: cursive;
-    font-size: 8.5em;
+/*    font-family: cursive;*/
+    font-family: serif;
+
+    letter-spacing: -0.04em;
+/*    font-size: 8.5em;*/
+    font-size: 10vw;
     font-weight: 100;
     line-height: 0.75;
     text-shadow: 0 0 30px white;
@@ -147,8 +154,9 @@ h1, h2, h3, a, a:visited{
     font-family: serif;
     color: blue; 
     font-weight: 100;
-    font-size: 8em;
+     font-size: 9vw;
     padding: 0 0 0 1.5%;
+    letter-spacing: -0.04em;
 }
 .title-num{
     font-size: 1.3em;
