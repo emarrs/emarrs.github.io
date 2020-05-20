@@ -10,7 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-<!--        <script src="sketch.js"></script>-->
+        <script src="sketch.js"></script>
 </head>  
     
 <style>
@@ -23,7 +23,7 @@
 <div id="outline">
 <div id="accordion">
     <h2><a href="#post-authentic-sincerity"><em>Post-Authentic Sincerity</em></a></h2>
-        <div class="content">&#10040; On Realness, Nature, Defaults, and Graphic Design?</div>
+        <div class="content">&#10040; On realness, nature, and defaults in the context of Graphic Design</div>
     <h2><a href="#part-1">PART I:<br> A BRIEF BREAKDOWN OF AUTHENTICITY</a></h2>
             <div class="content"  style="height: 120px; overflow-y: scroll;">&#10040; We often depend on a constructed real-fake binary to decode our world. We internalize different sensory associations with realness according to our belief systems. I argue that “authenticity” is a realness-descriptor that alludes to nature imagery, individualism, nostalgia, and the outside of consumer capitalism.</div>
         <h3><a href="#1-1">1.1 The Real-Fake Binary</a></h3>
@@ -135,11 +135,14 @@
 </div>
 <div id="main-title-img"></div>    
 <div id="main-title">
-    <h1>&nbsp;&nbsp;&nbsp;Post-Authentic <br>Sincerity<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;<em>A</em> <span style="font-family: sans-serif; font-size: 0.9em; font-weight:normal;">Premium <br>&nbsp;&nbsp;&nbsp;&nbsp; Generic</span> <em>Essay</em></h1>
+    <h1><span id="ln1"></span>Post-Authentic <br>Sincerity<br>
+        <span id="ln2"><em>a</em> <span style="font-family: sans-serif; font-size: 9.3vw; font-weight:normal; font-style: normal;">Premium <br>
+            <span id="ln3"></span>Generic</span> <em>Essay</em></span>
+    </h1>
 </div>   
  
 <div id="top-mods">
-    <div><p>Making sense of authenticity, realness, nature, and graphic design.<br>by Libby Marrs <a href="https://libbymarrs.net/" target="_blank"; style="text-decoration: none;">&#9758; &#9786; &#9756;</a></p></div>
+    <div><p>Making sense of realness, nature, and defaults in the context of graphic design.<br>by Libby Marrs <a href="https://libbymarrs.net/" target="_blank"; style="text-decoration: none;">&#9758; &#9786; &#9756;</a></p></div>
     <div><p>Written in the spring of 2020, and to be continued...!<br><br><span style="color: blue">.~*&#10040;.~*&#10052;.~*&#10047;.~*&#10018;</span></p></div>
         <div style="width: 50%;"><p>Default settings can be fun: The five "default" fonts in the HTML programming language are: <br>
             <input type="radio" name="foo"  id="radio-sans" checked onclick="toSans()"> Sans-serif (recommended), 
@@ -161,9 +164,7 @@
     </div>
     <div class="notes" style="margin-top: 0;">
         <div id="intro">
-            <p>Designers should recognize their collective role as “the oil in the machine of capitalism,” and how this machine dictates our perception of reality, enveloping us in an oppressive belief system which amplifies and depends on oppositional constructs such as authenticity/artificiality, nature/culture, and original/copy. To better understand this role in the context of 2020, we need to look at what has been going on in the marketplace, as capital reveals itself more and more deeply, inextricably bound to graphic design practice. I find brand strategy to be a useful lens to see how the “authenticity” construct in particular shapes the role of the graphic designer.
-
-</p>
+            <p>Designers should recognize their collective role as “the oil in the machine of capitalism,” and how this machine dictates our perception of reality, enveloping us in an oppressive belief system which amplifies and depends on oppositional constructs such as authenticity/artificiality, nature/culture, and original/copy. To better understand this role in the context of 2020, we need to look at what has been going on in the marketplace, as capital reveals itself more and more deeply, inextricably bound to graphic design practice. I find brand strategy to be a useful lens to see how the “authenticity” construct in particular shapes the role of the graphic designer.</p>
         </div>
     </div>
 </div>
@@ -723,26 +724,48 @@
 </div>
    
     <script>
-        let articleFont = document.querySelector("body")
+        let articleFont = document.querySelector("body");
+        let titleFont = document.querySelector("#main-title h1");
         let toSans = function(){
             articleFont.style.fontFamily = "sans-serif";
             articleFont.style.fontSize = "1em";
+            titleFont.style.fontFamily = "sans-serif";
+            titleFont.style.fontWeight = "normal";
+            titleFont.style.fontSize = "9.3vw";
+            document.getElementById("ln2").style.top = ".8em";
+            document.getElementById("ln3").style.paddingLeft = "9vw";
         }
         let toSerif = function(){
             articleFont.style.fontFamily = "serif";
             articleFont.style.fontSize = "1.0725em";
+            titleFont.style.fontFamily = "serif";
+            titleFont.style.fontSize = "10vw";
+            document.getElementById("ln2").style.top = ".6em";
+            document.getElementById("ln3").style.paddingLeft = "9vw";
         }
         let toCursive = function(){
             articleFont.style.fontFamily = "cursive";
             articleFont.style.fontSize = "1.1em";
+            titleFont.style.fontFamily = "cursive";
+            titleFont.style.fontSize = "9.7vw";
+            document.getElementById("ln2").style.top = ".7em";
+            document.getElementById("ln3").style.paddingLeft = "9vw";
         }
         let toMono = function(){
             articleFont.style.fontFamily = "monospace";
             articleFont.style.fontSize = "1.1em";
+            titleFont.style.fontFamily = "monospace";
+            titleFont.style.fontSize = "9.8vw";
+            document.getElementById("ln2").style.top = ".2em";
+            document.getElementById("ln3").style.paddingLeft = "3vw";
         }
         let toFantasy = function(){
             articleFont.style.fontFamily = "fantasy";
             articleFont.style.fontSize = "1.1em";
+            titleFont.style.fontFamily = "fantasy";
+            titleFont.style.fontSize = "9.5vw";
+            document.getElementById("ln2").style.top = ".8em";
+            document.getElementById("ln3").style.paddingLeft = "9vw";
         }
         
         if (document.getElementById("radio-sans").checked){
@@ -758,6 +781,10 @@
         }else{
             articleFont.style.fontFamily = "sans-serif";
             articleFont.style.fontSize = "1em";
+            titleFont.style.fontFamily = "sans-serif";
+            titleFont.style.fontSize = "9.3vw";
+            document.getElementById("ln2").style.top = ".8em";
+            document.getElementById("ln3").style.paddingLeft = "9vw";
         }
     </script>    
 <script>
