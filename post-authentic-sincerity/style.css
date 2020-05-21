@@ -234,11 +234,12 @@ div.part{
 
 /*images and readings*/
 #right{
-    width: 11.5%;
+    hyphens: auto;
+    width: 12.5%;
     position: fixed;
     right: 0em;
 /*    margin-top: 1em;*/
-    padding-right: 1.5%;
+    padding-right: .5%;
     float: right;
 /*    overflow: visible;*/
     cursor: crosshair;
