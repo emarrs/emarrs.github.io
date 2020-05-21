@@ -235,7 +235,7 @@ div.part{
 /*images and readings*/
 #right{
     hyphens: auto;
-    width: 12.5%;
+    width: 11.5%;
     position: fixed;
     right: 0em;
 /*    margin-top: 1em;*/
@@ -273,7 +273,7 @@ div.part{
 }
 
 #readingsbox{
-    max-height: 300px;
+    max-height: 200px;
     overflow-y: scroll;
 /*    border-bottom: 1px solid blue;*/
     background-color: white;
