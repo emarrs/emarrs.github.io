@@ -21,6 +21,34 @@ html{
     overflow-x: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+  .left, canvas, button, .notes, #article-container, #main-title, #main-title-img{
+      display: none;
+  }
+    #outline, #top-mods, #right{
+        visibility: hidden;
+    }
+    .mobile-only{
+        display: block;
+    }
+/*
+    #article-container{
+       flex-wrap: wrap;
+    }
+    #article-container div{
+        width: 100%;
+    }
+    #main-title, #main-title-img, #top-mods{
+    }
+*/
+}
+
+@media only screen and (min-width: 600px) {
+    .mobile-only{
+        display: none;
+    }
+}
+
 button{
     z-index: 200;
 }
@@ -211,6 +239,7 @@ div.part{
     overflow-x: hidden;
     padding-right: 0.7%;
 }
+
 #outline h2, #outline h3{
     padding: 0;
 }
@@ -235,15 +264,9 @@ div.part{
 /*images and readings*/
 #right{
     hyphens: auto;
-    width: 11.5%;
     position: fixed;
-    right: 0em;
-/*    margin-top: 1em;*/
     padding-right: .5%;
-    float: right;
-/*    overflow: visible;*/
     cursor: crosshair;
-/*    border: 1px solid blue;*/
     z-index: 150;
 }
 
@@ -257,6 +280,20 @@ div.part{
 
 .right-dropdown:hover{
     text-shadow: 0 0 3px blue;
+}
+/*desktop*/
+@media only screen and (min-width: 600px) {
+    #right{
+        right: 0em;
+        width: 11.5%;
+    }
+}
+/*mobile*/
+@media only screen and (max-width: 600px) {
+    #right{
+        right: 1em;
+        width: 7em;
+    }
 }
 
 #imgsbox{
@@ -449,7 +486,9 @@ div.part{
 #nxt h1{
     color: white;
     line-height: 1;
-    font-family: serif; font-size: 3.3em; font-weight: 100;
+    font-family: serif; 
+/*    font-size: 3.3em; */
+    font-weight: 100;
 /*    padding: 0;*/
 }
 #nxt .article{
