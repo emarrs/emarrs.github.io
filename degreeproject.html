@@ -11,20 +11,6 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>  
 <style>
-    #dp .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 100%;
-      width: auto;
-      padding: 6px;
-      margin-top: -22px;
-      color: #da0505;
-      font-weight: lighter;
-      font-size: 70px;
-      transition: 0.6s ease;
-      border-radius: 0 0px 0px 0;
-      user-select: none;
-}
     
     @media only screen and (min-width: 450px){
 
@@ -43,31 +29,9 @@
             border-top: 1px solid black;
             padding-bottom: 2%;
         }
-        #dp .slideshow-container{
-            padding-top: 0%;
-            width: 100%;
-        }
-        #dp .next {
-              right: 1%;;
-              border-radius: 3px 0 0 3px;
-        }
-
-        #dp .prev {
-                right: 93%;
-        }
     }
 /*    MOBILE*/
     @media only screen and (max-width: 450px){
-        #dp .next {
-              right: 1%;;
-              border-radius: 3px 0 0 3px;
-        }
-
-        #dp .prev {
-                right: 78%;
-        }
-        #dp .slideshow-container{
-        }
         #dp .flex-container div{
 /*            width: 100%;*/
         }
@@ -83,10 +47,10 @@
     
     <div class="menu-bar"> 
         <div class="nav-list">
-                <div class="backnext"><a href="memes.html"><p>prev<span class="body-serif">: Fun Web Experiments</span></p></a></div>
-                <div class="backnext"><a href="digiwearable.html"><p>next<span class="body-serif">: DigiPrinted Wearables</span></p></a></div>
+                <div class="backnext"><a href="posters.html"><p>prev<span class="body-serif">: Selected Posters</span></p></a></div>
+                <div class="backnext"><a href="funeralmuseum.html"><p>next<span class="body-serif">: Funeral Museum</span></p></a></div>
 
-                <div class="empty"><h1 class="menu-serif"><em>Degree Project</em></h1></div>
+                <div class="empty"><h1 class="menu-serif"><em>Post-Authentic Sincerity</em></h1></div>
 
                 <div class="backgd">
                     <div><a href="index.html"><p>home</p></a></div>
@@ -95,78 +59,38 @@
             </div>
     </div>
     
-
+<div style="padding: 0; margin: 0;"><a target="_blank" href="post-authentic-sincerity/index.html">
+    <img style="padding: 0; margin: 0;" src="gdpage/DP/gif-big.gif">
+    </a>
+</div>
     
     
    
-<div class="slideshow-container" id="dp">
 
-<div class="mySlides fade">
+
+<!--
+<div>
   <img src="gdpage/DP/DPproposal.png" style="width:100%">
 </div>
 
-<div class="mySlides fade">
+<div>
   <img src="gdpage/DP/DPproposal2.png" style="width:100%">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#8592;</a>
-<a class="next" onclick="plusSlides(1)">&#8594;</a>
-
-</div>
-
-<div class="flex-container">
-    <div id="dpcap">
-        <p><em><span class="body-serif">Graphic Design Degree Project.</span></em> Over my very last semester at <br>RISD, I am working on my degree project. Above is my proposal, in the <br>form of a double-sided piece of tabloid paper. Stay tuned for <br>more as I embark upon this wonderful journey.......
-        <br><em><span class="body-serif"><br>
-            Work in progress.</span><br></em>
-            2020.
-        </p>
-    </div>
-</div>
-<!--
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
-  <span class="dot" onclick="currentSlide(7)"></span> 
-  <span class="dot" onclick="currentSlide(8)"></span> 
-  <span class="dot" onclick="currentSlide(9)"></span> 
-  <span class="dot" onclick="currentSlide(10)"></span> 
-  <span class="dot" onclick="currentSlide(11)"></span> 
 </div>
 -->
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+<div class="flex-container">
+    <div id="dpcap">
+        <p><em><span class="body-serif">Graphic Design Degree Project.</span></em> For my degree project, I wrote an essay and programmed + designed a website to contain it. <br>The writing analyzes realness, nature, and default systems in the context of graphic design, and proposes a new post-authentic approach to graphic design which acknowledges its commodity form. Visit it <a style="text-decoration: underline;" target="_blank" href="post-authentic-sincerity/index.html">here.</a>
+        <br><em><span class="body-serif"><br>
+            Written, designed and programmed in the</span></em>
+            Spring of 2020.
+        </p>
+    </div>
+</div>
+
     
 </body>
 </html>
