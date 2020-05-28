@@ -78,11 +78,14 @@ h2, h3{
     margin: 0;
     padding: 0;
 }
+h2{font-size: 1.65vw;}
+h3{font-size: 1.3vw;}
 
 p{
 /*    font-family: sans-serif;*/
     line-height: 1.2;
-    font-size: 1.2em;
+/*    font-size: 1.2em;*/
+    font-size: 1.35vw;
     hyphens: auto;
 }
 
@@ -234,7 +237,7 @@ div.part{
     margin-left: 1.1%;
     position: fixed;
     z-index: 100;
-    max-height: 96%;
+    height: 96%;
     overflow: scroll;
     overflow-x: hidden;
     padding-right: 0.7%;
@@ -242,12 +245,13 @@ div.part{
 
 #outline h2, #outline h3{
     padding: 0;
+    font-size: 1.6vw;
 }
 
 .content{
     font-style: italic;
     color: blue;
-    font-size: 1.2em;
+    font-size: 1.3vw;
     line-height: 1em;
     padding-right: 1%;
     padding-top: 2%;

@@ -15,7 +15,7 @@ function setup() {
     textFont('Arial');
     textSize(14);
     fill(255);
-    text("<!DOCTYPE html> \n<html> \n<head> <meta charset= &#34; utf-8 &#34;> \n<meta http-equiv=X-UA-Compatible content=IE=edge> \n<title>Post-Authentic Sincerity</title> \n<meta name=description content= &#34; An essay about design, authenticity, and defaults &#34; > \n<meta name=viewport content=width=device-width, initial-scale=1.0> \n<link rel=stylesheet href=style.css> \n<body> \n<h1>" + textArray[randText] + "</h1> \n</body> \n</html>", 50, 250, windowWidth/8)
+    text("<!DOCTYPE html> \n<html> \n<head> <meta charset= &#34; utf-8 &#34;> \n<meta http-equiv=X-UA- Compatible content=IE=edge> \n<title>Post-Authentic Sincerity</title> \n<meta name=description content= &#34; An essay about design, authenticity, and defaults &#34; > \n<meta name=viewport content=width=device- width, initial-scale=1.0> \n<link rel=stylesheet href=style.css> \n<body> \n<h1>" + textArray[randText] + "</h1> \n</body> \n</html> \n \n \nClick around to dissolve this layer. Or, just press the button below.", 50, 25, windowWidth/8)
     
     fill(0,0,255);
     stroke(255);
@@ -30,13 +30,14 @@ function setup() {
 //    textStyle(ITALIC);
     textAlign(CENTER);
     textSize(30);
-//    textLeading(90);
-    text('Click around! Then click on the button to the left.',x+w / 2,windowHeight - 85)
+
+//    text('Click around',x+w / 2,windowHeight - 85)
 //    text(textArray[randText],x+w / 2,windowHeight - 85)
     
-    button = createButton('click for full interactivity!');
-    button.position(50,windowHeight-90,'fixed');
+    button = createButton('click here for full interactivity!');
+    button.position(50,y+h-10,'fixed');
     button.mousePressed(skipIntro);
+    
 }
 
 function skipIntro(){
