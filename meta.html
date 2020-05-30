@@ -12,10 +12,7 @@
 </head>
 
 <style>
-    #metadescript{
-/*        justify-content: space-between;*/
-    }
-
+@media only screen and (min-width:450px){ 
     #metadescript div{
         width: 33.33%;       
     }
@@ -23,7 +20,7 @@
     #metadescript p{
         padding: 0 8% 6% 10%;
     }
-    
+
     .bl{
         border-left: 1px solid black;
     }
@@ -33,24 +30,31 @@
     .bb{
         border-bottom: 1px solid black;
     }
-
-
-    @media only screen and (min-width:450px){ 
-        #niyapix{
-/*            width: 66.66%;*/
-/*
-            width: 790px;
-            margin: auto;
-*/
-            }
+    #p2{
+        width: 33.33%; border-right: 1px solid black;
     }
+    #p2 p{
+        padding: 9%;
+    }
+}
+
+
+@media only screen and (max-width:450px){ 
+    #metadescript div{
+        border-bottom: 1px solid black;
+    }
+
+    #metadescript div{
+        width: 100%;       
+    }
+}
 </style>
     
 <body>
     <div class="menu-bar" style="position: absolute; width: 100%;"> 
         <div class="nav-list">
-                <div class="backnext"><a href="nopostershow.html"><p>prev<span class="body-serif">: No <br>Poster Show</span></p></a></div>
-                <div class="backnext"><a href="cbcintro.html"><p>next<span class="body-serif">: Neoliberal Outfitters</span></p></a></div>
+                <div class="backnext"><a href="nopostershow.html"><p>prev<span class="body-serif">: <span class="mobile"><br></span>No Poster Show</span></p></a></div>
+                <div class="backnext"><a href="cbcintro.html"><p>next<span class="body-serif">: <span class="mobile"><br></span>Neoliberal Outfitters</span></p></a></div>
 
                 <div class="empty"><h2 class="menu-serif"><em>Hierarchy of Need$</em></h2></div>
 
@@ -63,7 +67,7 @@
     
 <img src="META/meta.gif">
     
-    <div class="bb" style="width: 100%; font-family: serif; padding-top: 3%;"><p style="padding-left: 3%;"><em>Hierarchy of Needs</em> (Jacket)</p></div>
+    <div class="desktop bb" style="width: 100%; font-family: serif; padding-top: 3%;"><p style="padding-left: 3%;"><em>Hierarchy of Needs</em> (Jacket)</p></div>
     
 <div class="flex-container" id="metadescript">
     <div style="padding-top: 2%;"><img src="META/NEEDS-01.png"></div>
@@ -80,7 +84,7 @@
     </div>
     
     <div class="bb">
-        <p style="padding-top: 4%; padding-bottom: 0;"><span class="body-serif">Part One: The Jacket</span><br>-->    I created a wearable package for the products I mapped out within the objectified hierarchy of needs. Packaging them together as a wearable brings the human body into the conversation, and how it interacts with products to satisfy its needs.<br>   
+        <p style="padding-top: 4%;"><span class="body-serif">Part One: The Jacket</span><br>-->    I created a wearable package for the products I mapped out within the objectified hierarchy of needs. Packaging them together as a wearable brings the human body into the conversation, and how it interacts with products to satisfy its needs.<br>   
         -->    I positioned each product on the jacket according to how easy it would be to reach while wearing it, referencing my interpretation of Maslow's hierarchy of needs. <br>
         The front is full of easy-to-reach, instantly-gratifying, and cheap products such as junk food, makeup, and temporary warmth/heat, that aim to satisfy the two lowest/primary levels of needs: physiological and safety/security.<br>
         -->    The back of the jacket (hard to reach) contains products that address lower-level needs in with more long-term and expensive approaches, such as organic food and nice housing, as well as objects attempting to address the two higher-level deficiency needs: belonging/love and esteem/prestige.</p>
@@ -88,7 +92,7 @@
     <div class="bb"><img src="META/Screen%20Shot%202019-03-25%20at%201.41.18%20PM.png"></div>
     <div class="bb"></div>
 </div>
-<div class="flex-container">
+<div class="flex-container" class="desktop">
 <!--    MAKE THESE IMGS RECTANGLE AGAIN-->
     <div style="width: 66.66%;"><img src="META/front.JPG"></div>
     <div class="bl" style="width: 33.33%; padding: 4%;">
@@ -139,8 +143,8 @@
 </div>
     
 <div class="flex-container bt" style="width: 100%; ">
-        <div style="width: 33.33%; border-right: 1px solid black;">
-            <p style="padding:9%; pa"><span class="body-serif">Part Two: Jacket Consume (Jacket Destroy)</span><br>
+        <div id="p2">
+            <p><span class="body-serif">Part Two: Jacket Consume (Jacket Destroy)</span><br>
             The next logical step was to introduce an actual body to the jacket of packaged needs, and consume it. I partnered with Niya Sun to create an "unpackaging video," which ended up becoming a performance in itself. I recorded Niya wearing the jacket, unpackaging and consuming each product one by one, first getting through the front then moving on to the back, until the jacket is empty and reduced to nothing but a pile of plastic on the floor.
             </p>
     </div>
@@ -157,9 +161,9 @@
 
 
     <div class="mobile">
-        <iframe width="288px" height="200px" src="https://www.youtube.com/embed/AMbFhxNne0s" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AMbFhxNne0s" frameborder="0" allowfullscreen></iframe>
         
-        <p style="padding: 0; margin-top: 15px;"><em>Video collaboration with <a href="https://niya-sun.com/" target="_blank">Niya Sun</a><br>
+        <p><em>Video collaboration with <a href="https://niya-sun.com/" target="_blank">Niya Sun</a><br>
             Music by Lately Kind Of Yeah<br>
             Background footage from <a href="https://www.youtube.com/watch?v=P4vooFB14Z8" target="_blank">"The Cult of Consumerism"</a> documentary by Steve Brown 
         </em></p>
@@ -168,7 +172,7 @@
 
 </div>
     
-<div class="flex-container" id="niyapix">
+<div class="flex-container desktop" id="niyapix">
     <div class="bt" style="width: 66.66%"><img src="META/niya.JPG"></div>
         <div class="bl" style="width: 33.33%"></div>
     <div class="bt bb" style="width: 33.33%"><img src="META/niya1.JPG"></div>

@@ -7,97 +7,80 @@
         <meta name="description" content="a girl graphix designer.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="webstyle.css">
-        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
 </head>  
     
     
 <style>
-    #menu-gd{
-        font-family: 'Petit Formal Script', serif;
-        font-weight: 100;
-        font-size: 3em;
-        color: black;
-        animation: color 10s alternate;
-        -webkit-animation: color 10s alternate;
-/*        text-shadow: 0 0 15px red;*/
-        position: static;
-        line-height: 1em;
-        margin: 10px 0px;
+    #gdpg, #gdpg body{
+        height: 100vh;
+        overflow: scroll;
     }
-    #gdpg h1{
-        color: black; 
-        text-align: left;
-        font-weight: lighter;
-        font-size: 1.4em;
-        line-height: 1em;
-        margin: 0 0 0px 0;
-        text-shadow: none;
-    }
-    
-    #gdpg h1:hover{
-        color: #da0505; 
+    #gdpg a:hover{
+        color: #da0505;
         text-shadow: 0 0 25px red;
     }
-    
-    #gdpg .flex-container{
-        display: block;
-    }
     @media only screen and (min-width: 450px){
-        #gdpg .flex-container div {
-            border-radius: 50%;
-        }
-
         #gdpg .flex-container{
-            padding: 2%;
-            position: absolute;
-            bottom: 5%;
-            left: 2%;
+            flex-wrap: nowrap;
         }
-
-        #gdpg .flex-container img {
-            max-height: 100%;
-            width: inherit;
-            margin: auto;
+        #gdpg h1{
+            font-size: 1.55vw;
+            margin: 0;
+            line-height: 1;
+        }
+        #left-list{
+            padding: 0 1em;
+            border-left: 1px solid black;
+            height: 85vh;
+            overflow: scroll;
+            margin-top: 1em;
+            margin-left: 1em;
+            width: 12.25%;
+        }
+        #mid-list{
+            padding: 0 1em;
+            border-left: 1px solid black;
+            height: 85vh;
+            overflow: scroll;
+            margin-top: 1em;
+            width: 18.25%;
+        }
+        #work-list{
+/*            margin-left: 13.5%;*/
+            padding: 0 1em;
+            border-left: 1px solid black;
+            height: 85vh;
+            overflow: scroll;
+            margin-top: 1em;
+            width: 18.25%;
         }
         
         #gdpg .center-photo{
-            position: absolute;
-            padding: 2%;
-            top: 5%;
-            left: 29%;
-            width: 45%;
+            height: 85vh;
+            width: 50%;
+            margin-top: 1em;
+            border-left: 1px solid black;
+            overflow: scroll;
+        }
+        #gdpg .center-photo img{
+            float: right;
+            padding: 0 1em;
         }
 
-        .tall img{
-            max-height: 10%;
-        }
     }
     @media only screen and (max-width: 450px){
-        #gdpg body{
-        }
-        
-        #gdpg .menu{
-            margin: 3%;
-            position:static;
-        }
-
-        #gdpg .flex-container{
+        #work-list{
             width: 100%;
-            bottom: 5%;
+            margin-bottom: 3vh;
         }
 
-        #gdpg h1{
-/*            font-size: 1em;*/
-        }
-
-        #gdpg .flex-container div{
-            margin-top: auto;
-            margin-left: 20px;
-        }
+    #gdpg h1{
+        font-size: 5vw;
+        line-height: 0.9;
+    }
         #gdpg .center-photo{
             padding: 2%;
-            margin: 10% 0;
+            margin: 5vh 0;
         }
     }
     
@@ -106,125 +89,70 @@
     
     
 <body>
-    <div class="menu">   
-<!--        <a href="apparelpg.html"><p>apparel</p></a>-->
-        <h2 id="menu-gd">GR4PHIC<br> DESIGN</h2>
-        <a href="index.html"><p>home</p></a>
-        <a href="about.html"><p>about</p></a>
-    </div>
-    
-    <div class="center-photo">
-        <img src="about/bananabread.png">
-<!--        <img src="gdpage/gdsensibility.png">-->
-    </div>
-    
-    
-    
+<div class="menu-bar"> 
+        <div class="nav-list">
+            <div class="backnext desktop"><p>LibbyMarrs.net<br> Updated 5.30.20</p></div>
+            <div class="backnext desktop"><h2 class="desktop menu-serif" style="width: 50vw;"><em>Graphic Design</em></h2></div>
+                <div class="empty" style="border-bottom: 0;"><h2 class="mobile menu-serif"><em>Graphic Design</em></h2></div>
+
+                <div class="backgd">
+                    <div><a href="index.html"><p>Home</p></a></div>
+                    <div><a href="about.html"><p>About</p></a></div>
+                </div>
+            </div>
+</div>
     
 <div class="flex-container">
-    <div>
-        <a href="posters.html"><h1>Selected Posters</h1></a>
+<div id="left-list">
+    <img src="gdpage/gdsensibility.png" style="padding: 0 0 1vh 0;">
+    <h1>You can explore some of my graphic design work right here ---></h1>
+</div>
+<div id="work-list"><h1>
+        <a href="posters.html">1. Selected Posters</a><br>
+        <a href="degreeproject.html">2. Post-Authentic Sincerity</a><br>
+        <a href="funeralmuseum.html">3. Funeral Museum</a><br>
+        <a href="contrefacon.html">4. Contre la Contrefaçon</a><br>
+        <a href="bpr.html">5. Brown Political Review</a><br>
+        <a href="ethintro.html">6. Photographic Other / Author </a><br>
+        <a href="nopostershow.html">No Poster Show</a><br>
+        <a href="meta.html">7. Hierarchy of Needs</a><br>
+        <a href="cbcintro.html">8. Neoliberal Outfitters</a><br>
+        <a href="zombie.html">Zombie Mods vs. Pomo Vampires</a><br>
+        <a href= "WTpg.html">9. Wild Typography</a><br>
+        <a href="yummypg.html">10. Yummy (A Cookbook)</a><br>
+        <a href="craigslist.html">11. Craigslist Reflections</a><br>
+        <a href= "memes.html">12. Fun Web Experiments</a><br>
+        <a href="digiwearable.html">13. DigiPrinted Wearables</a>
+    </h1>
+    <h1 style="padding-top: 4.5vw;">
+    <strike>14. Bootleg Book</strike> (soon)<br>
+    <strike>15. Politics Rewired</strike> (soon)
+    </h1>
     </div>
-    <div>
-        <a href="degreeproject.html"><h1>Post-Authentic Sincerity</h1></a>
-    </div>
-    <div>
-        <a href="funeralmuseum.html"><h1>Funeral Museum</h1></a>
-    </div>
-    <div>
-        <a href="contrefacon.html"><h1>Contre la Contrefaçon</h1></a>
-    </div>
-    <div>
-        <a href="bpr.html"><h1>Brown Political Review</h1></a>
-    </div>
-    <div>
-        <a href="ethintro.html"><h1>Photographic Other / Author </h1></a>
-    </div>
-    <div>
-        <a href="nopostershow.html"><h1>No Poster Show</h1></a>
-    </div>
-    <div>
-        <a href="meta.html"><h1>Hierarchy of Needs</h1></a>
-    </div>
-    <div>
-        <a href="cbcintro.html"><h1>Neoliberal Outfitters</h1></a>
-    </div>
-    <div>
-        <a href="zombie.html"><h1>Zombie Mods vs. Pomo Vampires</h1></a>
-    </div>
-    <div>
-        <a href= "WTpg.html"><h1>Wild Typography</h1></a>
-    </div>
-    <div class="top right">
-        <a href="yummypg.html"><h1>Yummy (A Cookbook)</h1></a>
-    </div>
-    <div>
-        <a href="craigslist.html"><h1>Craigslist Reflections</h1></a>
-    </div>
-    
-<!--
-    <div>
-        <a href="gg.html"><h1>Genuine & Ginger</h1></a>
-    </div>
--->
-    <div>
-        <a href= "memes.html"><h1>Fun Web Experiments</h1></a>
-    </div>
-    
-    <div>
-        <a href="digiwearable.html"><h1>DigiPrinted Wearables</h1></a>
-    </div>
-<!--
-    </div>
-        <div>
-        <a href="https://marrsec4.wixsite.com/mysite" target="_blank"><h1>PROTEST SIGN<br />CAMPAIGN</h1></a>
-    </div>
--->
-<!--
-            <div class="best">
-        <a href="arthurpg.html"><img src="gdpage/arthur/arthur.gif" style="margin-bottom: 15%;"><h1>NIHILIST<br />ARTHUR</h1></a>
-    </div>
--->
-<!--
-            <div>
-        <a href="risite.html"><img src="risitethumb.png" style="border: 4px dashed white; padding: 0;"><h1>WTD IN RI TODAY?<br />WEB DESIGN</h1></a>
-    </div>
--->
-<!--
-        <div>
-        <a href="sunsetsun.html"><h1>TYPOGRAPHIC<br />MUSIC VIDEO</h1></a>
-    </div>
--->
-<!--
-            <div>
-        <a href="#"><img src="gdpage/smileu.png" style="padding: 15%;"><h1>COMING<br />SOON</h1></a>
-    </div>
-                <div>
-        <a href="#"><img src="gdpage/smiley.png" style="padding: 15%;"><h1>COMING<br />SOON</h1></a>
-    </div>
--->
-        
-    ...
-    <div>
-        <a href="#"><h1>Bootleg Book ( soon ;) )</h1></a>
-    </div>
-    
-    <div>
-        <a href="#"><h1>Politics Rewired ( soon !! )</h1></a>
-    </div>
-<!--
-    <div class="bottom left">
-        <a href="#"><h1>NO POSTER<br />SHOW</h1></a>
-    </div>
--->
-<!--
-    <div>
-        <a href="#"><h1>COPYCOPIA<br />DOT NET</h1></a>
-    </div>
--->
+<div id="mid-list">
+    <h1>I think you'll have so much fun looking at my graphic design work. How could you not?</h1>
+    <h1 style="padding-top: 32vw;">Enjoy some random cute vector moments right here ----></h1>
     
 </div>
 
+    <div class="center-photo">
+        <img style="margin-bottom: 1em;" src="gdpage/imgs/bananabread.png">
+        <a href="posters.html"><img src="gdpage/imgs/electivesposter_4.jpg"></a>
+        <a href="degreeproject.html">
+            <img src="gdpage/imgs/post-auth-thumb.png">
+            <img src="gdpage/imgs/post-auth-2.png">
+        </a>
+        <img src="gdpage/imgs/brand1.PNG">
+        <img src="gdpage/imgs/bread2.png">
+        <img src="gdpage/imgs/Asset%201.PNG">
+        <img src="gdpage/imgs/Asset%202.PNG">
+        <img src="gdpage/imgs/band15@4x.PNG">
+        <img src="gdpage/imgs/brand1.PNG">
+        <a href="ethintro.html"><img src="gdpage/imgs/eth.png"></a>
+        
+<!--        <img src="gdpage/gdsensibility.png">-->
+    </div>
+</div>
 
 
             

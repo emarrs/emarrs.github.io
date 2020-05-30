@@ -50,7 +50,7 @@ body {
     .backgd{
         width: 25%;
         text-align: right;
-        margin: 1em 0 1em 2em;
+        margin: 1em 0 1em 0em;
     }
     .empty{
         width: 50%;
@@ -74,7 +74,7 @@ body {
 
     .backnext{
         width: 50%;
-        text-align: left;
+        text-align: center;
         border-left: 1px solid black;
         padding: 0.5em;
 /*
@@ -114,19 +114,10 @@ body {
 */
 }
 
-.menu{
-/*    float: right;*/
-    text-align: right;
-    position: absolute;
-    right: 2%;
-    top: 2%;
-}
 
 .menu-bar{
     text-align: center;
     border-bottom: 1px solid black;
-/*    padding: 1em;*/
-/*    position: fixed;*/
 }
 
 
@@ -135,53 +126,30 @@ body {
     color: #da0505;
 }
 
-.menu-reg{
-        font-family: 'Petit Formal Script', serif;
-        font-weight: 100;
-        font-size: 3em;
-        color: black;
-        margin: 0;
-        animation: color 10s alternate;
-        -webkit-animation: color 10s alternate;
-/*        text-shadow: 0 0 15px red;*/
-        position: static;
-        line-height: normal;
-        margin: 10px 0px;
-    }
 
 .menu-serif{
         font-family: serif;
         font-weight: 100;
-        font-size: 3em;
+        letter-spacing: -1.5pt;
         color: black;
         margin: auto;
         animation: color 10s alternate;
         -webkit-animation: color 10s alternate;
-/*        text-shadow: 0 0 15px red;*/
-/*        position: static;*/
         line-height: 0.9em;
-/*        margin: 5px 0px 10px 0px;*/
     }
+@media only screen and (min-width: 450px){
+.menu-serif{font-size: 3.5vw;}
+}
+@media only screen and (max-width: 450px){
+.menu-serif{font-size: 3em;}
+}
+
 
 .menu-serif:hover{
     color: #da0505;
     text-shadow: 0 0 25px red;
 }
 
-.menu p{
-    margin-top: 0%;
-    font-size: 1em;
-/*
-    font-family: 'Nanum Gothic Coding', monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-*/
-}
-
-.menu p:hover{
-   text-shadow: 0 0 15px red;
-    color: #da0505;
-}
 
 
 ul{
@@ -198,7 +166,8 @@ img{
 }
 
 p{
-    font-size: 1em;
+/*    font-size: 1em;*/
+    font-size: 1.125vw;
     font-family: sans-serif;
     line-height:1.3;
     margin-top: 0;
