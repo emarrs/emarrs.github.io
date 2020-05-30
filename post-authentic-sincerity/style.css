@@ -5,6 +5,8 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 *{
@@ -14,12 +16,6 @@ html {
 /*    color: blue;*/
 }
 
-html{
-/*    height: 100%;*/
-/*    background: white;*/
-    width: 100%;
-    overflow-x: hidden;
-}
 
 @media only screen and (max-width: 600px) {
   .left, canvas, button, .notes, #article-container, #main-title, #main-title-img{
@@ -138,6 +134,7 @@ h1, h2, h3, a, a:visited{
 /*    height: 600px;*/
     height: 41.5vw;
     width: 75%;
+    pointer-events: none;
 /*    background-image: url(imgs/veggiegrill.jpg);*/
 }
 #main-title-img{
