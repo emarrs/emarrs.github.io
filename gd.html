@@ -19,6 +19,7 @@
         color: #da0505;
         text-shadow: 0 0 25px red;
     }
+/*    DESKTOP*/
     @media only screen and (min-width: 450px){
         #gdpg .flex-container{
             flex-wrap: nowrap;
@@ -68,19 +69,27 @@
         }
 
     }
+/*    MOBILE*/
     @media only screen and (max-width: 450px){
-        #work-list{
-            width: 100%;
-            margin-bottom: 3vh;
+        #gdpg .menu-bar{
+            position:fixed;
+            background: #f7ab9b;
+            width: 100vw;
         }
-
-    #gdpg h1{
-        font-size: 5vw;
-        line-height: 0.9;
-    }
+        #work-list{
+            border-top: 1px solid black;
+            position: fixed;
+            bottom: 0vw;
+            width: 100%;
+            padding: 3vw;
+            background: #f7ab9b;
+        }
+        #gdpg h1{
+            font-size: 4.5vw;
+            line-height: 1;
+        }
         #gdpg .center-photo{
-            padding: 2%;
-            margin: 5vh 0;
+            margin: 18.5vh 0;
         }
     }
     
@@ -103,7 +112,7 @@
 </div>
     
 <div class="flex-container">
-<div id="left-list">
+<div id="left-list" class="desktop">
     <img src="gdpage/gdsensibility.png" style="padding: 0 0 1vh 0;">
     <h1>You can explore some of my graphic design work right here ---></h1>
 </div>
@@ -114,29 +123,30 @@
         <a href="contrefacon.html">4. Contre la Contrefaçon</a><br>
         <a href="bpr.html">5. Brown Political Review</a><br>
         <a href="ethintro.html">6. Photographic Other / Author </a><br>
-        <a href="nopostershow.html">No Poster Show</a><br>
-        <a href="meta.html">7. Hierarchy of Needs</a><br>
-        <a href="cbcintro.html">8. Neoliberal Outfitters</a><br>
-        <a href="zombie.html">Zombie Mods vs. Pomo Vampires</a><br>
-        <a href= "WTpg.html">9. Wild Typography</a><br>
-        <a href="yummypg.html">10. Yummy (A Cookbook)</a><br>
-        <a href="craigslist.html">11. Craigslist Reflections</a><br>
-        <a href= "memes.html">12. Fun Web Experiments</a><br>
-        <a href="digiwearable.html">13. DigiPrinted Wearables</a>
+        <a href="nopostershow.html">7. No Poster Show</a><br>
+        <a href="meta.html">8. Hierarchy of Needs</a><br>
+        <a href="cbcintro.html">9. Neoliberal Outfitters</a><br>
+        <a href="zombie.html">10. Zombie Mods vs. Pomo Vampires</a><br>
+        <a href= "WTpg.html">11. Wild Typography</a><br>
+        <a href="yummypg.html">12. Yummy (A Cookbook)</a><br>
+        <a href="craigslist.html">13. Craigslist Reflections</a><br>
+        <a href= "memes.html">14. Fun Web Experiments</a><br>
+        <a href="digiwearable.html">15. DigiPrinted Wearables</a>
     </h1>
-    <h1 style="padding-top: 4.5vw;">
-    <strike>14. Bootleg Book</strike> (soon)<br>
-    <strike>15. Politics Rewired</strike> (soon)
+    <h1 class="desktop" style="padding-top: 4.5vw;">
+    <strike>16. Bootleg Book</strike> (soon)<br>
+    <strike>17. Politics Rewired</strike> (soon)
     </h1>
     </div>
-<div id="mid-list">
+<div id="mid-list" class="desktop">
     <h1>I think you'll have so much fun looking at my graphic design work. How could you not?</h1>
     <h1 style="padding-top: 32vw;">Enjoy some random cute vector moments right here ----></h1>
     
 </div>
 
     <div class="center-photo">
-        <img style="margin-bottom: 1em;" src="gdpage/imgs/bananabread.png">
+        <img class="" style="padding: 0 2.5em 2.5em 2.5em;" src="gdpage/imgs/bananabread.png">
+<!--        <img class="mobile" style="padding: 5vh 20vw 10vw 20vw;" src="gdpage/imgs/bananabread.png">-->
 <!--        <img src="gdpage/imgs/bandana1.PNG">-->
         <a href="posters.html"><img style="width: 100%;" src="gdpage/imgs/electivesposter_4.jpg"></a>
         <a href="degreeproject.html">
