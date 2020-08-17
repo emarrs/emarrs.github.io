@@ -78,6 +78,7 @@ body {
     }
     .backnext p{
         line-height: 1.3em;
+        padding-right: 1em;
     }
     .backgd{
         width: 100%;
