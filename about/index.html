@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html id="about"> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>~*.~about**LibbyMarrs.~;*</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+</head>  
+    
+<style>
+/*    MOBILE*/
+    @media only screen and (max-width: 450px){
+        #aboutblurb{
+            font-size:3.75vw;
+            width: 90vw;
+            height: 90vw;
+            margin: auto;
+            border: 1px solid black;
+            padding: 1em;
+        }
+        #about .flex-container{
+            flex-direction: column-reverse;
+            margin-left: 1em;
+            padding: 1em 1em 0 0;
+        }
+        #about .center-photo{
+            width: 0vw;
+        }
+    }
+    
+    @media only screen and (min-width: 450px){
+        #about .center-photo{
+            width: 42vw;
+            z-index: -10;
+        }
+    
+        #about .flex-container{
+            flex-direction: row-reverse;
+            margin-left: 12vw;
+            padding: 1em 1em 0 0;
+        }
+
+        #aboutblurb{
+            width: 42vw;
+            height: 42vw;
+            margin: auto;
+            border: 1px solid black;
+            padding: 1em; 
+        }
+
+        #aboutblurb h1{
+/*            letter-spacing: 0.5pt;*/
+            color: black; font-size: 1.4em; font-family:serif; 
+            line-height: 1.2;
+            text-shadow: 0px 0px 0px;
+        }
+
+        #contact{
+            width: 10%;
+            font-size: 1.5em;
+            letter-spacing: 1pt;
+            padding-top: 0%;
+        }
+
+        #contact a{
+            text-decoration: underline;
+        }
+    }
+
+</style>
+    
+<div class="menu-bar"> 
+        <div class="nav-list">
+            <div class="backnext desktop"><p>LibbyMarrs.net<br> Updated 5.30.20</p></div>
+            <div class="backnext desktop"><h2 class="desktop menu-serif" style="width: 50vw;"><em>Libby Marrs</em></h2></div>
+                <div class="empty" style="border-bottom: 0;"><h2 class="mobile menu-serif"><em>Libby Marrs</em></h2></div>
+
+                <div class="backgd">
+                    <div><a href="../index.html"><p>Home</p></a></div>
+                    <div><a href="../graphic-design/index.html"><p>Graphic Design</p></a></div>
+                </div>
+            </div>
+    </div>
+    
+<body>
+    
+
+<div class="flex-container">
+    <div class="center-photo">
+    <img src="trash.png">
+</div>
+    <div id="aboutblurb">
+        <h1>
+            A <strike>senior in</strike> <span style="color: #da0505; text-shadow: 0 0 1px red">fresh graduate of</span> Graphic Design at Rhode Island School of Design, Libby enjoys print and web publications, complex information systems, critical and creative writing, drawing and arranging letterforms, experimenting with code, and making clothes. We hear she comes from the "desert" of New Mexico. She is proud that she programmed this website all by herself but is sorry that it is kind of clunky...why not send her some mail?<br><br>emarrs@risd.edu<br><a href="https://www.are.na/libby-marrs">Are.na</a><br><a href="https://www.instagram.com/m4rrs/">Instagram</a></h1>
+    </div>
+    
+    
+    
+<!--
+    <div id="photo">
+        <div class="tooltip"><img src="about/me.png"><span class="tooltiptext">When she had short hair</span></div>
+    </div>
+-->
+    
+<!--
+    <div id="contact">
+        <div style="padding-left: 20px;">
+        emarrs@risd.edu
+            <a href="about/marrs_resume1.pdf" download>resume</a></div>
+    </div>
+-->
+
+</div>
+
+    
+
+        
+</body>
+</html>

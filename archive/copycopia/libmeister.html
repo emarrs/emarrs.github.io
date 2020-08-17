@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Libmeister & Libby</title>
+        <meta name="description" content="a girl graphix designer.">
+        <link rel="stylesheet" href="libmeister.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:400,400i,900,900i" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>  
+    
+<body>
+
+    <div id="video-container">
+        
+        <div id="rotate">
+            <img src="l.png">
+        </div>
+        
+            <video autoplay muted loop id="myVideo">
+      <source src="libmeister2.mp4" type="video/mp4">
+    </video>
+        
+    </div>
+    
+    
+    
+    
+    <div id="footer">
+        
+    <div style="width: 130px; height: 30px;">
+            <img class="myImg" src="work_1.png">
+    </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+        </div>
+        
+        
+    <div style="width: 150px; height: 30px;" >
+            <img class="myImg" src="about_1.png">
+    </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+        </div>
+        
+        
+        
+    <div style="width: 130px; height: 30px;">
+            <img class="myImg" src="news.png">
+    </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+        </div>
+
+        
+        
+        
+    <div style="width: 130px; height: 30px;">
+            <img class="myImg" src="press.png">
+    </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+        </div>
+        
+        
+        <div style="margin-left: 30%; height: 50px;">
+            <a href="lib.by.html" target="_blank">
+            <img src="logo.png">
+            </a>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+    
+</body>
+</html>
+
