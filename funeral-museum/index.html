@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html id="funeral"> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Funeral*Museum.~*~.Libby Marrs.~*~.</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+</head>  
+    
+<style>
+    #funeral{
+        color: white;
+        background-color: black;
+    }
+    #funeral p{
+        color: white;
+    }
+    #funeral h2{
+        color: white;
+        animation: none;
+    }
+    #funeral .menu-bar{
+        border-color: white;
+    }
+    @media only screen and (max-width: 910px){
+        #funeral .flex-container{
+            border-top: 1px solid white;        }
+        #funeral .next{
+            right: 7px;
+        }
+        #funeral .prev{
+            left: 5px;
+        }
+        #funeral .slideshow-container{
+            padding: 5vh 0;
+        }
+    }
+    
+    @media only screen and (min-width: 910px){
+        #funeral .flex-container{
+            border-top: 1px solid white;
+            padding: 3% 50% 5% 4%;
+        }
+        #funeral .slideshow-container{
+            width: 97%;
+        }
+        #funeral .prev{
+            right: 99%;
+        }
+        #funeral .next{
+            right: 0;
+        }
+    }
+    
+</style>
+    
+<body>
+    
+    <div class="menu-bar"> 
+            <div class="nav-list">
+                <div class="backnext"><a href="../post-authentic-degree-project/index.html"><p>prev<span class="body-serif">: <span class="mobile"><br></span>Post-Authentic Sincerity</span></p></a></div>
+                <div class="backnext"><a href="../contre-la-contrefacon/index.html"><p>next<span class="body-serif">: <span class="mobile"><br></span>Contre la Contrefaçon</span></p></a></div>
+
+                <div class="empty"><h2 class="menu-serif"><em>Funeral Museum Brand Identity</em></h2></div>
+
+                <div class="backgd">
+                    <div><a href="../index.html"><p>Home</p></a></div>
+                    <div><a href="../graphic-design/index.html"><p>Back to projects</p></a></div>
+                </div>
+            </div>
+    </div>
+    
+
+        
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img alt="" src="images/funeralmuseum-01.png" style="width:100%; height:auto;">
+</div>
+
+<div class="mySlides fade">
+  <img alt="" src="images/funeralmuseum-02.png" style="width:100%; height:auto;">
+</div>
+<div class="mySlides fade">
+  <img alt="" src="images/funeralmuseum-03.png" style="width:100%; height:auto;">
+</div>
+<div class="mySlides fade">
+  <img alt="" src="images/funeralmuseum-04.png" style="width:100%; height:auto;">
+</div>
+<div class="mySlides fade">
+  <img alt="" src="images/funeralmuseum-05.png" style="width:100%; height:auto;">
+</div>
+<div class="mySlides fade">
+  <img alt="" src="images/funeralmuseum-06.png" style="width:100%; height:auto;">
+</div>
+    
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+    
+<div class="flex-container">
+    <div>
+        <p><em><span style="font-family: serif; font-size: 1.15em">Funeral Museum: Brand identity system.</span></em>
+            Welcome to the Funeral Museum, where we put the "fun" back in funerals!<br>
+            Project done in Brand Identity Design Studio at RISD.<br>Instructor: Richard Rose.
+            <br><br>2019.</p>
+        
+    </div>
+        
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+    
+    
+</body>
+</html>

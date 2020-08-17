@@ -1,0 +1,517 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*DESKTOP*/
+@media only screen and (min-width: 768px) and (max-width: 2000px){
+    
+    #main-form {
+      float: left;
+      width: 500px;
+      margin-left: 30px;
+      padding-top: 0px;
+    }
+    #printout {
+      float: right;
+      width: 400px;
+      height: 700px;
+      padding: 8% 4%;
+      margin-right: 50px;
+      margin-top: 0px;
+      background-image: url(1x/text.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #sticker{
+        display: none;
+/*
+        position: absolute;
+        height: 700px;
+        width: 400px;
+        right: 600px;
+*/
+    }
+
+    #sticker img{
+        max-width: 100%;
+    }
+    
+    
+    .pages .marquee{
+        width: 380px;
+        position: absolute;
+        left: 38%;
+    }
+
+    
+/*aloof careerist desktop*/
+     #aloof1{
+        height: 100px;
+        width: 500px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #aloof1 label{
+        padding-right: 200px;
+    }   
+    #aloof2{
+        height: 110px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    
+    #aloof2 label{
+        padding-right: 450px;
+    }
+    
+    #aloof3{
+        height: 100px; 
+        width: 500px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    
+    #aloof3 label{
+         padding-right: 250px;
+    }
+    
+/*    goth desktop*/
+    #goth1{
+        height: 100px; 
+        width: 600px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    
+    #goth1 label{
+        padding-right: 250px;
+    }
+    #goth2{
+        height: 110px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #goth2 label{
+        padding-right: 450px;
+    }
+    #goth3{
+        height: 110px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #goth3 label{
+        padding-right: 450px
+    }
+    
+/*    hipster desktop*/
+    #hipster1{
+        height: 100px; 
+        width: 500px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #hipster1 label{
+        padding-right: 250px;
+    }
+    #hipster2{
+        height: 110px; 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    #hipster2 label{
+        padding-right: 450px;
+    }
+    #teen1{
+        height: 100px; width: 500px; display: flex; flex-wrap: wrap;
+    }
+    #teen1 label{
+        padding-right: 250px;
+    }
+    #teen2{
+        height: 110px; display: flex; flex-wrap: wrap;
+    }
+    #teen2 label{
+        width: 100%
+    }
+    
+    #american1{
+        display: flex; 
+        flex-wrap: wrap;
+        width: 400px;
+    }
+}
+
+
+.flex{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+label{
+    width: 100%;
+}
+
+/*iphone 5*/
+@media only screen and (max-width: 375px){
+    #printout {
+      height: 565px;
+    }
+}
+
+/*iphone 6/7/8*/
+@media only screen and (min-width: 375px) and (max-width: 414px){
+    #printout {
+      height: 665px;
+    }
+}
+
+/*iphone 6/7/8PLUS*/
+@media only screen and (min-width: 414px) and (max-width: 768px){
+    #printout {
+      height: 730px;
+    }
+}  
+
+
+@media only screen and (max-width: 414px){
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #home .flex-container div{
+        width: 50%;
+        cursor: pointer;
+    }
+    
+    #home h1{
+        font-size: 2em;
+        padding-top: 0px;
+    }
+    
+    #home h2{
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+}
+
+#home img{
+    width: 95%;
+}
+
+#home{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#home p{
+    font-family: serif;
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width: 768px){
+    
+    
+    #main-form {
+      width: 100%;
+      padding-left: 13px;
+      padding-top: 0px;
+    }
+    /*aloof careerist MOBILE*/
+    #printout {
+      width: 100%;
+      padding: 25% 10% 0%;
+      background-image: url(1x/text.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 10%;
+    }
+    
+    #printout p {
+        padding-top: 1%;
+        color: black;
+        font-size: .8em;
+    }
+    
+    #aloof1, #aloof3{
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    
+    
+    #sticker{
+        width: 80%;
+        margin: auto;
+    }
+    #sticker img{
+        max-width: 100%;
+    }
+    
+    #marqueecontainer {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #home .marquee {
+      height: 25px;
+      overflow: hidden;
+      position: relative;
+        width: 300%;
+    }
+    
+    #home .marquee p{
+        font-size: .8em;
+    }
+
+    #home .marquee div {
+      display: block;
+      width: 300%;
+      height: 15px;
+
+      position: absolute;
+      overflow: hidden;
+
+      animation: marquee 20s linear infinite;
+    }
+
+    #home .marquee span {
+      float: left;
+      width: 50%;
+    }
+    
+}
+
+
+
+#printout p {
+    padding-top: 1%;
+    color: black;
+}
+
+p{
+  font-family: 'Arial';
+    font-size: 11pt;
+}
+
+form {
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+    font-size: .9em;
+    max-width: 100%;
+}
+
+form div {
+  padding-top: 15px;
+}
+
+#american form {
+    color: #da0505;
+}
+
+#american .radio{
+    color: blue;
+}
+
+#techbro form{
+    font-family: 'Inconsolata', monospace;
+    font-size: .95em;
+    color: white;
+}
+
+#techbro .radio{
+    color: fuchsia;
+    font-weight: bold;
+}
+
+#techbro {
+    background-color: black;
+}
+
+#skater label{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 1.1em;
+}
+
+#soundcloud label{
+    font-family: 'Ceviche One', cursive;
+    font-size: 1.4em;
+}
+
+#soundcloud{
+    background-image: url(glitch.png)
+}
+
+#soundcloud form{
+    color: white;
+}
+
+#soundcloud .radio{
+    background-color: black;
+}
+
+
+
+input[type=text] {
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid pink;
+  width: 75px;
+  margin-left: 5px;
+  transition: 1s border-bottom;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #444;
+  text-decoration: none;
+}
+
+button{
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+button a{
+    text-decoration: none;
+}
+
+.radio {
+    padding-left: 10px;
+    max-width: 100%;
+}
+
+.radio input{
+    margin: 0px 10px;
+}
+
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
+  margin: 0 auto;
+  color: #444;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 100;
+    color: #444;
+}
+
+h3{
+    font-weight: 100;
+    font-size: 12pt;
+    padding-top: 10px;
+}
+
+a{
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    color: #444;
+}
+
+
+/*
+HOME PAGE desktop
+@media only screen and (min-width: 768px) and (max-width: 2000px){
+*/
+
+
+    .flex-container{
+        display: flex;
+    }
+
+    .flex-container div{
+        width: 25%;
+        cursor: pointer;
+    }
+
+
+
+
+    .marquee {
+      height: 25px;
+      overflow: hidden;
+      position: relative;
+        width: 100%;
+    }
+
+    .marquee div {
+      display: block;
+      width: 200%;
+      height: 30px;
+
+      position: absolute;
+      overflow: hidden;
+
+      animation: marquee 20s linear infinite;
+    }
+
+    .marquee span {
+      float: left;
+      width: 50%;
+    }
+
+
+
+#american .marquee{
+    animation-duration: 5s;
+    color: red;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#techbro .marquee{
+    color: aqua;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#soundcloud .marquee{
+    color: aqua;
+    font-family: 'UnifrakturMaguntia', cursive;;
+    font-weight: bold;
+}
+
+#skater .marquee{
+    color: yellow;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-weight: bold;
+}
+
+#teen .marquee{
+    color: fuchsia;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#goth .marquee{
+    color: black;
+    font-family: 'Ceviche One', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#hipster .marquee{
+    color: green;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
