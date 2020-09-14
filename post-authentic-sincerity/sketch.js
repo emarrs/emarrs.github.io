@@ -20,7 +20,7 @@ function setup() {
     fill(0,0,255);
     stroke(255);
     strokeWeight(2);
-    x = windowWidth*.23; y = 25; w = windowWidth*.74; h = 610;
+    x = windowWidth*.235; y = 25; w = windowWidth*.74; h = windowWidth*.42;
     rect(x,y,w,h);
     line(x,y,x+w,y+h);
     line(x,y+h,w+x,y);

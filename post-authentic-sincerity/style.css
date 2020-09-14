@@ -249,7 +249,7 @@ div.part{
     font-style: italic;
     color: blue;
     font-size: 1.3vw;
-    line-height: 1em;
+    /* line-height: 1em; */
     padding-right: 1%;
     padding-top: 2%;
     hyphens: auto;
@@ -272,7 +272,7 @@ div.part{
 }
 
 .right-dropdown{
-    padding: 0;
+    padding: 0 10px 10px 10px;
     background-color: white;
     font-family: serif;
     font-weight: 100;
@@ -315,6 +315,7 @@ div.part{
     overflow-y: scroll;
 /*    border-bottom: 1px solid blue;*/
     background-color: white;
+    padding: 10px;
 }
 #readingsbox a{
     text-decoration: none;
