@@ -27,6 +27,10 @@ html {
     .mobile-only{
         display: block;
     }
+    .mobile-only p{
+        font-size: 12pt;
+        hyphens: none;
+    }
 /*
     #article-container{
        flex-wrap: wrap;
@@ -470,7 +474,7 @@ div.part{
 
 #intro{
     padding-top: 4px;
-    max-height: 215px;
+    max-height: 16vw;
     overflow: scroll;
     overflow-x: hidden;
     padding-right: .5em;
