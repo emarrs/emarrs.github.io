@@ -262,12 +262,12 @@ h3{
 
 /*ANIMATIONS*/
 @keyframes rootate {
-    0%   {transform: rotateY(0deg); transform:}
+    0%   {transform: rotateY(0deg);}
     100% {transform: rotateY(360deg);}
 }
 
 @-webkit-keyframes rootate {
-    0%   {transform: rotateY(0deg); transform:}
+    0%   {transform: rotateY(0deg);}
     100% {transform: rotateY(360deg);}
 }
 
@@ -404,7 +404,7 @@ h3{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 910px) {
-  .prev, .next, {font-size: 11px}
+  .prev, .next {font-size: 11px}
     .dot{
       height: 5px;
       width: 5px;

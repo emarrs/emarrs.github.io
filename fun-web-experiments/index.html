@@ -14,13 +14,24 @@
 <style>
     #webstuff{
         background-color: white;
+        border-collapse: collapse;
     }
+    iframe{border: none; overflow: hidden;pointer-events: none;}
     @media only screen and (min-width: 910px){
-        #webstuff .flex-container div{
-            width: 50%;
+        #poet, #other-sites{width: 50vw;height: 50vw;}
+        #other-sites{display: flex; flex-wrap: wrap;}
+        #other-sites div{
+            width: 25vw;
+            height: 25vw;
             border-left: 1px solid black;
             border-bottom: 1px solid black;
         }
+        /* #webstuff .flex-container div{
+            width: 25vw;
+            height: 25vw;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        } */
     }
     @media only screen and (max-width: 910px){
         #webstuff .flex-container{
@@ -46,31 +57,39 @@
                 </div>
             </div>
     </div>
-    
     <div class="flex-container">
+    <div id="poet">
+        <a href="https://original-real-poet.glitch.me/" target="_blank">
+            <img src="poet.png">
+        </a>
+    </div>
+    <div id="other-sites">
         <div>
             <a href="breakup-text-generator/index.html" target="_blank">
                 <img src="breakup-text-generator/ITSNOTU.png" style="width: 60%; margin-left: 20%; padding: 10%;">
             </a>
         </div>
-        
         <div>
-            
-            <a href="https://original-real-poet.glitch.me/" target="_blank">
-                <img src="poet.png">
+            <a href="./reinvent-the-wheel.html" target="_blank">
+                <img src="./rtw-img.png">
             </a>
-<!--
-            <a href="https://libbymarrs.net/myrenaissanceface/index.html" target="_blank">
-                <img src="myrenaissanceface/myrenaissanceface.png" style="margin-top: 30%;">
+        </div>
+            <!-- <a href="./my-renaissance-face/index.html" target="_blank">
+                <img src="my-renaissance-face/images/myrenaissanceface.png" style="margin-top: 30%;">
+            </a> -->
+
+        <div id="randomness-bg" style="position: relative; border-bottom: none;">
+            <iframe src="https://editor.p5js.org/marrsec/embed/6_z4htIY" scrolling="no" height="100%" width="100%"></iframe>
+            <a href="./randomness.html" target="_blank" style="position:absolute; top:0; left:0; display:inline-block; width:25vw; height:25vw; z-index:5;">
             </a>
--->
         </div>
         
-        <div class="cap">
+        <!-- <div class="cap">
             <p>A couple of web explorations. Learning HTML, CSS, Javascript (mostly p5.js)<br><br>2019.
             </p>
-        </div>
+        </div> -->
     
+    </div>
     </div>
     
 </body>
