@@ -16,6 +16,7 @@ function setup() {
     textSize(14);
     fill(255);
     text("<!DOCTYPE html> \n<html> \n<head> <meta charset= &#34; utf-8 &#34;> \n<meta http-equiv=X-UA- Compatible content=IE=edge> \n<title>Post-Authentic Sincerity</title> \n<meta name=description content= &#34; An essay about design, authenticity, and defaults &#34; > \n<meta name=viewport content=width=device- width, initial-scale=1.0> \n<link rel=stylesheet href=style.css> \n<body> \n<h1>" + textArray[randText] + "</h1> \n</body> \n</html> \n \n \nClick around to dissolve this layer. Or, just press the button below.", 50, 25, windowWidth/8)
+
     
     fill(0,0,255);
     stroke(255);
