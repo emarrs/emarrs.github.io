@@ -22,31 +22,56 @@
         color: white;
         animation: none;
     }
+    #funeral .image h2 { 
+        margin: 20px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid;
+        font-style: oblique;
+    }
     #funeral .menu-bar{
         border-color: white;
     }
+    #funeral .flex-container .image  { padding: 4px;}
+    
     @media only screen and (max-width: 910px){
-        #funeral .flex-container{
-            border-top: 1px solid white;        }
+        #funeral .image h2 { font-size: 1.2em; }
+        #funeral .flex-container div { width: 100%;}
+        #funeral .flex-container {
+            justify-content: unset;
+            padding: 8%;
+        }
+        #funeral .imgs-container {
+            padding: 8%;
+        }
+        #funeral .flex-container p { padding-left: 0; }
+
         #funeral .next{
             right: 7px;
         }
         #funeral .prev{
             left: 5px;
         }
-        #funeral .slideshow-container{
+        /* #funeral .imgs-container{
             padding: 5vh 0;
-        }
+        } */
     }
     
     @media only screen and (min-width: 910px){
-        #funeral .flex-container{
-            border-top: 1px solid white;
-            padding: 3% 50% 5% 4%;
+        #funeral .image h2 { font-size: 40px; }
+        #funeral .flex-container div { width: 50%;}
+        #funeral .flex-container div:first-child { width: 100%;}
+        #funeral .flex-container {
+            justify-content: unset;
+            padding: 10% 20%;
         }
-        #funeral .slideshow-container{
+        #funeral .imgs-container {
+            margin-top: 16px;
+            padding: 40px;
+        }
+        #funeral .description { padding: 30px; }
+        /* #funeral .imgs-container{
             width: 97%;
-        }
+        } */
         #funeral .prev{
             right: 99%;
         }
@@ -61,7 +86,7 @@
     
     <div class="menu-bar"> 
             <div class="nav-list">
-                <div class="backnext"><a href="../post-authentic-degree-project/index.html"><p>prev<span class="body-serif">: <span class="mobile"><br></span>Post-Authentic Sincerity</span></p></a></div>
+                <div class="backnext"><a href="../fun-web-experiments/index.html"><p>prev<span class="body-serif">: <span class="mobile"><br></span>Fun Web Experiments</span></p></a></div>
                 <div class="backnext"><a href="../contre-la-contrefacon/index.html"><p>next<span class="body-serif">: <span class="mobile"><br></span>Contre la Contrefaçon</span></p></a></div>
 
                 <div class="empty"><h2 class="menu-serif"><em>Funeral Museum Brand Identity</em></h2></div>
@@ -72,72 +97,55 @@
                 </div>
             </div>
     </div>
-    
-
-        
-    
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <img alt="" src="images/funeralmuseum-01.png" style="width:100%; height:auto;">
-</div>
-
-<div class="mySlides fade">
-  <img alt="" src="images/funeralmuseum-02.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/funeralmuseum-03.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/funeralmuseum-04.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/funeralmuseum-05.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/funeralmuseum-06.png" style="width:100%; height:auto;">
-</div>
-    
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-    
 <div class="flex-container">
-    <div>
+    <div class="image">
+        <img src="../graphic-design/images/fm4.PNG">
+    </div>
+    <div class="image">
+        <img src="../graphic-design/images/fm2.PNG">
+    </div>
+    <div class="description">
         <p><em><span style="font-family: serif; font-size: 1.15em">Funeral Museum: Brand identity system.</span></em>
             Welcome to the Funeral Museum, where we put the "fun" back in funerals!<br>
             Project done in Brand Identity Design Studio at RISD.<br>Instructor: Richard Rose.
             <br><br>2019.</p>
-        
     </div>
-        
+    <div class="image">
+        <img src="../graphic-design/images/fm3.PNG">
+    </div>
+    <div class="image">
+        <img src="../graphic-design/images/fm1.PNG">
+    </div>
 </div>
+    
+    
+<div class="imgs-container">
+    <div class="image">
+        <h2>Logomark, type, color, pattern</h2>
+        <img alt="" src="images/funeralmuseum-01.png">
+    </div>
+    <div class="image">
+        <h2>Stationery</h2>
+        <img alt="" src="images/funeralmuseum-02.png">
+    </div>
+    <div class="image">
+        <h2>Merchandise & website</h2>
+        <img alt="" src="images/funeralmuseum-03.png">
+    </div>
+    <div class="image">
+        <h2>Signage</h2>
+        <img alt="" src="images/funeralmuseum-04.png">
+    </div>
+    <div class="image">
+        <h2>Promotional material</h2>
+        <img alt="" src="images/funeralmuseum-05.png">
+    </div>
+    <div class="image">
+        <img alt="" src="images/funeralmuseum-06.png">
+    </div>
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
+</div>
+<br>
     
     
 </body>
