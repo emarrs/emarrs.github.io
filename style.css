@@ -24,6 +24,23 @@ body {
 
 
 @media only screen and (min-width: 910px){
+    ::-webkit-scrollbar {
+        width: 18px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent; 
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #da0505; 
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
     .nav-list{
         display: flex;
         padding: 0 1em;

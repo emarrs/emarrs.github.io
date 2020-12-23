@@ -18,11 +18,14 @@
     }
     iframe{border: none; overflow: hidden;pointer-events: none;}
     @media only screen and (min-width: 910px){
-        #poet, #other-sites{width: 50vw;height: 50vw;}
+        #poet, #other-sites{
+            width: calc(50vw - 9px);
+            height: calc(50vw - 9px);
+        }
         #other-sites{display: flex; flex-wrap: wrap;}
         #other-sites div{
-            width: 25vw;
-            height: 25vw;
+            width: calc(25vw - 4.5px);
+            height: calc(25vw - 4.5px);
             border-left: 1px solid black;
             border-bottom: 1px solid black;
         }
