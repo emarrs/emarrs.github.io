@@ -25,14 +25,14 @@
             border-bottom: 1px solid black;
         }
         #bjh .slideshow-container{
-            padding-top: 10%;
-            width: 95%;
+            padding: 5% 10%;
+            width: 76%;
         }
     }
 /*    MOBILE*/
     @media only screen and (max-width: 910px){
         #bjh .slideshow-container{
-            padding: 3% 3% 3% 0%;
+            padding: 13% 3% 3% 0%;
             margin: 0 0 0 2%;
             width: 98%;
         }
@@ -59,14 +59,82 @@
     </div>
     
 <div class="flex-container">
-    <div id="bjhpic">
-        <!-- <img src="images/"> -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/bjh_Page_01.png" style="width: 50%; margin-left: 25%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_02.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_03.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_04.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_05.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_06.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_07.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_08.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_09.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_10.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_11.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_12.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_13.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_14.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_15.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_16.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_17.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_18.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_19.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_20.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/bjh_Page_21.png">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
     </div>
     
     <div id="bjhcap">
-        <p><em><span class="body-serif">Brown Journal of History.</span></em> I designed and art-directed the 2019-2020 issue of Brown Journal of History. Documentation coming soon.
+        <p><em><span class="body-serif">Brown Journal of History.</span></em> I designed and art-directed the 2019-2020 issue of Brown Journal of History.
         <br><br>
-        <a href="./images/bjh2020_0626.pdf" target="_blank" style="text-decoration: underline;">View PDF here.</a> 
+        <a href="./images/bjh2020_0626.pdf" target="_blank" style="text-decoration: underline;">View full PDF here.</a> 
         <br><br>
         <em><span class="body-serif">
             Digital publication.<br>
@@ -77,18 +145,7 @@
 </div>
     
     
-   
-<div class="slideshow-container">
 
-<!-- <div class="mySlides fade">
-  <img src="images/" style="width:100%;">
-</div> -->
-
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
 <br>
 
 
@@ -107,17 +164,17 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+//   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+//   dots[slideIndex-1].className += " active";
 }
 </script>
     
