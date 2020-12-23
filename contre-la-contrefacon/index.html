@@ -15,44 +15,44 @@
         background-color: #F1F2F2;
     }
 
+    #contre .image h2 { 
+        margin: 20px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid;
+        font-style: oblique;
+    }
+
+    #contre .flex-container .image  { padding: 4px;}
+
     @media only screen and (max-width: 910px){
         #contre .menu-serif{
             line-height: 1em;
         }
-        #contre .slideshow-container{
-            padding: 10% 0 7% 0;
-            margin: 0 0 0 2%;
-            width: 96%;
+        #contre .image h2 { font-size: 1.2em; }
+        #contre .flex-container div { width: 100%;}
+        #contre .flex-container {
+            justify-content: unset;
+            padding: 8%;
         }
-        #contre .flex-container{
-            border-top: 1px solid black;
+        #contre .imgs-container {
+            padding: 8%;
         }
-        #contre .next{
-            right: 0;
-        }
+        #contre .flex-container p { padding-left: 0; }
     }
     
     @media only screen and (min-width: 910px){
-        #contre .flex-container{
-            border-top: 1px solid black;
-            padding: 3% 50% 5% 4%;
+      #contre .image h2 { font-size: 40px; }
+        #contre .flex-container div { width: 50%;}
+        #contre .flex-container div:first-child { width: 100%;}
+        #contre .flex-container {
+            justify-content: unset;
+            padding: 10% 20%;
         }
-
-        #contre .slideshow-container{
-            width: 97%;
+        #contre .imgs-container {
+            margin-top: 16px;
+            padding: 40px;
         }
-        #contre .empty{
-            width: 70%;
-            font-size: 0.9em;
-        }
-/*
-        #contre .prev{
-            right: 99%;
-        }
-        #contre .next{
-            right: 0;}
-*/
-        
+        #contre .description { padding: 30px; }
     }
 
     
@@ -73,71 +73,56 @@
               </div>
             </div>
     </div>
+
+    <div class="flex-container">
+      <div class="image">
+          <img src="../graphic-design/images/c.PNG">
+      </div>
+      <div class="image">
+          <img src="../graphic-design/images/c4.PNG">
+      </div>
+      <div class="description">
+          <p><em><span style="font-family: serif; font-size: 1.15em">Contre la Contrefaçon: </span></em>Brand identity system.
+              Welcome to the Funeral Museum, where we put the "fun" back in funerals!<br>
+              Project done in Brand Identity Design Studio at RISD.<br>Instructor: Richard Rose.
+              <br><br>2019.</p>
+      </div>
+      <div class="image">
+          <img src="../graphic-design/images/c3.PNG">
+      </div>
+      <div class="image">
+          <img src="../graphic-design/images/c2.PNG">
+      </div>
+  </div>
+      
+      
+  <div class="imgs-container">
+      <div class="image">
+          <h2>Logomark, type, color, stationery</h2>
+          <img alt="" src="images/contre-01.png">
+      </div>
+      <div class="image">
+          <h2>Signage & billboards</h2>
+          <img alt="" src="images/contre-02.png">
+      </div>
+      <div class="image">
+          <h2>Posters</h2>
+          <img alt="" src="images/contre-03.png">
+      </div>
+      <div class="image">
+          <h2>Merchandise & website</h2>
+          <img alt="" src="images/contre-04.png">
+      </div>
+      <div class="image">
+          <h2>Promotional material</h2>
+          <img alt="" src="images/contre-05.png">
+      </div>
+      <div class="image">
+          <img alt="" src="images/contre-06.png">
+      </div>
+  
+  </div>
     
-
-        
-    
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <img alt="" src="images/contre-01.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/contre-02.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/contre-03.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/contre-04.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/contre-05.png" style="width:100%; height:auto;">
-</div>
-<div class="mySlides fade">
-  <img alt="" src="images/contre-06.png" style="width:100%; height:auto;">
-</div>    
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-    
-<div class="flex-container">
-    <div>
-        <p><em><span style="font-family: serif; font-size: 1.15em">Contre la Contrefaçon: Brand identity system.</span></em>
-            <br>
-            Project done in Brand Identity Design Studio at RISD.<br>Instructor: Richard Rose.
-            <br><br>2019.</p>
-        
-    </div>
-        
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
     
     
 </body>
