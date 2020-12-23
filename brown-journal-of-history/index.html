@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html id="bjh">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Libby Marrs</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+</head>  
+<!--    UPDATE!!!!-->
+<style>
+    @media only screen and (min-width: 910px){
+
+        #bjhpic{
+            width: 76%;
+            padding: 6% 10%;
+        }
+        #bjhcap{
+            border-left: 1px solid black;
+            width: 24%;
+            padding: 3%;
+        }
+        #bjh .flex-container{
+            border-bottom: 1px solid black;
+        }
+        #bjh .slideshow-container{
+            padding-top: 10%;
+            width: 95%;
+        }
+    }
+/*    MOBILE*/
+    @media only screen and (max-width: 910px){
+        #bjh .slideshow-container{
+            padding: 3% 3% 3% 0%;
+            margin: 0 0 0 2%;
+            width: 98%;
+        }
+        
+        #bjhpic{
+            padding: 6%;
+        }
+    }
+</style>
+<body>
+    
+    <div class="menu-bar"> 
+        <div class="nav-list">
+                <div class="backnext navlonger"><a href="../brown-political-review/index.html"><p>prev<span class="body-serif">: <span class="mobile"><br></span>Brown Political Review</span></p></a></div>
+                <div class="backnext "><a href="../craigslist-reflections/index.html"><p>next<span class="body-serif">: <span class="mobile"><br></span>Craigslist Reflections</span></p></a></div>
+
+                <div class="empty"><h2 class="menu-serif"><em>Brown Journal of History</em></h2></div>
+
+                <div class="backgd">
+                  <div><a href="../index.html"><p>Landing Page</p></a></div>
+                  <div><a href="../graphic-design/index.html"><p>Back to Projects</p></a></div>
+              </div>
+            </div>
+    </div>
+    
+<div class="flex-container">
+    <div id="bjhpic">
+        <!-- <img src="images/"> -->
+    </div>
+    
+    <div id="bjhcap">
+        <p><em><span class="body-serif">Brown Journal of History.</span></em> I designed and art-directed the 2019-2020 issue of Brown Journal of History. Documentation coming soon.
+        <br><br>
+        <a href="./images/bjh2020_0626.pdf" target="_blank" style="text-decoration: underline;">View PDF here.</a> 
+        <br><br>
+        <em><span class="body-serif">
+            Digital publication.<br>
+            2020.</span>
+        </em>
+        </p>
+    </div>
+</div>
+    
+    
+   
+<div class="slideshow-container">
+
+<!-- <div class="mySlides fade">
+  <img src="images/" style="width:100%;">
+</div> -->
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</body>
+</html>

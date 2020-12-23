@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html id="ethpg"> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Libby Marrs</title>
+        <meta name="description" content="a girl graphix designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>  
+    
+<style>
+    @media only screen and (max-width: 910px){
+        #ethpg .flex-container{
+            border-bottom: 1px solid black;
+        }
+        #ethpg .slideshow-container{
+            padding: 4% 5% 0 1%;
+            margin: 0 0 0 2%;
+        }
+    }
+    @media only screen and (min-width: 910px){
+        #ethpg .flex-container div{
+            width: 40%;
+            padding: 4%;
+            border-right: 1px solid black;
+        }
+
+        #ethpg #ethpic{
+            width: 50%;
+            padding-top: 6%;
+        }
+
+        #ethpg .flex-container{
+            border-bottom: 1px solid black;
+            height:inherit;
+        }
+    }
+</style>
+    
+<body>
+    
+    <div class="menu-bar"> 
+            <div class="nav-list">
+                <div class="backnext"><a href="../brown-political-review/index.html"><p>prev<span class="body-serif">: <span class="mobile"><br></span>Brown Political Review</span></p></a></div>
+                <div class="backnext"><a href="../no-poster-show/index.html"><p>next<span class="body-serif">: <span class="mobile"><br></span>No Poster Show</span></p></a></div>
+
+                <div class="empty"><h2 class="menu-serif"><em>Photographic Other // Author</em></h2></div>
+
+                <div class="backgd">
+                  <div><a href="../index.html"><p>Landing Page</p></a></div>
+                  <div><a href="../graphic-design/index.html"><p>Back to Projects</p></a></div>
+              </div>
+            </div>
+    </div>
+    
+    <div class="flex-container">
+    <div>
+        <p><em><span style="font-family: serif; font-size: 1.15em">Point and Shoot: The Camera as a Weapon.</span></em> This is a research-based project printed on 30"x40" transparent vellum as a book. <br><br>I begin by exploring how the medium of photography has been used, ever since its mid-19th-century invention, as a tool for violence and the reinforcemet of systemic oppression toward ethnographically-grouped people. Since the same patterns of oppression weave back and forth throughout history, it is impossible for me to lay out my research chronologically, so I typeset writings and images of every example I could think of all at once, and broke the whole set of information down into a diagram.<br><br>
+            The first part, about the photographic "other," blends into the second part, which is about the photographic author. It represents the targets of historical oppression siezing the power of the camera to portray their own narratives, proving that the camera can have just as much power fighting for them rather than against them.<br><br><br>2018.</p>
+        
+    </div>
+        
+    </div>
+
+        
+    
+<div class="slideshow-container" id="eth">
+
+<div class="mySlides fade">
+  <img alt="" src="images/eth.jpg" style="width:100%; height:auto;">
+</div>
+
+<div class="mySlides fade">
+  <img alt="" src="images/eth2.jpg" style="width:100%; height:auto;">
+</div>
+
+<div class="mySlides fade">
+  <img id="zoom" alt="" src="images/eth3.jpg" style="width:100%; height:auto;">
+</div>
+    
+<div class="mySlides fade">
+  <img id="zooma" alt="" src="images/eth4.jpg" style="width:100%; height:auto;">
+</div>
+    
+<div class="mySlides fade">
+  <img alt="" src="images/eth45.jpg" style="width:100%; height:auto;">
+</div>
+    
+<div class="mySlides fade">
+  <img id="zoomb" alt="" src="images/eth5.jpg" style="width:100%; height:auto;">
+</div> 
+    
+<div class="mySlides fade">
+  <img id="zoomc" alt="" src="images/eth55.jpg" style="width:100%; height:auto;">
+</div> 
+
+<div class="mySlides fade">
+  <img id="zoomd" alt="" src="images/eth6.jpg" style="width:100%; height:auto;">
+</div> 
+    
+<div class="mySlides fade">
+  <img id="zoome" alt="" src="images/eth65.jpg" style="width:100%; height:auto;">
+</div> 
+    
+<div class="mySlides fade">
+  <img id="zoomf" alt="" src="images/eth7.jpg" style="width:100%; height:auto;">
+</div> 
+    
+<div class="mySlides fade">
+  <img id="zoomg" alt="" src="images/eth8.jpg" style="width:100%; height:auto;">
+</div> 
+    
+<div class="mySlides fade">
+  <img id="zoomh" alt="" src="images/eth9.jpg" style="width:100%; height:auto;">
+</div> 
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+    
+    
+</body>
+</html>
