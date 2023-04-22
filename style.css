@@ -21,6 +21,18 @@ body {
     color: black;
     font-size: 16px;
 }
+#writingpg a,
+#aboutblurb a{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#writingpg a:hover,
+#aboutblurb a:hover{
+    color: #da0505;
+    text-shadow: 0 0 25px #c51414;
+    transition: all 0.1s ease;
+}
 
 
 @media only screen and (min-width: 910px){
