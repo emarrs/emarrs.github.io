@@ -13,13 +13,6 @@ const config = {
 		precompress: false,
 		strict: true
 	}),
-	paths: {
-		base: '/emarrs.github.io', // Replace 'your-repository-name'
-	},
-	prerender: {
-		// Configure prerendering if you have static routes
-		//entries: ['/', '/about', '/contact'] // Example entries
-	}
  }
 };
 
