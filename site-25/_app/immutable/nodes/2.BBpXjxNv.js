@@ -1,0 +1,1 @@
+import{f as a,a as p}from"../chunks/BKeYXCdv.js";import"../chunks/DJWf8JEv.js";var r=a('<div class="bg-pink-100 p-10"><h1 class="text-2xl text-rose-500">DEBUGGING</h1></div>');function i(o){var t=r();p(o,t)}export{i as component};
