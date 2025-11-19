@@ -6,14 +6,23 @@ const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-	kit: { adapter: adapter({
-		pages: 'build',
-		assets: 'build',
-		fallback: '200.html',
-		precompress: false,
+	kit: {
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: '200.html',
+			precompress: false,
 		strict: true
-	}),
- }
+		}),
+		// prerender: {
+		// 	default: true,
+		// },
+		//trailingSlash: 'always',
+		paths: {
+			base: '/emarrs.github.io'
+		}
+	// base: '/emarrs.github.io',
+	}
 };
 
 export default config;
