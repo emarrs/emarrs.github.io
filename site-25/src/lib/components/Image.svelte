@@ -2,7 +2,7 @@
     export let src;
 </script>
 
-<img src={`src/lib/assets/images/${src}`} alt="" 
+<img src={`/images/${src}`} alt="" 
     class={[
         "object-contain h-full",
         

@@ -71,7 +71,7 @@
                 desc = ""
             >
                 <Image src="dp/libbydp.gif" />
-                <video src="src/lib/assets/images/dp/slide_2.mov" ><track kind="captions"></video>
+                <Image src="dp/libbydp2.gif" />
             </Project>
 
             <Project 
@@ -79,7 +79,6 @@
                 desc = ""
             >
                 <Image src="lkt/oo-ov-o3.png" />
-                <!-- <Image src="lkt/oo-ov-02.png" /> -->
                 <Image src="lkt/birdflu-sketch.png" />
             </Project>
 
