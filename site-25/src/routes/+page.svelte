@@ -18,7 +18,7 @@
                         <p class=" text-[#8a9b8a]">Currently working on interfaces for understanding complex data at <a href="https://www.fathom.info/" class="text-[#83c900]">Fathom Information Design</a>. Most of the images you'll find on this site (which I built myself!) are from graphic design, web, and writing projects I've done for fun. <span class="italic">Curious?</span> Reach out to see more of my work or inquire about freelance availability. </p>
                         <ul class="mt-4">
                             <p class="text-[#7f7fbc]">marrsec@gmail.com</p>
-                            <p class="text-[#c7696a]"><a href="https://www.instagram.com/woman_designer_8295/" target="_blank">Are.na</a></p>
+                            <p class="text-[#c7696a]"><a href="https://www.are.na/libby-marrs/" target="_blank">Are.na</a></p>
                             <p class="text-[#c7696a]"><a href="https://www.instagram.com/woman_designer_8295/" target="_blank">Instagram</a></p>
                            
                         </ul>
