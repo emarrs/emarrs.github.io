@@ -14,9 +14,17 @@
 
             <section class="pt-24 flex flex-col-reverse lg:items-start lg:justify-between lg:flex-row xl:h-full mb-20">
                 <div id="top" class="font-serif max-w-100 flex flex-col gap-10 xl:h-full xl:justify-between pb-10 ">
-                    <p class=" text-[#8a9b8a]">Currently working on interfaces for understanding complex data at <a href="https://www.fathom.info/" class="text-[#83c900]">Fathom Information Design</a>. Most of the images you'll find on this site (which I built myself!) are from graphic design, web, and writing projects I've done for fun. <span class="italic">Curious?</span> Email me to see more of my work or inquire about freelance availability. </p>
+                    <div>
+                        <p class=" text-[#8a9b8a]">Currently working on interfaces for understanding complex data at <a href="https://www.fathom.info/" class="text-[#83c900]">Fathom Information Design</a>. Most of the images you'll find on this site (which I built myself!) are from graphic design, web, and writing projects I've done for fun. <span class="italic">Curious?</span> Reach out to see more of my work or inquire about freelance availability. </p>
+                        <ul class="mt-4">
+                            <p class="text-[#7f7fbc]">marrsec@gmail.com</p>
+                            <p class="text-[#c7696a]"><a href="https://www.instagram.com/woman_designer_8295/" target="_blank">Are.na</a></p>
+                            <p class="text-[#c7696a]"><a href="https://www.instagram.com/woman_designer_8295/" target="_blank">Instagram</a></p>
+                           
+                        </ul>
+                    </div>
                     <div class="text-[#8f9b79] space-y-2">
-                        <p class="italic font-light">All-time favorite projects:</p>
+                        <p class="italic font-light">Favorite projects:</p>
                         <ul class="space-y-2">
                             <li class="ml-2">
                                 <a class="text-[#009246]" href="#ron-carter-universe">The Ron Carter Universe</a>

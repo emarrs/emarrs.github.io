@@ -10,7 +10,7 @@
     <div class="hidden md:block w-60 bg-amber-50 grow-0 shrink-0 h-max sticky left-0 font-serif text-amber-600 p-4 ">
         <h1 class="uppercase text-sm leading-4 mb-2 font-light"> {title} </h1>
         <p class="text-sm italic"> { desc } </p>
-         {#if link}<a class="mt-2 text-sm text-amber-500" href={link} target="_blank">Live site</a>{/if}
+         {#if link}<a class="mt-2 text-sm italic text-[#7f7fbc]" href={link} target="_blank">Live site</a>{/if}
     </div>
        
     {/if}
