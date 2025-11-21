@@ -1,10 +1,8 @@
 <script>
     export let src;
+    export let cls = "";
 </script>
 
 <img src={`/images/${src}`} alt="" 
-    class={[
-        "object-contain h-full",
-        
-        ]}
+    class="object-contain h-full {cls}"
 />
