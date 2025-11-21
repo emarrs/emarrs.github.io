@@ -82,24 +82,25 @@
                 </div>
             </Project>
 
+            <Project
+                title = "Post-Authentic Sincerity"
+                desc = 'For my Graphic Design degree project at RISD, I wrote an essay and built a website to contain it. The writing explores concepts of realness, nature, and default systems in the context of branding and graphic design, and how recent shifts in the way these ideas are symbolized and marketed indicate a larger cultural movement away from something called "authenticity". The essay also argues for a "post-authentic" approach to graphic design discourse which acknowledges its own function as commodity service, rather than an artform inherently independent of commerce, as many thought-leaders within the design world have previously claimed.'
+                link = "https://libbymarrs.net/post-authentic-sincerity/"
+                id = "post-authentic-sincerity"
+            >
+                <Image src="dp/libbydp.gif"/>
+                <Image src="dp/libbydp2.gif" />
+            </Project>
+
             <Project 
                 title = "A wedding invitation"
                 desc = "For some friends"
             >
-                <Image src="wedding/menu.png" />
+                <Image src="wedding/menu.png"  cls="md:-ml-60" />
                 <Image src="wedding/cards_sm.png" />
                 <Image src="wedding/invite_info_front_4x6.png" />
                 <Image src="wedding/sketches.png" />
                 
-            </Project>
-
-            <Project
-                title = "Post-Authentic Sincerity"
-                desc = "A premium generic essay"
-                id = "post-authentic-sincerity"
-            >
-                <Image src="dp/libbydp.gif" cls="md:-ml-60" />
-                <Image src="dp/libbydp2.gif" />
             </Project>
 
             <Project 
