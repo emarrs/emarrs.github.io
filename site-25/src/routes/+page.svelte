@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                 </div>
-                <Image src="misc/bananabread.png" cls="p-10 pt-0 w-full max-w-140 h-max m-auto lg:m-0 xl:m-auto xl:max-w-200 xl:w-full xl:mt-0"/>
+                <Image src="misc/bananabread.png" cls="p-10 pt-0 w-full max-w-140 m-auto lg:m-0 xl:m-auto xl:max-w-200 xl:w-full xl:mt-0"/>
             </section>
                 
 
