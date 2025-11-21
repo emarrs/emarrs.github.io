@@ -13,28 +13,28 @@
         <!-- <section class="w-60 bg-amber-100 p-4"></section> -->
         <section class="w-full space-y-4 p-4 overflow-y-scroll">
 
-            <section class="pt-24 flex flex-col-reverse lg:items-start lg:justify-between lg:flex-row xl:h-full">
-                <div class="font-serif max-w-100 space-y-10">
+            <section class="pt-24 flex flex-col-reverse lg:items-start lg:justify-between lg:flex-row xl:h-full mb-20">
+                <div class="font-serif max-w-100 flex flex-col gap-10 xl:h-full xl:justify-between pb-10 ">
                     <p class=" text-[#8a9b8a]">Currently working on interfaces for understanding complex data at <a href="https://www.fathom.info/" class="text-[#83c900]">Fathom Information Design</a>. Most of the images you'll find on this site (which I built myself!) are from graphic design, web, and writing projects I've done for fun. <span class="italic">Curious?</span> Email me to see more of my work or inquire about freelance availability. </p>
                     <div class="text-[#8f9b79] space-y-2">
                         <p class="italic font-light">All-time favorite projects:</p>
                         <ul class="space-y-2">
                             <li class="ml-2">
-                                <a href="#ron-carter-universe">The Ron Carter Universe</a>
+                                <a class="text-[#009246]" href="#ron-carter-universe">The Ron Carter Universe</a>
                                 <p>Design + web development for a mobile-first immersive experience of Ron Carter's discography.</p>
                             </li>
                             <li class="ml-2">
-                                <a href="https://otherinter.net/research/lore/how-to-read-the-internet/" target="_blank">How to Read the Internet</a>
-                                <p>Writing + research: Part of my collaboration with Tiger Dingsun during our stint as visiting researchers at <a href="https://otherinter.net/" target="_blank">Other Internet</a>.</p>
+                                <a class="text-[#009246]" href="https://otherinter.net/research/lore/how-to-read-the-internet/" target="_blank">How to Read the Internet</a>
+                                <p>Writing + research: Part of my collaboration with Tiger Dingsun during our stint as visiting researchers at <a class="text-[#83c900]" href="https://otherinter.net/" target="_blank">Other Internet</a>.</p>
                             </li>
                             <li class="ml-2">
-                                <a href="#post-authentic-sincerity">Post-Authentic Sincerity</a>
+                                <a class="text-[#009246]" href="#post-authentic-sincerity">Post-Authentic Sincerity</a>
                                 <p>Design + web development + writing for my degree project at RISD exploring the idea of <span class="italic">authenticity</span> in graphic design.</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <Image src="misc/bananabread.png" cls="p-10 pt-0 w-full max-w-200 h-max m-auto lg:m-0"/>
+                <Image src="misc/bananabread.png" cls="p-10 pt-0 w-full max-w-140 h-max m-auto lg:m-0 xl:m-auto xl:max-w-200 xl:w-full xl:mt-0"/>
             </section>
                 
 
