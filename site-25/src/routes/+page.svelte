@@ -78,6 +78,7 @@
                     <Image src="albums-other/230610N.png" />
                     <Image src="albums-other/230924E.png" />
                 </div>
+                <Image src="cemeteryclassics/pencilsketches.png" cls="mx-8" />
                 <Image src="cemeteryclassics/sketch-07.png" />
                 <div class="grid grid-cols-3 w-max max-w-max gap-2 grid-rows-2 max-h-full">
                     <Image src="cemeteryclassics/sketch-06.png" />
@@ -130,6 +131,9 @@
                 <Image src="roncarter/sc2.png" />
                 <Image src="roncarter/sc3.png" />
                 <Image src="roncarter/mobile-photo.jpg" />
+                <Image src="roncarter/swatch.png" />
+                <Image src="roncarter/poster1.png" />
+                <Image src="roncarter/poster2.png" />
             </Project>
 
              <Project 
