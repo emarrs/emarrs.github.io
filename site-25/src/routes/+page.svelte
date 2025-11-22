@@ -61,7 +61,7 @@
 
             <Project >
                 <Image src="albums-other/1.png" />
-                <div class="grid grid-cols-3 w-max gap-2 grid-rows-2 max-h-full">
+                <div class="grid grid-cols-3 w-max max-w-max gap-2 grid-rows-2 max-h-full">
                     <Image src="albums-other/231215D.png" />
                     <Image src="albums-other/231218E.png" />
                     <Image src="albums-other/231202O.png" />
@@ -70,7 +70,7 @@
                     <Image src="albums-other/231215M 2.png" />
                 </div>
                 <Image src="albums-other/230924D.png" />
-                <div class="grid grid-cols-3 w-max gap-2 grid-rows-2 max-h-full">
+                <div class="grid grid-cols-3 w-max max-w-max gap-2 grid-rows-2 max-h-full">
                     <Image src="albums-other/230924B.png" />
                     <Image src="albums-other/230924G.png" />
                     <Image src="albums-other/230610S.png" />
@@ -79,7 +79,7 @@
                     <Image src="albums-other/230924E.png" />
                 </div>
                 <Image src="cemeteryclassics/sketch-07.png" />
-                <div class="grid grid-cols-3 w-max gap-2 grid-rows-2 max-h-full">
+                <div class="grid grid-cols-3 w-max max-w-max gap-2 grid-rows-2 max-h-full">
                     <Image src="cemeteryclassics/sketch-06.png" />
                     <Image src="cemeteryclassics/sketch-05.png" />
                     <Image src="cemeteryclassics/sketch-04.png" />

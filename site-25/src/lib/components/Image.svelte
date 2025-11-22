@@ -4,5 +4,5 @@
 </script>
 
 <img src={`/images/${src}`} alt="" 
-    class="object-contain h-full {cls}"
+    class="object-contain h-full w-auto {cls}"
 />

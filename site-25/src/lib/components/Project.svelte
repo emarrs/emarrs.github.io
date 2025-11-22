@@ -5,7 +5,7 @@
     export let link = "";
 </script>
 
-<section class="h-100 md:h-200 w-full flex bg-transparent overflow-x-scroll overscroll-x-none" id={id}>
+<section class="h-80 md:h-200 w-full flex bg-transparent overflow-x-scroll overscroll-x-none" id={id}>
     {#if title}
     <div class="hidden md:block w-60 bg-amber-50 grow-0 shrink-0 h-max sticky left-0 font-serif text-amber-600 p-4 ">
         <h1 class="uppercase text-sm leading-4 mb-2 font-light"> {title} </h1>
@@ -15,8 +15,8 @@
        
     {/if}
     
-    <div class="md:h-200 min-w-max">
-        <div class="h-full flex gap-2">
+    <div class="h-80 md:h-200">
+        <div class="h-full flex gap-2 w-max">
             <slot></slot>
         </div>
     </div>
