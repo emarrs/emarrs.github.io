@@ -19,8 +19,8 @@
                         <p class="text-[#8a9b8a]">Currently working on interfaces for understanding complex data at <Link href="https://www.fathom.info/" text="Fathom Information Design" color="lime"/>. Most of the images you'll find on this site (which I built myself!) are from graphic design, web, and writing projects I've done for fun. <span class="italic">Curious?</span> Reach out to see more of my work or inquire about freelance availability. </p>
                         <ul class="mt-4">
                             <p class="text-[#8a9b8a]">marrsec@gmail.com</p>
-                            <Link href="https://www.are.na/libby-marrs/" text="Are.na" color="red"/><br>
-                            <Link href="https://www.instagram.com/woman_designer_8295/" text="Instagram" color="red"/>
+                            <Link href="https://www.are.na/libby-marrs/" text="Are.na" color="blue"/><br>
+                            <Link href="https://www.instagram.com/woman_designer_8295/" text="Instagram" color="blue"/>
                            
                         </ul>
                     </div>
@@ -28,7 +28,7 @@
                         <p class="italic font-light">Favorite projects:</p>
                         <ul class="space-y-2">
                             <li class="">
-                                <Link href="#ron-carter-universe" text="The Ron Carter Universe" color="forest"/>
+                                <Link newTab={false} href="#ron-carter-universe" text="The Ron Carter Universe" color="forest"/>
                                 <p>Design + web development for a mobile-first immersive experience of Ron Carter's discography.</p>
                             </li>
                             <li class="">
@@ -36,7 +36,7 @@
                                 <p>Writing + research: Part of my collaboration with Tiger Dingsun during our stint as visiting researchers at <Link href="https://otherinter.net/" text="Other Internet" color="lime"/>.</p>
                             </li>
                             <li class="">
-                                <Link href="#post-authentic-sincerity" text="Post-Authentic Sincerity" color="forest"/>
+                                <Link newTab={false} href="#post-authentic-sincerity" text="Post-Authentic Sincerity" color="forest"/>
                                 <p>Design + web development + writing for my degree project at RISD exploring the idea of <span class="italic">authenticity</span> in graphic design.</p>
                             </li>
                         </ul>
@@ -164,7 +164,7 @@
                 <Image src="misc/noposter-12.jpg"/>
                 
                 
-                <Image src="misc/bitter-word-stripe.svg" cls="p-20"/>
+                <!-- <Image src="misc/bitter-word-stripe.svg" cls="p-20"/> -->
                 <Image src="arvi/arvi-transparent.png" cls="mx-20" />
                 <Image src="arvi/arvi-07.png" />
 
