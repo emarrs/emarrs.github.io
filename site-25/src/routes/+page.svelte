@@ -49,7 +49,7 @@
             <Project 
                 title = "Album artwork"
                 desc = "For Moses Archuleta and Anastasia Coope" 
-                color = "blue"
+                color = "red"
             >
                 <Image src="cemeteryclassics/vinyl-group.png" />
                 <Image src="cemeteryclassics/cover-f-final.png" />
@@ -60,7 +60,7 @@
                 <Image src="albums-other/toughsun-vinyl.jpg" />
             </Project>
 
-            <Project color = "blue">
+            <Project color = "red">
                 <Image src="albums-other/1.png" />
                 <div class="grid grid-cols-3 w-max max-w-max gap-2 grid-rows-2 max-h-full">
                     <Image src="albums-other/231215D.png" />
@@ -96,6 +96,7 @@
                 desc = 'For my Graphic Design degree project at RISD, I wrote an essay and built a website to contain it. The writing explores realness, nature, and default systems in the context of branding and graphic design, and how recent shifts in the way these ideas are symbolized and marketed indicate a cultural movement away from "authenticity".'
                 link = "https://libbymarrs.net/post-authentic-sincerity/"
                 id = "post-authentic-sincerity"
+                color = "yellow"
             >
                 <Image src="dp/libbydp.gif"/>
                 <Image src="dp/libbydp2.gif" />
@@ -116,6 +117,7 @@
             <Project 
                 title = "Outbreak analytics & education tools"
                 desc = "A couple examples of the kind of work I've done at Fathom Information Design as part of an effort in partnership with the Sabeti Lab to create tools that facilitate infectious disease research, outbreak surveillance, and education about public health and epidemiology."
+                color = "yellow"
             >
                 <Image src="lkt/oo-ov-o3.png" />
                 <Image src="lkt/birdflu-sketch.png" />
@@ -127,7 +129,7 @@
                 desc = "Ron Carter is probably the most legendary bassist in jazz history. In honor of the vibrance and elegance of his life's work, I designed and built an immersive discography with the help of Mr. Carter himself and my team at Fathom. <br>
                 I wrote a series of blog posts reflecting on the project <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae]' href='https://www.fathom.info/notebook/231108/'>here</a>, <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae]' href='https://www.fathom.info/notebook/231115/'>here</a>, and <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae]' href='https://www.fathom.info/notebook/231127/'>here</a>."
                 link = "https://www.roncarteruniverse.com/"
-                color = "blue"
+                color = "red"
             >
                 <Image src="roncarter/desktop-photo.png" />
                 <Image src="roncarter/sc1.jpg" />

@@ -7,16 +7,18 @@
     export let color = "";
 </script>
 
-<section class={`pt-4 pb-8 h-92 md:h-212 w-full pr-4 flex overflow-x-scroll overscroll-x-none scrollbar bg-linear-to-br ${cls} 
-    ${color === 'blue' ? 'from-[#f4fcf0] to-[#f3fce0] text-[#73979b]' 
-    : color === 'yellow' ? 'from-[#fffce2] to-[#ffefef]'
-    : color === 'white' ? 'from-white to-[#ffefef] text-[#73979b]'
+<section class={`pt-4 pb-8 h-92 md:h-212 w-full pr-4 flex overflow-x-scroll overscroll-x-none scrollbar bg-linear-to-r ${cls} 
+    ${color === 'red' ? 'from-[#fff5f5] to-[#fffce2] text-[#937064]' 
+    : color === 'yellow' ? 'from-[#fffce2] to-[#ffefef] text-[#888578]'
+    : color === 'blue' ? 'from-[#f4fcf0] to-[#f3fce0] text-[#73979b]'
+    : color === 'white' ? 'from-white to-white text-[#73979b]'
     : 'bg-transparent text-amber-600'}`}
 id={id}>
     {#if title}
     <div class={`hidden md:block w-60 grow-0 shrink-0 h-max sticky left-0 font-serif p-4 pl-8 
-        ${color === 'blue' ? 'bg-[#f4fcf0]' 
+        ${color === 'red' ? 'bg-[#fff5f5]' 
         : color === 'yellow' ? 'bg-[#fffce2]'
+        : color === 'blue' ? 'bg-[#f4fcf0]' 
         : color === 'white' ? 'bg-white'
         : 'bg-[#fffce2]'}`}>
         <h1 class="uppercase text-sm leading-4 mb-2 font-light"> {title} </h1>
