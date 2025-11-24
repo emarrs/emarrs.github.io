@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Link from "./Link.svelte";
+
     export let id = "";
     export let title = "";
     export let desc = "";
@@ -23,7 +25,7 @@ id={id}>
         : 'bg-[#fffce2]'}`}>
         <h1 class="uppercase text-sm leading-4 mb-2 font-light"> {title} </h1>
         <p class="text-sm italic"> {@html desc } </p>
-         {#if link}<a class="block mt-2 text-sm italic text-[#7f7fbc] hover:text-[#4949ae]" href={link} target="_blank">Live site</a>{/if}
+        {#if link}<p class="mt-2 text-sm"><Link color="red" href={link} text="Live site"/></p>{/if}
     </div>
        
     {/if}

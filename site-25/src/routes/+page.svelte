@@ -2,6 +2,7 @@
     import Header from "$lib/components/Header.svelte";
     import Project from "$lib/components/Project.svelte";
     import Image from "$lib/components/Image.svelte";
+	import Link from "$lib/components/Link.svelte";
 
 </script>
 
@@ -15,11 +16,11 @@
             <section class="gap-8 flex flex-col-reverse items-center lg:flex-row lg:items-start lg:justify-between lg:h-full lg:max-h-170 xl:max-h-200 mb-20">
                 <div id="top" class="py-10 px-4 lg:px-8 pb-10 font-serif max-w-120 lg:max-w-80 flex flex-col gap-10 h-full justify-between text-sm">
                     <div>
-                        <p class=" text-[#8a9b8a]">Currently working on interfaces for understanding complex data at <a href="https://www.fathom.info/" class="text-[#83c900]">Fathom Information Design</a>. Most of the images you'll find on this site (which I built myself!) are from graphic design, web, and writing projects I've done for fun. <span class="italic">Curious?</span> Reach out to see more of my work or inquire about freelance availability. </p>
+                        <p class="text-[#8a9b8a]">Currently working on interfaces for understanding complex data at <Link href="https://www.fathom.info/" text="Fathom Information Design" color="lime"/>. Most of the images you'll find on this site (which I built myself!) are from graphic design, web, and writing projects I've done for fun. <span class="italic">Curious?</span> Reach out to see more of my work or inquire about freelance availability. </p>
                         <ul class="mt-4">
-                            <p class="text-[#7f7fbc]">marrsec@gmail.com</p>
-                            <p class="text-[#c7696a]"><a href="https://www.are.na/libby-marrs/" target="_blank">Are.na</a></p>
-                            <p class="text-[#c7696a]"><a href="https://www.instagram.com/woman_designer_8295/" target="_blank">Instagram</a></p>
+                            <p class="text-[#8a9b8a]">marrsec@gmail.com</p>
+                            <Link href="https://www.are.na/libby-marrs/" text="Are.na" color="red"/><br>
+                            <Link href="https://www.instagram.com/woman_designer_8295/" text="Instagram" color="red"/>
                            
                         </ul>
                     </div>
@@ -27,15 +28,15 @@
                         <p class="italic font-light">Favorite projects:</p>
                         <ul class="space-y-2">
                             <li class="">
-                                <a class="text-[#009246]" href="#ron-carter-universe">The Ron Carter Universe</a>
+                                <Link href="#ron-carter-universe" text="The Ron Carter Universe" color="forest"/>
                                 <p>Design + web development for a mobile-first immersive experience of Ron Carter's discography.</p>
                             </li>
                             <li class="">
-                                <a class="text-[#009246]" href="https://otherinter.net/research/lore/how-to-read-the-internet/" target="_blank">How to Read the Internet</a>
-                                <p>Writing + research: Part of my collaboration with Tiger Dingsun during our stint as visiting researchers at <a class="text-[#83c900]" href="https://otherinter.net/" target="_blank">Other Internet</a>.</p>
+                                <Link href="https://otherinter.net/research/lore/how-to-read-the-internet/" text="How to Read the Internet" color="forest"/>
+                                <p>Writing + research: Part of my collaboration with Tiger Dingsun during our stint as visiting researchers at <Link href="https://otherinter.net/" text="Other Internet" color="lime"/>.</p>
                             </li>
                             <li class="">
-                                <a class="text-[#009246]" href="#post-authentic-sincerity">Post-Authentic Sincerity</a>
+                                <Link href="#post-authentic-sincerity" text="Post-Authentic Sincerity" color="forest"/>
                                 <p>Design + web development + writing for my degree project at RISD exploring the idea of <span class="italic">authenticity</span> in graphic design.</p>
                             </li>
                         </ul>
@@ -127,7 +128,7 @@
                 id = "ron-carter-universe"
                 title = "Ron Carter Universe"
                 desc = "Ron Carter is probably the most legendary bassist in jazz history. In honor of the vibrance and elegance of his life's work, I designed and built an immersive discography with the help of Mr. Carter himself and my team at Fathom. <br>
-                I wrote a series of blog posts reflecting on the project <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae]' href='https://www.fathom.info/notebook/231108/'>here</a>, <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae]' href='https://www.fathom.info/notebook/231115/'>here</a>, and <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae]' href='https://www.fathom.info/notebook/231127/'>here</a>."
+                I wrote a series of blog posts reflecting on the project <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae] hover:text-shadow-current/60 hover:text-shadow-[0_0_3px]' href='https://www.fathom.info/notebook/231108/'>here</a>, <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae] hover:text-shadow-current/60 hover:text-shadow-[0_0_3px]' href='https://www.fathom.info/notebook/231115/'>here</a>, and <a target='_blank' class='text-[#7f7fbc] hover:text-[#4949ae] hover:text-shadow-current/60 hover:text-shadow-[0_0_3px]' href='https://www.fathom.info/notebook/231127/'>here</a>."
                 link = "https://www.roncarteruniverse.com/"
                 color = "red"
             >
