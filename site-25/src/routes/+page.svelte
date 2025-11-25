@@ -117,11 +117,22 @@
 
             <Project 
                 title = "Outbreak analytics & education tools"
-                desc = "A couple examples of the kind of work I've done at Fathom Information Design as part of an effort in partnership with the Sabeti Lab to create tools that facilitate infectious disease research, outbreak surveillance, and education about public health and epidemiology."
+                desc = "Some examples of the kind of work I've done at Fathom Information Design as part of an effort in partnership with the Sabeti Lab to create tools that facilitate infectious disease research, outbreak surveillance, and education about public health and epidemiology."
                 color = "yellow"
             >
                 <Image src="lkt/oo-ov-o3.png" />
                 <Image src="lkt/birdflu-sketch.png" />
+                <Image src="lkt/patient-timelines.png" />
+                <Image src="lkt/lkt-unknowns-1.png" />
+                <Image src="lkt/lkt-unknowns-2.png" />
+                <Image src="lkt/lassa-map.png" />
+                <Image src="lkt/contact-deg-crop.png" />
+                <Image src="lkt/transmission-crop.png" />
+                <Image src="lkt/ehr-crop.png" />
+
+                <Image src="lkt/lkt-multi-pathogen-wf.png" />
+                <Image src="lkt/lkt-zoonotic-seq-crop.png" />
+                <Image src="lkt/lkt-headlines-sketch.png" />
             </Project>
 
             <Project 
