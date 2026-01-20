@@ -94,7 +94,7 @@
 
             <Project
                 title = "Post-Authentic Sincerity"
-                desc = 'For my Graphic Design degree project at RISD, I wrote an essay and built a website to contain it. The writing explores realness, nature, and default systems in the context of branding and graphic design, and how recent shifts in the way these ideas are symbolized and marketed indicate a cultural movement away from "authenticity".'
+                desc = 'I wrote an essay and built a website to contain it. The writing explores realness, nature, and default systems in the context of branding and graphic design, and how recent shifts in the way these ideas are symbolized and marketed indicate a cultural movement away from "authenticity".'
                 link = "https://libbymarrs.net/post-authentic-sincerity/"
                 id = "post-authentic-sincerity"
                 color = "yellow"
