@@ -37,7 +37,7 @@
                             </li>
                             <li class="">
                                 <Link newTab={false} href="#post-authentic-sincerity" text="Post-Authentic Sincerity" color="forest"/>
-                                <p>Design + web development + writing for my degree project at RISD exploring the idea of <span class="italic">authenticity</span> in graphic design.</p>
+                                <p>Design + web development + writing exploring the idea of <span class="italic">authenticity</span> in graphic design.</p>
                             </li>
                         </ul>
                     </div>
